@@ -8,6 +8,9 @@
         if (isset($nutzer) || isset($email) || isset($passwort)) {
             header('location: index.php?code=6');
             exit();
+        } else if (strlen($nutzer) > 8) {
+            header('location: index.php?code=7');
+            exit();
         } else {
             $ini = parse_ini_file('credentials.ini');
             $servername = $ini['db_ip'];
@@ -21,14 +24,22 @@
             if ($conn->connect_error) {
                 die("Connection failed: ".$conn->connect_error);
             }
+
+            $sql1 = "SELECT * FROM Nutzer WHERE Nutzername == '$nutzer'";
+            $result1 = $conn->query($sql1);
+            $num_rows = mysqli_field_count($result1);
+            if ($num_rows > 0) {
+                header('location: index.php?code=8');
+                exit();
+            }
             
             $permitted_chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
             $code = substr(str_shuffle($permitted_chars), 0, 20);
 
             # Holt die Daten aus der Datenbank
-            $sql = "INSERT INTO Nutzer (Nutzername, Email, Passwort, Active) VALUES ('$nutzer', '$email', '$hash', '$code')";
-            $result = $conn->query($sql);
-            $row = mysqli_fetch_row($result);
+            $sql2 = "INSERT INTO Nutzer (Nutzername, Email, Passwort, Active) VALUES ('$nutzer', '$email', '$hash', '$code')";
+            $result2 = $conn->query($sql2);
+            $row2 = mysqli_fetch_row($result2);
             $conn->close();
 
 
