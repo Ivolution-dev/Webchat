@@ -5,7 +5,7 @@
         $passwort = filter_input(INPUT_POST, 'passwort', FILTER_SANITIZE_STRING);
         $hash = password_hash($passwort, PASSWORD_DEFAULT);
         
-        if (!isset($nutzer) && !isset($email) && !isset($passwort)) {
+        if (!isset($nutzer) || !isset($email) || !isset($passwort)) {
             header('location: index.php?code=6');
             exit();
         } else if (strlen($nutzer) > 8) {
@@ -27,8 +27,8 @@
 
             $sql1 = "SELECT * FROM Nutzer WHERE Nutzername == '$nutzer'";
             $result1 = $conn->query($sql1);
-            $num_rows = mysqli_field_count($result1);
-            if ($num_rows > 0) {
+            $num_rows1 = mysqli_field_count($result1);
+            if ($num_rows1 > 0) {
                 header('location: index.php?code=8');
                 exit();
             }
