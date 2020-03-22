@@ -27,6 +27,7 @@ form {
 #error {
     text-align: center;
     color: red;
+    margin-top: 0.1%;
 }
 table{
     width:100%;
