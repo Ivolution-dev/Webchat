@@ -31,7 +31,7 @@ form {
 #success, #error{
     margin-top: 0.8%;
     transition: 5s;
-    color:#555555;
+    visibility:hidden;
 }
 
 table{
