@@ -3,6 +3,8 @@ body {
     width: 50%;
     padding: 10px;
     margin: auto;
+    background-color: #444;
+    color: #e4e4e4;
 }
 
 h1 {
@@ -27,8 +29,7 @@ form {
 }
 
 th {
-    background-color: #21888F;  
-    color:blue;
+    background-color: #21888F;   
 }
 
 td {
