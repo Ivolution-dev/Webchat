@@ -42,6 +42,8 @@
             <?php
                 if (isset($_GET["code"]) && $_GET["code"] == 3) {
                     echo("<div id='success'>Du hast dich erfolgreich Registriert! <br>Du musst erst noch deine Email Bestätigen!</div>");
+                } if (isset($_GET["code"]) && $_GET["code"] == 6) {
+                    echo("<div id='error'>Ungültige Daten!</div>");
                 }
             ?>
 
