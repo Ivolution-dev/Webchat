@@ -30,10 +30,10 @@ form {
     color: red;
     margin-top: 0.8%;
 }
-#success, #error{
+/*#success, #error{
     transition: 5s;
     visibility:hidden;
-}
+}*/
 
 table{
     width:100%;
