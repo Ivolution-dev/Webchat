@@ -46,8 +46,12 @@
             <?php
                 if (isset($_GET["code"]) && $_GET["code"] == 3) {
                     echo("<div id='success'>Du hast dich erfolgreich Registriert! <br>Du musst erst noch deine Email Bestätigen!</div>");
-                } if (isset($_GET["code"]) && $_GET["code"] == 6) {
+                } else if (isset($_GET["code"]) && $_GET["code"] == 6) {
                     echo("<div id='error'>Ungültige Daten!</div>");
+                } else if (isset($_GET["code"]) && $_GET["code"] == 7) {
+                    echo("<div id='error'>Der Benutzername ist zu lang! <br>Der Name darf nicht länger als 8 Zeichen sein!</div>");
+                } else if (isset($_GET["code"]) && $_GET["code"] == 8) {
+                    echo("<div id='error'>Der Benutzer existiert bereits oder diese Email wurde bereits verwendet!</div>");
                 }
             ?>
 
