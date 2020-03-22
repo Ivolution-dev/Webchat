@@ -64,6 +64,7 @@ td {
     width:250px;
     clear:both;
     font-weight: bold;
+    border: 1px solid #414141;
 }
 .feld input{
     margin-left: auto;
