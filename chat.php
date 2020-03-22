@@ -36,6 +36,7 @@
                 tbdy = document.createElement('tbody');
                 for (var i = 0; i < ChatData.length; i++) {
                     var tr = document.createElement('tr');
+                    tr.setAttribute("style","margin-left:auto;");
                     for (var j = 0; j < 2; j++) {
                         var td = document.createElement('td');
                         var te = document.createTextNode(ChatData[i][j]);
