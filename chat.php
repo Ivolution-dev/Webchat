@@ -38,8 +38,8 @@
                     var tr = document.createElement('tr');
                         var td1 = document.createElement('td');
                         var td2 = document.createElement('td');
-                        td1.setAttribute("class","Uname");
-                        td2.setAttribute("class","Message");
+                        td1.setAttribute("id","Uname");
+                        td2.setAttribute("id","Message");
                         var te1 = document.createTextNode(ChatData[i][0]);
                         var te2 = document.createTextNode(ChatData[i][1]);
                         td1.appendChild(te1);

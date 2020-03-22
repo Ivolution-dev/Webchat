@@ -37,13 +37,13 @@ table{
 #Messagehd{
     width:90%;
 }
-.Message{
+#Message{
     text-align: left;
 }
-.Uname{
+#Uname{
     text-align: center;
 }
-#ten, #ninety {
+#Unamehd, #Messagehd {
     background-color: #21888F;   
 }
 
