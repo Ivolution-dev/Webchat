@@ -37,11 +37,13 @@
                 for (var i = 0; i < ChatData.length; i++) {
                     var tr = document.createElement('tr');
                     for (var j = 0; j < 2; j++) {
-                        var td = document.createElement('td');
-                        td.setAttribute("style","text-align: center;");
-                        var te = document.createTextNode(ChatData[i][j]);
-                        td.appendChild(te);
-                        tr.appendChild(td);
+                        var td1 = document.createElement('td');
+                        var td2 = document.createElement('td');
+                        var te1 = document.createTextNode(ChatData[i]);
+                        var te2 = document.createTextNode(ChatData[j]);
+                        td1.appendChild(te1);
+                        td2.appendChild(te2);
+                        tr.appendChild(td1,td2);
                     }
                     tbdy.appendChild(tr);
                 }
