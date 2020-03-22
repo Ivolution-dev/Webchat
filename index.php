@@ -51,7 +51,7 @@
                 } else if (isset($_GET["code"]) && $_GET["code"] == 7) {
                     echo("<div id='error'>Der Benutzername ist zu lang! <br>Der Name darf nicht länger als 8 Zeichen sein!</div>");
                 } else if (isset($_GET["code"]) && $_GET["code"] == 8) {
-                    echo("<div id='error'>Der Benutzer existiert bereits</div>");
+                    echo("<div id='error'>Der Benutzer existiert bereits oder diese Email wurde bereits verwendet!</div>");
                 }
             ?>
 
