@@ -57,10 +57,12 @@ td {
     color:white;
 }
 .test{
+    margin-left:50%;
     width:500px;
     clear:both;
 }
 .test input{
+    margin-left: auto;
     width:100%;
     clear:both;
 }
