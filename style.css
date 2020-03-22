@@ -37,10 +37,11 @@ table{
 #Messagehd{
     width:90%;
     text-align: left;
+    margin-left:25%;
 }
 #Message{
     text-align: left;
-    margin-left:25%;
+    
 }
 #Uname{
     text-align: center;
