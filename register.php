@@ -28,9 +28,10 @@
             $sql1 = "SELECT * FROM Nutzer WHERE Nutzername LIKE '$nutzer'";
             echo($sql1);
             $result1 = $conn->query($sql1);
-            echo($result1);
-            echo(mysqli_num_rows($result1));
-            if (mysqli_num_rows($result1) > 0) {
+            $row1 = mysqli_fetch_row($result1);
+            echo($row1);
+            echo(mysqli_num_rows($row1));
+            if (mysqli_num_rows($row1) > 0) {
                 header('location: index.php?code=8');
                 exit();
             }
