@@ -19,7 +19,7 @@
                 <form action="login.php" method="post"> 
                     Nutzername  : <input type="text" name="nutzer" autofocus><br><br>
                     Passwort    : <input type="password" name="passwort"><br><br>
-                    <input  type="submit" value="Anmelden" name="login">
+                    <input type="submit" value="Anmelden" name="login">
                 </form>
             </div>
             <?php
@@ -40,7 +40,7 @@
                     Nutzername  : <input type="text" name="nutzer" autofocus><br><br>
                     Email       : <input type="text" name="email"><br><br>
                     Passwort    : <input type="password" name="passwort"><br><br>
-                    <input  type="submit" value="Registrieren" name="register">
+                    <input type="submit" value="Registrieren" name="register">
                 </form>
             </div>
             <?php

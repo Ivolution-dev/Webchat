@@ -12,7 +12,6 @@ h1 {
     color: white;
     text-align: center;
     height:40px;
-    margin:3%;
 }
 
 form {
@@ -74,4 +73,22 @@ table, th, td {
     background-color: #555555;
     border: 1px solid black;
     border-collapse: collapse;
+}
+input[type=submit]{
+    clear: both;
+    text-align:center;
+    background: #4C7FEB;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-transition: color 0.2s,background-color 0.2s,box-shadow 0.2s,border 0.2s;
+    -moz-transition: color 0.2s,background-color 0.2s,box-shadow 0.2s,border 0.2s;
+    -o-transition: color 0.2s,background-color 0.2s,box-shadow 0.2s,border 0.2s;
+    transition: color 0.2s,background-color 0.2s,box-shadow 0.2s,border 0.2s;
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+input[type=submit]:hover{
+    background: #285AC5;
+    box-shadow: none;
 }
