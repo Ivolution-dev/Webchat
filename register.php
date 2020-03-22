@@ -25,7 +25,7 @@
                 die("Connection failed: ".$conn->connect_error);
             }
 
-            $sql1 = "SELECT * FROM Nutzer WHERE Nutzername LIKE '$nutzer'";
+            $sql1 = "SELECT * FROM Nutzer WHERE Nutzername LIKE '$nutzer' OR Email LIKE '$email'";
             echo($sql1);
             $result1 = $conn->query($sql1);
             $rowcount = mysqli_num_rows($result1);
