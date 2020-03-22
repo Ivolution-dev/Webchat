@@ -5,7 +5,7 @@
         $passwort = filter_input(INPUT_POST, 'passwort', FILTER_SANITIZE_STRING);
         $hash = password_hash($passwort, PASSWORD_DEFAULT);
         
-        if (!isset($nutzer) || !isset($email) || !isset($passwort)) {
+        if (empty($nutzer) || empty($email) || empty($passwort)) {
             header('location: index.php?code=6');
             exit();
         } else if (strlen($nutzer) > 8) {
