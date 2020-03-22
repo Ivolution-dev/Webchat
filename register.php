@@ -27,7 +27,7 @@
 
             $sql1 = "SELECT * FROM Nutzer WHERE Nutzername == '$nutzer'";
             $result1 = $conn->query($sql1);
-            $num_rows1 = mysqli_field_count($result1);
+            $num_rows1 = mysqli_fetch_lengths($result1);
             echo($num_rows1);
             exit();
             if ($num_rows1 > 0) {
