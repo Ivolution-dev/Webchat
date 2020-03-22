@@ -38,6 +38,7 @@
                     var tr = document.createElement('tr');
                     for (var j = 0; j < 2; j++) {
                         var td = document.createElement('td');
+                        td.style.text-align="center";
                         var te = document.createTextNode(ChatData[i][j]);
                         td.appendChild(te);
                         tr.appendChild(td);
