@@ -28,7 +28,15 @@ form {
     text-align: center;
     color: red;
 }
-
+table{
+    width:100%;
+}
+#viertel{
+    width:25%;
+}
+#dreiviertel{
+    width:75%;
+}
 th {
     background-color: #21888F;   
 }
@@ -42,5 +50,4 @@ table, th, td {
     background-color: #555555;
     border: 1px solid black;
     border-collapse: collapse;
-    width:auto;
 }
