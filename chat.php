@@ -19,8 +19,8 @@
 
         <table id="chat">
         <tr>
-        <th>Username</th>
-        <th>Message</th>
+        <th id="viertel">Username</th>
+        <th id="dreiviertel">Message</th>
         </tr>
         </table> 
             
