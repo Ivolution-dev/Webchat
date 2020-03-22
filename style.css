@@ -43,7 +43,7 @@ table{
 }
 #Uname{
     text-align: center;
-    font: bold;
+    font-weight: bold;
 }
 #Unamehd, #Messagehd {
     background-color: #21888F;   
