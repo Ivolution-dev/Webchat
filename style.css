@@ -63,5 +63,5 @@ table, th, td {
     border-collapse: collapse;
 }
 input{
-    text-align: center;
+    margin:auto;
 }
