@@ -25,7 +25,7 @@
                 die("Connection failed: ".$conn->connect_error);
             }
 
-            $sql1 = "SELECT * FROM Nutzer WHERE Nutzername == '$nutzer'";
+            $sql1 = "SELECT * FROM Nutzer WHERE Nutzername LIKE '$nutzer'";
             echo($sql1);
             $result1 = $conn->query($sql1);
             echo($result1);
