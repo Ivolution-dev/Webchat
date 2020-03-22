@@ -37,10 +37,10 @@ table{
 #ninety{
     width:90%;
 }
-td[th="Username"]{
+td[th="ten"]{
     text-align:center;
 }
-td[th="Message"]{
+td[th="ninety"]{
     text-align: left;
 }
 th {
