@@ -22,13 +22,11 @@ form {
 #success {
     text-align: center;
     color: green;
-    margin-top: 0.8%;
 }
 
 #error {
     text-align: center;
     color: red;
-    margin-top: 0.8%;
 }
 /*#success, #error{
     transition: 5s;
