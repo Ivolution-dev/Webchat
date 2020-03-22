@@ -66,6 +66,7 @@ td {
     margin-left: auto;
     width:100%;
     clear:both;
+    text-align: center;
 }
 table, th, td {
     background-color: #555555;
