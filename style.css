@@ -36,12 +36,14 @@ table{
 }
 #Messagehd{
     width:90%;
+    text-align: left;
 }
 #Message{
     text-align: left;
 }
 #Uname{
     text-align: center;
+    font: bolt;
 }
 #Unamehd, #Messagehd {
     background-color: #21888F;   
