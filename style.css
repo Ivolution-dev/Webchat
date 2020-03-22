@@ -28,10 +28,12 @@ form {
     text-align: center;
     color: red;
 }
-/*#success, #error{
+#success, #error{
+    margin-top: 0.8%;
     transition: 5s;
     visibility:hidden;
-}*/
+    margin-bottom: 0,8%;
+}
 
 table{
     width:100%;
