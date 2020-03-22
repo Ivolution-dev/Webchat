@@ -31,10 +31,11 @@ form {
 table{
     width:100%;
 }
-#viertel{
+#ten{
     width:10%;
+    text-align: center;
 }
-#dreiviertel{
+#ninety{
     width:90%;
 }
 th {
