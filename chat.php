@@ -36,15 +36,15 @@
                 tbdy = document.createElement('tbody');
                 for (var i = 0; i < ChatData.length; i++) {
                     var tr = document.createElement('tr');
-                    for (var j = 0; j < 2; j++) {
+                     
                         var td1 = document.createElement('td');
                         var td2 = document.createElement('td');
-                        var te1 = document.createTextNode(ChatData[i]);
-                        var te2 = document.createTextNode(ChatData[j]);
+                        var te1 = document.createTextNode(ChatData[i][0]);
+                        var te2 = document.createTextNode(ChatData[i][1]);
                         td1.appendChild(te1);
                         td2.appendChild(te2);
-                        tr.appendChild(td1,td2);
-                    }
+                        tr.appendChild(td1);
+                        tr.appendChild(td2);
                     tbdy.appendChild(tr);
                 }
                 tbl.appendChild(tbdy);
