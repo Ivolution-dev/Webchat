@@ -33,15 +33,10 @@ table{
 }
 #ten{
     width:10%;
+    margin-left: 50%;
 }
 #ninety{
     width:90%;
-}
-td[th="ten"]{
-    text-align:center;
-}
-td[th="ninety"]{
-    text-align: left;
 }
 th {
     background-color: #21888F;   
