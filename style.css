@@ -22,18 +22,18 @@ form {
 #success {
     text-align: center;
     color: green;
-    margin-top: 0.8%;
-    transition-delay: 5s;
-    color:#555555;
 }
 
 #error {
     text-align: center;
     color: red;
+}
+#success, #error{
     margin-top: 0.8%;
     transition: 5s;
     color:#555555;
 }
+
 table{
     width:100%;
 }
