@@ -31,11 +31,17 @@ form {
 table{
     width:100%;
 }
-#ten{
+#Unamehd{
     width:10%;
 }
-#ninety{
+#Messagehd{
     width:90%;
+}
+.Message{
+    text-align: left;
+}
+.Uname{
+    text-align: center;
 }
 #ten, #ninety {
     background-color: #21888F;   

@@ -19,8 +19,8 @@
 
         <table id="chat">
         <tr>
-        <th id="ten">Username</th>
-        <th id="ninety">Message</th>
+        <th id="Unamehd">Username</th>
+        <th id="Messagehd">Message</th>
         </tr>
         </table> 
             
@@ -36,9 +36,10 @@
                 tbdy = document.createElement('tbody');
                 for (var i = 0; i < ChatData.length; i++) {
                     var tr = document.createElement('tr');
-                     
                         var td1 = document.createElement('td');
                         var td2 = document.createElement('td');
+                        td1.setAttribute("class","Uname");
+                        td2.setAttribute("class","Message");
                         var te1 = document.createTextNode(ChatData[i][0]);
                         var te2 = document.createTextNode(ChatData[i][1]);
                         td1.appendChild(te1);
