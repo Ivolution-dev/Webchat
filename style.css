@@ -31,8 +31,9 @@ form {
 #success, #error{
     transition: 1s;
     margin-top: 0.8%;
-    visibility:hidden;
     margin-bottom: -2%;
+    transition: 3s;
+    visibility:hidden;
 }
 
 table{
