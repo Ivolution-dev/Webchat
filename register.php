@@ -26,7 +26,9 @@
             }
 
             $sql1 = "SELECT * FROM Nutzer WHERE Nutzername == '$nutzer'";
+            echo($sql1);
             $result1 = $conn->query($sql1);
+            echo($result1);
             echo(mysqli_num_rows($result1));
             if (mysqli_num_rows($result1) > 0) {
                 header('location: index.php?code=8');
