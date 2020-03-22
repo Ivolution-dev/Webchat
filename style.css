@@ -28,11 +28,11 @@ form {
     text-align: center;
     color: red;
 }
-#success, #error{
+/*#success, #error{
     margin-top: 0.8%;
     transition: 5s;
     visibility:hidden;
-}
+}*/
 
 table{
     width:100%;
