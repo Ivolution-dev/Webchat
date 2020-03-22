@@ -35,12 +35,14 @@
             ?>
 
             <h1> Webchat - Registrieren </h1>
-            <form action="register.php" method="post">
-                Nutzername  : <input type="text" name="nutzer" autofocus><br><br>
-                Email       : <input type="text" name="email"><br><br>
-                Passwort    : <input type="password" name="passwort"><br><br>
-                <input  type="submit" value="Registrieren" name="register">
-            </form>
+            <div class="test">
+                <form action="register.php" method="post">
+                    Nutzername  : <input type="text" name="nutzer" autofocus><br><br>
+                    Email       : <input type="text" name="email"><br><br>
+                    Passwort    : <input type="password" name="passwort"><br><br>
+                    <input  type="submit" value="Registrieren" name="register">
+                </form>
+            </div>
             <?php
                 if (isset($_GET["code"]) && $_GET["code"] == 3) {
                     echo("<div id='success'>Du hast dich erfolgreich Registriert! <br>Du musst erst noch deine Email Bestätigen!</div>");
