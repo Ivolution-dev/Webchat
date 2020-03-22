@@ -33,7 +33,6 @@ table{
 }
 #ten{
     width:10%;
-    text-align: center;
 }
 #ninety{
     width:90%;
@@ -43,7 +42,7 @@ th {
 }
 
 td {
-    text-align: left;
+    text-align: center;
     padding: 8px;
     color:white;
 }
