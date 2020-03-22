@@ -17,7 +17,7 @@
             }
         ?>
 
-        <table id="chat"> Test </table> 
+        <table id="chat"> Test 2 </table> 
 
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script>
