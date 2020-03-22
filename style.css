@@ -1,9 +1,9 @@
 body {
-    font-family: Verdana, Roboto, Helvetica, sans-serif;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
     width: 50%;
     padding: 10px;
     margin: auto;
-    background-color: #444;
+    /*background-color: #444;*/
     color: #e4e4e4;
 }
 
