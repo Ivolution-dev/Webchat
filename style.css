@@ -64,7 +64,7 @@ td {
     width:250px;
     clear:both;
     font-weight: bold;
-    border: 1px solid #414141;
+    
 }
 .feld input{
     margin-left: auto;
@@ -72,6 +72,7 @@ td {
     clear:both;
     text-align: center;
     background-color: #555555;
+    border: 1px solid #414141;
 }
 table, th, td {
     background-color: #555555;
