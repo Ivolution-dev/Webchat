@@ -22,19 +22,19 @@ form {
 #success {
     text-align: center;
     color: green;
-    margin-top: 0.8%;
+    
 }
 
 #error {
     text-align: center;
     color: red;
-    margin-top: 0.8%;
 }
-/*#success, #error{
-    
+#success, #error{
+    margin-top: 0.8%;
     transition: 5s;
     visibility:hidden;
-}*/
+    margin-top: -0.8%;
+}
 
 table{
     width:100%;
