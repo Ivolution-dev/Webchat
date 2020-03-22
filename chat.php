@@ -69,7 +69,7 @@
         <div class="feld">
             <form action="sendmessage.php" method="post">
                 <input type="text" name="message" autofocus autocomplete="off"><br><br>
-                <input  type="submit" value="Senden" name="send">
+                <input  type="submit" value="Senden" name="send"><br><br>
             </form>
             <form action="logout.php" method="post">
                 <input  type="submit" value="Logout" name="logout">
