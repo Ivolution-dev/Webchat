@@ -33,12 +33,11 @@ table{
 }
 #ten{
     width:10%;
-    margin-left: 50%;
 }
 #ninety{
     width:90%;
 }
-th {
+#ten, #ninety {
     background-color: #21888F;   
 }
 
