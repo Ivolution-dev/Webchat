@@ -40,6 +40,7 @@ table{
 }
 #Message{
     text-align: left;
+    margin-left:25%;
 }
 #Uname{
     text-align: center;
