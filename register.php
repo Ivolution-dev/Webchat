@@ -27,10 +27,12 @@
 
             $sql1 = "SELECT * FROM Nutzer WHERE Nutzername == '$nutzer'";
             $result1 = $conn->query($sql1);
+            echo(mysqli_num_rows($result1));
             if (mysqli_num_rows($result1) > 0) {
                 header('location: index.php?code=8');
                 exit();
             }
+            exit();
             
             $permitted_chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
             $code = substr(str_shuffle($permitted_chars), 0, 20);
