@@ -15,11 +15,13 @@
             ?>
 
             <h1> Webchat - Log in </h1>
-            <form action="login.php" method="post"> 
-                Nutzername  : <input type="text" name="nutzer" autofocus><br><br>
-                Passwort    : <input type="password" name="passwort"><br><br>
-                <input  type="submit" value="Anmelden" name="login">
-            </form>
+            <div class="test">
+                <form action="login.php" method="post"> 
+                    Nutzername  : <input type="text" name="nutzer" autofocus><br><br>
+                    Passwort    : <input type="password" name="passwort"><br><br>
+                    <input  type="submit" value="Anmelden" name="login">
+                </form>
+            </div>
             <?php
                 if (isset($_GET["code"]) && $_GET["code"] == 1) {
                     echo("<div id='error'>Melde dich bitte erstmal an!</div>");
