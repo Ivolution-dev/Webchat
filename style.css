@@ -36,7 +36,8 @@ table{
 }
 #Messagehd{
     width:90%;
-    text-indent: -25%;
+    text-align: left;
+    text-indent: 10%;
 }
 #Message{
     text-align: left;
