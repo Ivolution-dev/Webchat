@@ -29,6 +29,7 @@ form {
     color: red;
 }
 #success, #error{
+    transition: 1s;
     margin-top: 0.8%;
     visibility:hidden;
     transition: 5s;
