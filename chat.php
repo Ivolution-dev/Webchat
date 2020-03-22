@@ -17,8 +17,13 @@
             }
         ?>
 
-        <table id="chat"> Test 2 </table> 
-
+        <table id="chat">
+        <tr>
+        <th>Username</th>
+        <th>Message</th>
+        </tr>
+        </table> 
+            
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script>
             

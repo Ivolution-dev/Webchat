@@ -21,12 +21,22 @@ form {
     color: green;
 }
 
-
 #error {
     text-align: center;
     color: red;
 }
 
+th {
+    background-color: #21888F;   
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+    color:white;
+}
 table, th, td {
+    background-color: #555555;
     border: 1px solid black;
+    
 }
