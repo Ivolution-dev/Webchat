@@ -17,6 +17,7 @@ h1 {
 form {
     margin: auto;
     text-align: center;
+    display:inline-block;
 }
 
 #success {
