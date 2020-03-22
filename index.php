@@ -15,7 +15,7 @@
             ?>
 
             <h1> Webchat - Log in </h1>
-            <div class="test">
+            <div class="feld">
                 <form action="login.php" method="post"> 
                     Nutzername  : <input type="text" name="nutzer" autofocus autocomplete="off"><br><br>
                     Passwort    : <input type="password" name="passwort" autocomplete="off"><br><br>
@@ -35,7 +35,7 @@
             ?>
 
             <h1> Webchat - Registrieren </h1>
-            <div class="test">
+            <div class="feld">
                 <form action="register.php" method="post">
                     Nutzername  : <input type="text" name="nutzer" autofocus autocomplete="off"><br><br>
                     Email       : <input type="text" name="email" autocomplete="off"><br><br>

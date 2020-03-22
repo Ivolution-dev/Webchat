@@ -58,14 +58,14 @@ td {
     padding: 8px;
     color:white;
 }
-.test{
+.feld{
     margin-left:auto;
     margin-right: auto;
     width:250px;
     clear:both;
     font-weight: bold;
 }
-.test input{
+.feld input{
     margin-left: auto;
     width:100%;
     clear:both;

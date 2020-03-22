@@ -66,15 +66,15 @@
             updater();
             t = setInterval(updater, 1000);
         </script> 
-
-        <form action="sendmessage.php" method="post">
-            <input type="text" name="message" autofocus autocomplete="off"><br><br>
-            <input  type="submit" value="Senden" name="send">
-        </form>
-        <form action="logout.php" method="post">
-            <input  type="submit" value="Logout" name="logout">
-        </form>
-
+        <div class="feld">
+            <form action="sendmessage.php" method="post">
+                <input type="text" name="message" autofocus autocomplete="off"><br><br>
+                <input  type="submit" value="Senden" name="send">
+            </form>
+            <form action="logout.php" method="post">
+                <input  type="submit" value="Logout" name="logout">
+            </form>
+        </div>
     </body>
 </html>
 
