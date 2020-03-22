@@ -42,7 +42,7 @@ th {
 }
 
 td {
-    text-align: center;
+    margin-left: auto;
     padding: 8px;
     color:white;
 }
