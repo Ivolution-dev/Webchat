@@ -37,12 +37,18 @@ table{
 #ninety{
     width:90%;
 }
+td[th="Username"]{
+    text-align:center;
+}
+td[th="Message"]{
+    text-align: left;
+}
 th {
     background-color: #21888F;   
 }
 
 td {
-    
+    margin-left: auto;
     padding: 8px;
     color:white;
 }
