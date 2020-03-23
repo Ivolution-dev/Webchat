@@ -144,7 +144,6 @@ input:focus {
 
 }
 #trmsg{
-    transition: opacitiy ease-in 2s;
-    -webkit-transition: opacitiy ease-in 2s;
+    transition-timing-function: linear;
 }
 /*Made and written by Collin Schulz */
