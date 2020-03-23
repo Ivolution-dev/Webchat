@@ -124,7 +124,7 @@ input:focus {
 #logobtn{
     background:url(http://gamer-server.eu/Webchat/logout.png);
     background-size: 15px;
-    background-position: left;
+    background-position: right;
     background-repeat: no-repeat;
     background-color: #ed3330;
 }
