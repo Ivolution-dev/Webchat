@@ -130,7 +130,6 @@ input:focus {
     background-color: #ed3330;
 }
 #scroll{
-    background: #00BFFF;
     height: auto;
     overflow: auto;
     width: auto;
