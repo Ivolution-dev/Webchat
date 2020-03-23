@@ -144,7 +144,7 @@ input:focus {
 
 }
 #trmsg{
-    animation: fadeIn ease 10s;
-    -webkit-animation: fadeIn ease 10s;
+    animation: opacitiy ease-in 2s;
+    -webkit-animation: opacitiy ease-in 2s;
 }
 /*Made and written by Collin Schulz */
