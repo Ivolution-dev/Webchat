@@ -132,9 +132,10 @@ input:focus {
 #scroll{
     height: 50%;
     width: 95%;
-    overflow: auto;
+    overflow-x: auto;
     position:absolute;
     border: 1px solid #000;
     padding: 10px;
+    white-space: nowrap
 }
 /*Made and written by Collin Schulz */
