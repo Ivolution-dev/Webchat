@@ -133,11 +133,10 @@ input:focus {
 }
 #scroll{
     height: 500px;
-    width: 99%;
+    width: 100%;
     overflow: auto;
     position:static;
     border: 1px solid #000;
-    padding-right: 17px;
     margin:auto;
     display:flex;
     flex-direction: column-reverse;
