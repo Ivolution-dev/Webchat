@@ -28,7 +28,7 @@
         <th id="Unamehd">Username</th>
         <th id="Messagehd">Message</th>
         </tr>
-        </table> 
+        </table><br>
             
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script>
