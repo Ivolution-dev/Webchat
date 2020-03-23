@@ -134,11 +134,13 @@ input:focus {
 #scroll{
     height: 500px;
     width: 100%;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     position:static;
     border: 1px solid #000;
     margin:auto;
     display:flex;
     flex-direction: column-reverse;
+
 }
 /*Made and written by Collin Schulz */
