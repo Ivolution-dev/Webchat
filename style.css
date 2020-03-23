@@ -34,6 +34,9 @@ form {
     margin-bottom: -2%;
     visibility:hidden;
 }
+#logout{
+    margin-right: auto;
+}
 
 table{
     width:100%;
