@@ -18,8 +18,8 @@
         ?>
 
         <div class="logout">
-            <form id="lgbtn" img src="logout.png" width=200 height=200 action="logout.php" method="post">
-                <input  type="submit" value="Logout" name="logout">
+            <form id="lgbtn" action="logout.php" method="post">
+                <input  img src="logout.png" width=200 height=200 type="submit" value="Logout" name="logout">
             </form>
         </div><br>
 
