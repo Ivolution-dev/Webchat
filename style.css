@@ -143,4 +143,7 @@ input:focus {
     flex-direction: column-reverse;
 
 }
+#trmsg{
+    transition: all 0.4s ease 0s;
+}
 /*Made and written by Collin Schulz */
