@@ -18,9 +18,9 @@
         ?>
 
         <div class="logout">
-            <form id="lgbtn" action="logout.php" method="post"><br></br>
+            <form id="lgbtn" action="logout.php" method="post">
                 <input  type="submit" value="Logout" name="logout">
-            </form>
+            </form><br></br>
         </div>
 
         <table id="chat">
