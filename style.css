@@ -110,10 +110,9 @@ input:focus {
 .logout{
     margin-right:0%;;
 }
-.logout input[type=submit]{
+.logout #lgbtn{
     margin-left:auto;
     margin-right: auto;
     clear:both;
     width: 100px;
-    font-weight: bold;
 }
