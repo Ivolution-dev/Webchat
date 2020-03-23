@@ -116,3 +116,7 @@ input:focus {
     clear:both;
     width: 60px;
 }
+#lgbtn
+{
+    margin-right: 0;
+}
