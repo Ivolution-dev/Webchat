@@ -22,11 +22,17 @@
                 <input id="logobtn" type="submit" value="Logout" name="logout">
             </form>
         </div><br>
-        <div id="scroll">
-        <table id="chat">
+        <table id="hd">
         <tr>
         <th id="Unamehd">Username</th>
         <th id="Messagehd">Message</th>
+        </tr>
+        </table>
+        <div id="scroll">
+        <table id="chat">
+        <tr>
+        <th></th>
+        <th></th>
         </tr>
         </table>
         </div><br>    

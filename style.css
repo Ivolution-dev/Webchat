@@ -142,7 +142,4 @@ input:focus {
     display:flex;
     flex-direction: column-reverse;
 }
-th{
-    position: sticky;
-}
 /*Made and written by Collin Schulz */
