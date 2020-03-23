@@ -122,7 +122,8 @@ input:focus {
     width: 70px;
     background:url(http://gamer-server.eu/Webchat/logout.png);
     background-size: 15px;
+    background-size: cover;
     background-repeat: no-repeat;
-    z-index: 1;
+
 }
 
