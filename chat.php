@@ -48,8 +48,7 @@
                 tbdy = document.createElement('tbody');
                 for (var i = 0; i < ChatData.length; i++) {
                     var tr = document.createElement('tr');
-                    tr.setAttribute("id","trmsg")
-                    tr.fadeIn(10);
+                    tr.setAttribute("id","trmsg");
                     var td1 = document.createElement('td');
                     var td2 = document.createElement('td');
                     td1.setAttribute("id","Uname");
