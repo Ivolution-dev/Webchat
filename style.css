@@ -113,10 +113,10 @@ input:focus {
 .logout{
     margin-left:auto;
     margin-right: auto;
-    clear:both; 
+    clear:both;
+    width: 70px;
 }
 #lgbtn
 {
     margin-right: 0%;
-    width: 70px;
 }
