@@ -87,7 +87,7 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
-input[type=submit], .logout input{
+input[type=submit], .logout input[type=submit]{
     color: #fff ;
     text-transform: uppercase;
     text-decoration: none;
