@@ -131,7 +131,7 @@ input:focus {
 }
 #scroll{
     height: 500px;
-    width: 99%;
+    width: 98%;
     overflow: auto;
     position:static;
     border: 1px solid #000;
@@ -139,6 +139,5 @@ input:focus {
     margin:auto;
     display:flex;
     flex-direction: column-reverse;
-    /*-webkit-overflow-scrolling: touch;*/
 }
 /*Made and written by Collin Schulz */
