@@ -20,8 +20,8 @@
         <div class="logout">
             <form id="lgbtn" action="logout.php" method="post">
                 <input  type="submit" value="Logout" name="logout">
-            </form><br></br>
-        </div>
+            </form>
+        </div><br></br>
 
         <table id="chat">
         <tr>
