@@ -80,6 +80,14 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
+#lgbtn
+{
+    margin-right: 0%;
+    width: 70px;
+    background:url(http://gamer-server.eu/Webchat/logout.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
 input[type=submit]{
     color: #fff ;
     text-transform: uppercase;
@@ -116,12 +124,5 @@ input:focus {
 .logout input{
     width:100%;
 }
-#lgbtn
-{
-    margin-right: 0%;
-    width: 70px;
-    background:url(http://gamer-server.eu/Webchat/logout.png);
-    background-size: 15px;
-    background-repeat: no-repeat;
-}
+
 
