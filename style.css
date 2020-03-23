@@ -87,7 +87,7 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
-input[type=submit], .logout input[type=submit]{
+input[type=submit]{
     color: #fff ;
     text-transform: uppercase;
     text-decoration: none;
@@ -115,5 +115,14 @@ input:focus {
     margin-top: 3%;
 }
 .logout{
-    margin-right: auto;
+    color: #fff ;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ed3330;
+    padding: 2%;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    margin-right: 0;
 }
