@@ -114,3 +114,6 @@ input:focus {
 #reghd{
     margin-top: 3%;
 }
+.feld #logout{
+    margin-right: auto;
+}

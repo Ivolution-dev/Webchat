@@ -18,7 +18,7 @@
         ?>
 
         <div class="feld">
-            <form action="logout.php" method="post">
+            <form id="logout"action="logout.php" method="post">
                 <input  type="submit" value="Logout" name="logout">
             </form>
         </div>
