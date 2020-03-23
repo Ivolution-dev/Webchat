@@ -6,8 +6,6 @@ body {
     color: #e4e4e4;
     width:auto;
     overflow-x: hidden;
-    display:flex;
-    flex-direction: column-reverse;
 }
 h1 {
     background-color: gray;
