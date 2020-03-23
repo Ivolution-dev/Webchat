@@ -59,7 +59,7 @@ td {
     padding: 8px;
     color:white;
 }
-.feld, .logout{
+.feld{
     margin-left:auto;
     margin-right: auto;
     width:250px;
@@ -108,5 +108,11 @@ input:focus {
     margin-top: 3%;
 }
 .logout{
-    margin-right:0%;
+    margin-right:0%;;
+}
+.logout input[type=submit]{
+    margin-left:auto;
+    margin-right: auto;
+    clear:both;
+    font-weight: bold;
 }
