@@ -49,6 +49,7 @@
                 for (var i = 0; i < ChatData.length; i++) {
                     var tr = document.createElement('tr');
                     tr.setAttribute("id","trmsg")
+                    tr.fadeIn(1000);
                     var td1 = document.createElement('td');
                     var td2 = document.createElement('td');
                     td1.setAttribute("id","Uname");
