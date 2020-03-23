@@ -107,6 +107,6 @@ input:focus {
 #reghd{
     margin-top: 3%;
 }
-.logout, #lgbtn{
-    margin-right: -2%;
+#lgbtn{
+    margin-right: 0;
 }
