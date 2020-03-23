@@ -53,7 +53,8 @@ table{
     font-weight: bold;
 }
 #Unamehd, #Messagehd {
-    background-color: #ed3330;   
+    background-color: #ed3330;
+    position: sticky;   
 }
 td {
     margin-left: auto;
