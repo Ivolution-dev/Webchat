@@ -137,6 +137,6 @@ input:focus {
     border: 1px solid #000;
     padding: 10px;
     margin:auto;
-    -webkit-overflow-scrolling: touch;
+    /*-webkit-overflow-scrolling: touch;*/
 }
 /*Made and written by Collin Schulz */
