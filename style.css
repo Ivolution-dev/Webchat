@@ -54,7 +54,7 @@ table{
 }
 #Unamehd, #Messagehd {
     background-color: #ed3330;
-    position: sticky;   
+
 }
 td {
     margin-left: auto;
@@ -141,5 +141,8 @@ input:focus {
     margin:auto;
     display:flex;
     flex-direction: column-reverse;
+}
+th{
+    position: sticky;
 }
 /*Made and written by Collin Schulz */
