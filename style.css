@@ -90,7 +90,6 @@ input[type=submit]{
     display: inline-block;
     border: none;
     transition: all 0.4s ease 0s;
-    z-index: 1;
 }
 input[type=submit]:hover{
     background-color: #21888F;
@@ -121,8 +120,10 @@ input:focus {
 {
     margin-right: 0%;
     width: 70px;
+}
+#logobtn{
     background:url(http://gamer-server.eu/Webchat/logout.png);
     background-size: 15px;
     background-repeat: no-repeat;
-    z-index: 0;
+
 }
