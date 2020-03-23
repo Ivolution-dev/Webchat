@@ -41,7 +41,7 @@ table{
 #Messagehd{
     width:90%;
     text-align: left;
-    text-indent: 0.5%;
+    margin-left: auto;
 }
 #Message{
     text-align: left;
