@@ -43,10 +43,10 @@ table{
     text-align: left;
     margin-left: auto;
     padding:8px;
+    font-size: 10px;;
 }
 #Message{
     text-align: left;
-    
 }
 #Uname{
     text-align: center;
