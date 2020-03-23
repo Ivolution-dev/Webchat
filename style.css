@@ -114,7 +114,7 @@ input:focus {
 #reghd{
     margin-top: 3%;
 }
-.logout input{
+.logout input[type=submit]{
     color: #fff ;
     text-transform: uppercase;
     text-decoration: none;
