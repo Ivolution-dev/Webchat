@@ -19,7 +19,7 @@
 
         <div class="logout">
             <form id="lgbtn" action="logout.php" method="post">
-                <input  img src="logout.png" width=200 height=200 type="submit" value="Logout" name="logout">
+                <input id="logobtn" type="submit" value="Logout" name="logout">
             </form>
         </div><br>
 
