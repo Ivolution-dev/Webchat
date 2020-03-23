@@ -22,7 +22,6 @@
                 <input  type="submit" value="Logout" name="logout">
             </form>
         </div><br></br>
-
         <table id="chat">
         <tr>
         <th id="Unamehd">Username</th>
