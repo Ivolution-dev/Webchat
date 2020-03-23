@@ -16,10 +16,11 @@
                 echo("<h1>Willkommen ".$_SESSION['username']."</h1>");
             }
         ?>
-
-        <form id="logout" action="logout.php" method="post">
-            <input  type="submit" value="Logout" name="logout">
-        </form>
+        <div class="feld">
+            <form action="logout.php" method="post">
+                <input  type="submit" value="Logout" name="logout">
+            </form>
+        </div>
 
         <table id="chat">
         <tr>
