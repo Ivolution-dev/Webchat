@@ -22,14 +22,14 @@
                 <input id="logobtn" type="submit" value="Logout" name="logout">
             </form>
         </div><br>
-
+        <div id="scroll">
         <table id="chat">
         <tr>
         <th id="Unamehd">Username</th>
         <th id="Messagehd">Message</th>
         </tr>
         </table><br>
-            
+        </div>    
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script>
             
