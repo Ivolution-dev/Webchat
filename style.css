@@ -131,7 +131,7 @@ input:focus {
 }
 #scroll{
     height: 50%;
-    width: 95%;
+    width: 99%;
     overflow: auto;
     position:static;
     border: 1px solid #000;
