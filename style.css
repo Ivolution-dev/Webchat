@@ -144,6 +144,8 @@ input:focus {
 
 }
 #trmsg{
-    transition: all 0.4s ease 0s;
+    opacity: 0;
+    transition: opacity 2s ease-in;
+    opacity: 1;
 }
 /*Made and written by Collin Schulz */
