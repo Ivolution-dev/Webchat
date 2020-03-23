@@ -32,7 +32,6 @@ form {
     transition-duration: 2s;
     margin-top: 0.8%;
     margin-bottom: -2%;
-    visibility:hidden;
 }
 #logout{
     margin-right: auto;
