@@ -42,6 +42,7 @@ table{
     width:90%;
     text-align: left;
     margin-left: auto;
+    padding:8px;
 }
 #Message{
     text-align: left;
