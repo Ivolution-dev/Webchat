@@ -33,7 +33,7 @@ form {
 #logout{
     margin-right: auto;
 }
-table{
+table, #Unamehd, #Messagehd{
     width:100%;
 }
 #Unamehd{
@@ -76,7 +76,7 @@ td {
     background-color: #555555;
     border: 1px solid black;
 }
-table, th, td {
+table, th, td, #Unamehd, #Messagehd {
     background-color: #555555;
     border: 1px solid black;
     border-collapse: collapse;
