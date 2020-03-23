@@ -21,7 +21,7 @@
             <form id="lgbtn" action="logout.php" method="post">
                 <input  type="submit" value="Logout" name="logout">
             </form>
-        </div>
+        </div><br>
 
         <table id="chat">
         <tr>
