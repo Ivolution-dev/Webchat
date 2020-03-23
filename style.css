@@ -65,7 +65,7 @@ td {
     padding: 8px;
     color:white;
 }
-.feld{
+.feld, .logout{
     margin-left:auto;
     margin-right: auto;
     width:250px;
@@ -87,7 +87,7 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
-input[type=submit], .logout{
+input[type=submit]{
     color: #fff ;
     text-transform: uppercase;
     text-decoration: none;
@@ -113,8 +113,4 @@ input:focus {
 }
 #reghd{
     margin-top: 3%;
-}
-
-#logout{
-    margin-right: 0;
 }
