@@ -137,6 +137,8 @@ input:focus {
     border: 1px solid #000;
     padding: 10px;
     margin:auto;
+    display:flex;
+    flex-direction: column-reverse;
     /*-webkit-overflow-scrolling: touch;*/
 }
 /*Made and written by Collin Schulz */
