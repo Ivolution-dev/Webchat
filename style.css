@@ -133,7 +133,7 @@ input:focus {
     height: 100%;
     width: 90%;
     overflow: auto;
-    display:block;
+    position:fixed;
     border: 1px solid #000;
     padding: 10px;
 }
