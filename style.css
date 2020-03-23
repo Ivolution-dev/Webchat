@@ -36,10 +36,10 @@ form {
 table{
     width:100%;
 }
-#Unamehd{
+#Unamehd, #chatus{
     width:10%;
 }
-#Messagehd{
+#Messagehd, #chatmsg{
     width:90%;
     text-align: left;
     margin-left: auto;
