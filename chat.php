@@ -31,8 +31,6 @@
         <div id="scroll">
         <table id="chat">
         <tr>
-        <th id="chatus"></th>
-        <th id="chatmsg"></th>
         </tr>
         </table>
         </div><br>    
