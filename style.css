@@ -155,10 +155,5 @@ input:focus {
     -ms-animation: fadein 2s;
     animation-iteration-count: 1;
 }
-#hd{
-    border: 1px solid black;
-}
-#chat{
-    border: none;
-}
+
 /*Made and written by Collin Schulz */
