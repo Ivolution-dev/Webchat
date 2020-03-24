@@ -78,7 +78,6 @@ td {
     border: 1px solid black;
 }
 table, th, td {
-    background-color: #555555;
     border: 1px solid black;
     border-collapse: collapse;
 }
@@ -154,5 +153,10 @@ input:focus {
     -o-animation: fadein 2s;
     -ms-animation: fadein 2s;
     animation-iteration-count: 1;
+}
+#chatus, #chatmsg{
+    display:none;
+    border-style: none;
+    background-color: ;
 }
 /*Made and written by Collin Schulz */
