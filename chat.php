@@ -3,7 +3,7 @@
         <head>
             <title>Webchat</title> 
             <meta charset="utf-8">
-            <link href="<?php bloginfo('template_directory'); echo '/style.css?' . filemtime( get_template_directory() . '/style.css'); ?>">
+            <link href="<?php bloginfo('template_directory'); echo '/style.css?' . filemtime( /var/www/html/webchat() . '/style.css'); ?>">
         </head>
     <body>
         <?php
