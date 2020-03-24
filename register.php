@@ -26,10 +26,9 @@
             }
 
             $sql1 = "SELECT * FROM Nutzer WHERE Nutzername LIKE '$nutzer' OR Email LIKE '$email'";
-            echo($sql1);
             $result1 = $conn->query($sql1);
             $rowcount = mysqli_num_rows($result1);
-            if (intval($Anzahl) > 0) {
+            if (intval($rowcount) > 0) {
                 header('location: index.php?code=8');
                 exit();
             }
