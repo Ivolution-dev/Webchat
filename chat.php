@@ -74,7 +74,8 @@
             }
 
             function updater() {
-                jQuery.ajax({
+                jQuery.ajax(
+                {
                     type: "POST",
                     url: 'updatechat.php',
                     dataType: 'json',
@@ -82,11 +83,13 @@
                     success: function (obj, textstatus) {
                         createTable(obj);
                     }
-                });
+                }
+                );
             }
 
             updater();
             t = setInterval(updater, 1000);
+            
         </script> 
         <div class="feld">
             <form action="sendmessage.php" method="post">
