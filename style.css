@@ -155,7 +155,6 @@ input:focus {
     animation-iteration-count: 1;
 }
 #chatus, #chatmsg{
-    display:none;
     border-style: none;
     background-color: #555555;
 }
