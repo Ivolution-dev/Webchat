@@ -39,7 +39,7 @@
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script>
 
-            var lastmessage = "";
+            var old = "";
             
             var tbl = document.getElementById('chat');
             var tbdy = document.createElement('tbody');
