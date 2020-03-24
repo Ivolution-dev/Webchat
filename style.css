@@ -138,7 +138,7 @@ input:focus {
     overflow-y: auto;
     overflow-x: hidden;
     position:static;
-    border: 1px solid #000;
+    border-style: none;
     margin:auto;
     display:flex;
     flex-direction: column-reverse;
@@ -156,7 +156,5 @@ input:focus {
     -ms-animation: fadein 2s;
     animation-iteration-count: 1;
 }
-#chat{
-    border: none;
-}
+
 /*Made and written by Collin Schulz */
