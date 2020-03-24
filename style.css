@@ -150,5 +150,6 @@ input:focus {
 .fade{
     animation:fadein 2s;
     -webkit-animation: fadein 2s;
+    animation-iteration-count: 1;
 }
 /*Made and written by Collin Schulz */
