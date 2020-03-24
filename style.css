@@ -157,6 +157,6 @@ input:focus {
     animation-iteration-count: 1;
 }
 #chat{
-    border-style: none;
+    border: none;
 }
 /*Made and written by Collin Schulz */
