@@ -143,8 +143,8 @@ input:focus {
     flex-direction: column-reverse;
 
 }
-#fade{
-    opacity: 0;
+.fade{
+    opacity: 1;
     transition: opacity 2s ease-in;
 }
 /*Made and written by Collin Schulz */

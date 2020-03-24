@@ -61,7 +61,7 @@
                     tbdy.appendChild(tr);
                     if (ChatData.length - 1 == i)
                     {
-                        tr.setAttribute("id","fade");
+                        tr.setAttribute("class","fade");
                     }
                 }
                 tbl.appendChild(tbdy);
