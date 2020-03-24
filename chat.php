@@ -59,7 +59,10 @@
                     tr.appendChild(td1);
                     tr.appendChild(td2);
                     tbdy.appendChild(tr);
-                    tr.setAttribute("class","fade");                    
+                    if (ChatData.length - 1 == i)
+                    {
+                        tr.setAttribute("class","fade");
+                    }
                 }
                 tbl.appendChild(tbdy);
             }
