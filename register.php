@@ -29,11 +29,10 @@
             echo($sql1);
             $result1 = $conn->query($sql1);
             $rowcount = mysqli_num_rows($result1);
-            if (intval($Anzahl) == 0) {
+            if (intval($Anzahl) > 0) {
                 header('location: index.php?code=8');
                 exit();
             }
-            exit();
             
             $permitted_chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
             $code = substr(str_shuffle($permitted_chars), 0, 20);
