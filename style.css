@@ -137,7 +137,7 @@ input:focus {
     overflow-y: auto;
     overflow-x: hidden;
     position:static;
-    border-style: none;
+    border: 1px solid black;
     margin:auto;
     display:flex;
     flex-direction: column-reverse;
