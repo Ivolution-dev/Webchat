@@ -36,10 +36,10 @@ form {
 table{
     width:100%;
 }
-#Unamehd, #chatus{
+#Unamehd{
     width:10%;
 }
-#Messagehd, #chatmsg{
+#Messagehd{
     width:90%;
     text-align: left;
     margin-left: auto;
@@ -155,10 +155,6 @@ input:focus {
     -o-animation: fadein 2s;
     -ms-animation: fadein 2s;
     animation-iteration-count: 1;
-}
-#chatus, #chatmsg{
-    border-style: none;
-    background-color: #444;
 }
 #chat{
     border-style: none;
