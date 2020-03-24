@@ -36,18 +36,12 @@ form {
 table{
     width:100%;
 }
-#Unamehd{
-    width:10%;
-}
-#Messagehd{
+
+#Message,Messagehd{
     width:90%;
     text-align: left;
     margin-left: auto;
     padding:8px;
-}
-#Message,Messagehd{
-    text-align: left;
-    width:90%;
 }
 #Uname,Unahmehd{
     width:10%;
