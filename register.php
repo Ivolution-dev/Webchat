@@ -43,7 +43,7 @@
             $conn->close();
 
 
-            $nachricht = "Herzlich Willkommen bei Webchat $nutzer, \r\nUm deinen Account zu bestätigen klicke bitte auf den Link \r\nhttp://gamer-server.eu/Webchat/account.php?confirm=$code \r\nWenn du den Account nicht erstellt hast, kannst du diese Mail einfach ignorieren!";
+            $nachricht = "Herzlich Willkommen bei Webchat $nutzer, \r\n\r\nUm deinen Account zu bestätigen, klicke bitte auf den Link: \r\n\r\nhttp://gamer-server.eu/Webchat/account.php?confirm=$code \r\nWenn du den Account nicht erstellt hast, kannst du diese Mail einfach ignorieren!";
             $nachricht = wordwrap($nachricht, 70, "\r\n");
             mail($email, 'Account Bestätigung', $nachricht);
 
