@@ -158,4 +158,7 @@ input:focus {
     border-style: none;
     background-color: #444;
 }
+#chat{
+    border-style: none;
+}
 /*Made and written by Collin Schulz */
