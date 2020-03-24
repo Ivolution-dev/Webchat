@@ -3,7 +3,7 @@
         <head>
             <title>Webchat</title> 
             <meta charset="utf-8">
-            <link rel="stylesheet" href="style.css?v=1.1">
+            <link rel="stylesheet" href="style.css?v=1">
         </head>
     <body>
         <?php
@@ -35,15 +35,15 @@
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script>
 
-            var old = "";
+            var length = 0;
             
             var tbl = document.getElementById('chat');
             var tbdy = document.createElement('tbody');
             
             function createTable(ChatData) {
-                if (old != ChatData)
+                if (ChatData.length > length)
                 {
-                    old = ChatData;
+                    length = ChatData.length;
                     var tbl = document.getElementById('chat');
                     tbdy.remove();
                     tbdy = document.createElement('tbody');
