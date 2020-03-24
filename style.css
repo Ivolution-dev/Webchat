@@ -80,6 +80,7 @@ td {
     border: 1px solid black;
 }
 table, th, td {
+    border: 1px solid black;
     border-collapse: collapse;
 }
 input[type=submit]{
@@ -137,7 +138,7 @@ input:focus {
     overflow-y: auto;
     overflow-x: hidden;
     position:static;
-    border: 1px solid black;
+    border: 1px solid #000;
     margin:auto;
     display:flex;
     flex-direction: column-reverse;
