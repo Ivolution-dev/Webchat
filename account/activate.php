@@ -19,6 +19,8 @@
     $row = mysqli_fetch_row($result);
     $conn->close();
 
-    header('location: index.php?code=5');
+    session_start();
+    $_SESSION['codeAnmelden'] = "<div id='success'>Dein Account wurde aktiviert! Du kannst dich jetzt anmelden!</div>";
+    header('location: ../index.php');
     exit();
 ?>

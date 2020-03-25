@@ -3,7 +3,7 @@
     <head>
         <title>Webchat</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css?v=1">
+        <link rel="stylesheet" href="../style.css?v=1">
     </head>
     <body>
         <?php
@@ -11,7 +11,7 @@
                 $nutzer = filter_input(INPUT_POST, 'nutzer', FILTER_SANITIZE_STRING); 
                 $passwort = filter_input(INPUT_POST, 'passwort', FILTER_SANITIZE_STRING);
                 
-                $ini = parse_ini_file('credentials.ini');
+                $ini = parse_ini_file('../credentials.ini');
                 $servername = $ini['db_ip'];
                 $username = $ini['db_user'];
                 $password = $ini['db_password'];
@@ -34,27 +34,27 @@
                         session_start();
                         $_SESSION['username'] = $row[1];
                         $_SESSION['u_id'] = $row[0];
-                        header('location: chat.php');
+                        header('location: ../chat/chat.php');
                         exit();
                     } else {
                         session_start();
                         $_SESSION['codeAnmelden'] = "<div id='error'>Du musst erst deine Email bestätigen!</div>";
-                        header('location: index.php');
+                        header('location: ../index.php');
                         exit();
                     }
                 } else {
                     session_start();
                     $_SESSION['codeAnmelden'] = "<div id='error'>Falscher Benutzername oder Passwort</div>";
-                    header('location: index.php');
+                    header('location: ../index.php');
                     exit();
                 }
             } else if (!isset($_SESSION['username'])) {
-                header('location: chat.php');
+                header('location: ../chat/chat.php');
                 exit();
             } else {
                 session_start();
                 $_SESSION['codeAnmelden'] = "<div id='error'>Melde dich bitte erstmal an!</div>";
-                header('location: index.php');
+                header('location: ../index.php');
                 exit();
             }
         ?>

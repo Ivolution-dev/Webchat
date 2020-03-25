@@ -9,20 +9,20 @@
         if (empty($nutzer) || empty($email) || empty($passwort)|| empty($passwortwh) || !ctype_alnum($nutzer)) {
             session_start();
             $_SESSION['codeRegister'] = "<div id='error'>Ungültige Daten! Du darfst nur Zeichen von a-z und 0-9 verwenden!</div>";
-            header('location: index.php');
+            header('location: ../index.php');
             exit();
         } else if ($passwort != $passwortwh) {
             session_start();
             $_SESSION['codeRegister'] = "<div id='error'>Die Passwörter stimmen nicht überein!</div>";
-            header('location: index.php');
+            header('location: ../index.php');
             exit();
         } else if (strlen($nutzer) > 8) {
             session_start();
             $_SESSION['codeRegister'] = "<div id='error'>Der Benutzername ist zu lang! <br>Der Name darf nicht länger als 8 Zeichen sein!</div>";
-            header('location: index.php');
+            header('location: ../index.php');
             exit();
         } else {
-            $ini = parse_ini_file('credentials.ini');
+            $ini = parse_ini_file('../credentials.ini');
             $servername = $ini['db_ip'];
             $username = $ini['db_user'];
             $password = $ini['db_password'];
@@ -41,7 +41,7 @@
             if (intval($rowcount) > 0) {
                 session_start();
                 $_SESSION['codeRegister'] = "<div id='error'>Der Benutzer existiert bereits oder diese Email wurde bereits verwendet!</div>";
-                header('location: index.php');
+                header('location: ../index.php');
                 exit();
             }
             
@@ -59,9 +59,9 @@
             $_SESSION['betreff'] = 'Account Bestätigung';
             $_SESSION['mail'] = "Herzlich Willkommen bei Webchat $nutzer, \r\n\r\nUm deinen Account zu bestätigen, klicke bitte auf den Link: \r\n\r\nhttp://gamer-server.eu/Webchat/account.php?confirm=$code \r\nWenn du den Account nicht erstellt hast, kannst du diese Mail einfach ignorieren!";
             $_SESSION['codeRegister'] = "<div id='success'>Du hast dich erfolgreich Registriert! <br>Du musst erst noch deine Email Bestätigen!</div>";
-            $_SESSION['backTo'] = "index.php";
+            $_SESSION['backTo'] = "../index.php";
 
-            header('location: sendmail.php');
+            header('location: ../components/sendmail.php');
             exit();
         }
     }
