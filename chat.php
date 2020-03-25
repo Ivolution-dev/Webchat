@@ -9,7 +9,9 @@
         <?php
             session_start();
             if(!isset($_SESSION['username'])) {
-                header('location: index.php?code=1');
+                session_start();
+                $_SESSION['codeAnmelden'] = "<div id='error'>Melde dich bitte erstmal an!</div>";
+                header('location: index.php');
                 exit();
             }
             else {
