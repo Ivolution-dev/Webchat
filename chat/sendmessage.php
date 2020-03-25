@@ -9,6 +9,12 @@
     else {
         $message = filter_input(INPUT_POST, 'message',FILTER_SANITIZE_STRING); 
 
+        if (empty($message))
+        {
+            header('location: chat.php');
+            exit();
+        }
+
         $username = $_SESSION['username'];
         $u_id = $_SESSION['u_id'];
         
