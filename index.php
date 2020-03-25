@@ -8,10 +8,11 @@
     <body>
             <?php
                 session_start();
-                if(isset($_SESSION['username'])) {
+                if (isset($_SESSION['username'])) {
                     header('location: chat.php');
                     exit();
                 }
+                
             ?>
 
             <h1 id="loghd"> Log in </h1>
@@ -22,7 +23,16 @@
                     <input type="submit" value="Anmelden" name="login">
                 </form>
             </div>
+
+
             <?php
+
+                if (isset($_SESSION['codeAnmelden']) && $_SESSION['codeAnmelden'] != "") {
+                    echo($_SESSION['codeAnmelden']);
+                    $_SESSION['codeAnmelden'] = "";
+                }
+
+                /*
                 if (isset($_GET["code"]) && $_GET["code"] == 1) {
                     echo("<div id='error'>Melde dich bitte erstmal an!</div>");
                 } else if (isset($_GET["code"]) && $_GET["code"] == 0) {
@@ -32,6 +42,7 @@
                 } else if (isset($_GET["code"]) && $_GET["code"] == 5) {
                     echo("<div id='success'>Wenn alle Daten stimmen kannst du dich jetzt anmelden!</div>");
                 }
+                */
             ?>
 
             <h1 id="reghd"> Registrieren </h1>

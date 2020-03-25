@@ -37,11 +37,15 @@
                         header('location: chat.php');
                         exit();
                     } else {
-                        header('location: index.php?code=4');
+                        session_start();
+                        $_SESSION['codeAnmelden'] = "<div id='error'>Du musst erst deine Email bestätigen!</div>";
+                        header('location: index.php');
                         exit();
                     }
                 } else {
-                    header('location: index.php?code=0');
+                    session_start();
+                    $_SESSION['codeAnmelden'] = "<div id='error'>Falscher Benutzername oder Passwort</div>";
+                    header('location: index.php');
                     exit();
                 }
             } else if (!isset($_SESSION['username'])) {
