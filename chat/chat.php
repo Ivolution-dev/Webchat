@@ -3,7 +3,7 @@
         <head>
             <title>Webchat</title> 
             <meta charset="utf-8">
-            <link rel="stylesheet" href="style.css?v=2">
+            <link rel="stylesheet" href="../style.css?v=1">
         </head>
     <body>
         <?php
@@ -11,7 +11,7 @@
             if(!isset($_SESSION['username'])) {
                 session_start();
                 $_SESSION['codeAnmelden'] = "<div id='error'>Melde dich bitte erstmal an!</div>";
-                header('location: index.php');
+                header('location: ../index.php');
                 exit();
             }
             else {
@@ -20,7 +20,7 @@
         ?>
 
         <div class="logout">
-            <form id="lgbtn" action="logout.php" method="post">
+            <form id="lgbtn" action="../account/logout.php" method="post">
                 <input id="logobtn" type="submit" value="Logout" name="logout">
             </form>
         </div><br>
