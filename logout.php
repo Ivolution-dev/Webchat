@@ -1,6 +1,8 @@
 <?php
     session_start();
     session_destroy();
-    header('location: index.php?code=2');
+    session_start();
+    $_SESSION['codeAbmelden'] = "<div id='success'>Du hast dich erfolgreich abgemeldet!</div>";
+    header('location: index.php');
     exit();
 ?>
