@@ -25,14 +25,14 @@
                 }
 
                 # Holt die Daten aus der Datenbank
-                $sql = "SELECT U_ID, Nutzername, Passwort, Active FROM Nutzer where Nutzername = '$nutzer'";
+                $sql = "SELECT U_ID, Nutzername, Passwort, Active FROM Nutzer where Nutzername = '$nutzer' OR Email = '$nutzer'";
                 $result = $conn->query($sql);
                 $row = mysqli_fetch_row($result);
                 $conn->close();
                 if (password_verify($passwort, $row[2]) && !(empty($_POST["nutzer"]) || empty($_POST["passwort"]) || $row[0] == "")) {
                     if ($row[3] == "1") {
                         session_start();
-                        $_SESSION['username'] = $nutzer;
+                        $_SESSION['username'] = $row[1];
                         $_SESSION['u_id'] = $row[0];
                         header('location: chat.php');
                         exit();
