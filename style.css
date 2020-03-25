@@ -120,7 +120,7 @@ input:focus {
 }
 #logobtn{
     text-align: left;
-    background:url(http://gamer-server.eu/Webchat/logout.png);
+    background:url(logout.png);
     background-size: 15px;
     background-position: right;
     background-repeat: no-repeat;
