@@ -7,6 +7,6 @@
 
     mail($empfaenger, $betreff, $mail);
 
-    header("location: '$backTo'");
+    header("location: $backTo");
     exit();
 ?>
