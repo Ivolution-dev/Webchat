@@ -48,14 +48,14 @@
             $row2 = mysqli_fetch_row($result2);
             $conn->close();
 
-
-            $nachricht = "Herzlich Willkommen bei Webchat $nutzer, \r\n\r\nUm deinen Account zu bestätigen, klicke bitte auf den Link: \r\n\r\nhttp://gamer-server.eu/Webchat/account.php?confirm=$code \r\nWenn du den Account nicht erstellt hast, kannst du diese Mail einfach ignorieren!";
-            $nachricht = wordwrap($nachricht, 70, "\r\n");
-            mail($email, 'Account Bestätigung', $nachricht);
-
             session_start();
+            $_SESSION['empfaenger'] = $email;
+            $_SESSION['betreff'] = 'Account Bestätigung';
+            $_SESSION['mail'] = "Herzlich Willkommen bei Webchat $nutzer, \r\n\r\nUm deinen Account zu bestätigen, klicke bitte auf den Link: \r\n\r\nhttp://gamer-server.eu/Webchat/account.php?confirm=$code \r\nWenn du den Account nicht erstellt hast, kannst du diese Mail einfach ignorieren!";
             $_SESSION['codeRegister'] = "<div id='success'>Du hast dich erfolgreich Registriert! <br>Du musst erst noch deine Email Bestätigen!</div>";
-            header('location: index.php');
+            $_SESSION['backTo'] = "index.php";
+
+            header('location: sendmail.php');
             exit();
         }
     }
