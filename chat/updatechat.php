@@ -12,7 +12,7 @@
         $aResult = array();
         $aResult2 = array();
 
-        $ini = parse_ini_file('credentials.ini');
+        $ini = parse_ini_file('../credentials.ini');
         $servername = $ini['db_ip'];
         $username = $ini['db_user'];
         $password = $ini['db_password'];
