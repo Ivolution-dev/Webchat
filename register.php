@@ -7,7 +7,7 @@
         $hash = password_hash($passwort, PASSWORD_DEFAULT);
         
         if (empty($nutzer) || empty($email) || empty($passwort)|| empty($passwortwh) || !ctype_alnum($username)) {
-            if (ctype_alnum($username)) {
+            if (ctype_alnum(strval($username))) {
                 echo "Der String $username enthält nur Buchstaben und Ziffern.\n";
             } else {
                 echo "Der String $username besteht nicht nur aus Buchstaben und Ziffern.\n";
