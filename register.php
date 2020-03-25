@@ -6,7 +6,7 @@
         $passwortwh = filter_input(INPUT_POST, 'passwortwh', FILTER_SANITIZE_STRING);
         $hash = password_hash($passwort, PASSWORD_DEFAULT);
         
-        if (empty($nutzer) || empty($email) || empty($passwort)|| empty($passwortwh) || ctype_alnum($username)) {
+        if (empty($nutzer) || empty($email) || empty($passwort)|| empty($passwortwh) || !ctype_alnum($username)) {
             session_start();
             $_SESSION['codeRegister'] = "<div id='error'>Ungültige Daten! Du darfst nur Zeichen von a-z und 0-9 verwenden!</div>";
             header('location: index.php');
