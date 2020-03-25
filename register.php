@@ -3,11 +3,17 @@
         $nutzer = filter_input(INPUT_POST, 'nutzer', FILTER_SANITIZE_STRING);
         $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
         $passwort = filter_input(INPUT_POST, 'passwort', FILTER_SANITIZE_STRING);
+        $passwortwh = filter_input(INPUT_POST, 'passwortwh', FILTER_SANITIZE_STRING);
         $hash = password_hash($passwort, PASSWORD_DEFAULT);
         
-        if (empty($nutzer) || empty($email) || empty($passwort)) {
+        if (empty($nutzer) || empty($email) || empty($passwort)|| empty($passwortwh)) {
             session_start();
             $_SESSION['codeRegister'] = "<div id='error'>Ungültige Daten!</div>";
+            header('location: index.php');
+            exit();
+        } else if ($passwort != $passwortwh) {
+            session_start();
+            $_SESSION['codeRegister'] = "<div id='error'>Die Passwörter stimmen nicht überein!</div>";
             header('location: index.php');
             exit();
         } else if (strlen($nutzer) > 8) {
