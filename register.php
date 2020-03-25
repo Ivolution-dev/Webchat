@@ -6,13 +6,7 @@
         $passwortwh = filter_input(INPUT_POST, 'passwortwh', FILTER_SANITIZE_STRING);
         $hash = password_hash($passwort, PASSWORD_DEFAULT);
         
-        if (empty($nutzer) || empty($email) || empty($passwort)|| empty($passwortwh) || !ctype_alnum($username)) {
-            if (ctype_alnum("awdawd")) {
-                echo "Der String $username enthält nur Buchstaben und Ziffern.\n";
-            } else {
-                echo "Der String $username besteht nicht nur aus Buchstaben und Ziffern.\n";
-            }
-            exit();
+        if (empty($nutzer) || empty($email) || empty($passwort)|| empty($passwortwh) || !ctype_alnum($nutzer)) {
             session_start();
             $_SESSION['codeRegister'] = "<div id='error'>Ungültige Daten! Du darfst nur Zeichen von a-z und 0-9 verwenden!</div>";
             header('location: index.php');
