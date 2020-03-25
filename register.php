@@ -6,10 +6,14 @@
         $hash = password_hash($passwort, PASSWORD_DEFAULT);
         
         if (empty($nutzer) || empty($email) || empty($passwort)) {
-            header('location: index.php?code=6');
+            session_start();
+            $_SESSION['codeRegister'] = "<div id='error'>Ungültige Daten!</div>";
+            header('location: index.php');
             exit();
         } else if (strlen($nutzer) > 8) {
-            header('location: index.php?code=7');
+            session_start();
+            $_SESSION['codeRegister'] = "<div id='error'>Der Benutzername ist zu lang! <br>Der Name darf nicht länger als 8 Zeichen sein!</div>";
+            header('location: index.php');
             exit();
         } else {
             $ini = parse_ini_file('credentials.ini');
@@ -29,7 +33,9 @@
             $result1 = $conn->query($sql1);
             $rowcount = mysqli_num_rows($result1);
             if (intval($rowcount) > 0) {
-                header('location: index.php?code=8');
+                session_start();
+                $_SESSION['codeRegister'] = "<div id='error'>Der Benutzer existiert bereits oder diese Email wurde bereits verwendet!</div>";
+                header('location: index.php');
                 exit();
             }
             
@@ -47,7 +53,9 @@
             $nachricht = wordwrap($nachricht, 70, "\r\n");
             mail($email, 'Account Bestätigung', $nachricht);
 
-            header('location: index.php?code=3');
+            session_start();
+            $_SESSION['codeRegister'] = "<div id='success'>Du hast dich erfolgreich Registriert! <br>Du musst erst noch deine Email Bestätigen!</div>";
+            header('location: index.php');
             exit();
         }
     }

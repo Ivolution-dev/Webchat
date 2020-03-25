@@ -24,14 +24,11 @@
                 </form>
             </div>
 
-
             <?php
-
                 if (isset($_SESSION['codeAnmelden']) && $_SESSION['codeAnmelden'] != "") {
                     echo($_SESSION['codeAnmelden']);
                     $_SESSION['codeAnmelden'] = "";
                 }
-
                 /*
                 if (isset($_GET["code"]) && $_GET["code"] == 1) {
                     echo("<div id='error'>Melde dich bitte erstmal an!</div>");
@@ -55,6 +52,11 @@
                 </form>
             </div>
             <?php
+                if (isset($_SESSION['codeRegister']) && $_SESSION['codeRegister'] != "") {
+                    echo($_SESSION['codeRegister']);
+                    $_SESSION['codeRegister'] = "";
+                }
+                /*
                 if (isset($_GET["code"]) && $_GET["code"] == 3) {
                     echo("<div id='success'>Du hast dich erfolgreich Registriert! <br>Du musst erst noch deine Email Bestätigen!</div>");
                 } else if (isset($_GET["code"]) && $_GET["code"] == 6) {
@@ -64,6 +66,7 @@
                 } else if (isset($_GET["code"]) && $_GET["code"] == 8) {
                     echo("<div id='error'>Der Benutzer existiert bereits oder diese Email wurde bereits verwendet!</div>");
                 }
+                */
             ?>
 
             <?php
