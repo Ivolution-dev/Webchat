@@ -15,7 +15,7 @@
                 header('location: ../index.php');
                 exit();
             }               
-            echo("<h1>Webchat</h1>");
+            echo("<h1>Webchat by</h1>");
             echo("<p>Du bist eingeloggt als: ".$_SESSION['username']."</p>");
             
         ?>
