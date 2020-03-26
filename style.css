@@ -160,11 +160,13 @@ p{
     width: 40px;
     background-color: gray;
     text-align: center;
-    border:none;
+    float:left;
 }
-.header h1{
-    position:relative;
-    display:inline;
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 /*Made and written by Collin Schulz */
