@@ -159,7 +159,7 @@ p{
     width: 40px;
     background-color: gray;
     text-align: center;
-    display:inline;
+    border:none;
 }
 .header h1{
     position:relative;
