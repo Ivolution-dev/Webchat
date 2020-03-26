@@ -14,10 +14,9 @@
                 $_SESSION['codeAnmelden'] = "<div id='error'>Melde dich bitte erstmal an!</div>";
                 header('location: ../index.php');
                 exit();
-            }
-            else {
-                echo("<p>Du bist eingeloggt als : ".$_SESSION['username']."</p>");
-            }
+            }               
+            echo("<p>Du bist eingeloggt als : ".$_SESSION['username']."</p>");
+            
         ?>
 
         <div class="logout">
