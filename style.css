@@ -170,10 +170,12 @@ p{
     height:40px;
     background-color: gray;
 }
-a{
-    margin-top: 5px;
+.link{
     text-align: center;
     color:red;
+    padding: 10px;
+    display: inline-block;
+    overflow: hidden;
 }
 
 
