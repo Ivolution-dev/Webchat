@@ -59,7 +59,7 @@
             $_SESSION['betreff'] = 'Account Bestätigung';
             $_SESSION['mail'] = "Herzlich Willkommen bei Webchat $nutzer, \r\n\r\nUm deinen Account zu bestätigen, klicke bitte auf den Link: \r\n\r\nhttp://gamer-server.eu/Webchat/account/activate.php?confirm=$code \r\nWenn du den Account nicht erstellt hast, kannst du diese Mail einfach ignorieren!";
             $_SESSION['codeRegister'] = "<div id='success'>Du hast dich erfolgreich Registriert! <br>Du musst erst noch deine Email Bestätigen!</div>";
-            $_SESSION['backTo'] = "create.php";
+            $_SESSION['backTo'] = "../account/create.php";
 
             header('location: ../components/sendmail.php');
             exit();
