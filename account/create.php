@@ -24,7 +24,7 @@
                     Passwort                : <input type="password" name="passwort" autocomplete="off"><br><br>
                     Passwort wiederholen    : <input type="password" name="passwortwh" autocomplete="off"><br><br>
                     <input type="submit" value="Registrieren" name="register">
-                    <a class="link" href="components/index.php">Zurück zur Anmeldung!</a>
+                    <a class="link" href="../index.php">Zurück zur Anmeldung!</a>
                 </form>
             </div>
             <?php
