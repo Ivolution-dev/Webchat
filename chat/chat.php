@@ -3,7 +3,7 @@
         <head>
             <title>Webchat</title> 
             <meta charset="utf-8">
-            <link rel="stylesheet" href="../style.css?v=4">
+            <link rel="stylesheet" href="../style.css?v=5">
             <link rel="icon" type="image/png" href="../logo.png">
         </head>
     <body>
