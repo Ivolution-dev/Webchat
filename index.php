@@ -20,7 +20,7 @@
             <div class="feld">
                 <form action="account/login.php" method="post"> 
                     Nutzername oder Email  : <input type="text" name="nutzer" autofocus autocomplete="off"><br><br>
-                    Passwort    : <input type="password" name="passwort" autocomplete="off"><br><br>
+                    Passwort    : <input type="password" name="passwort" autocomplete="off">
                     <a class="link" href="account/forgetpassword.php">Passwort vergessen?</a>
                     <input type="submit" value="Anmelden" name="login">
                     <a class="link" href="account/create.php">Noch keinen Account? Hier klicken!</a>
