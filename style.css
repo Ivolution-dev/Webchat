@@ -161,6 +161,7 @@ p{
     width: 40px;
     background-color: gray;
     text-align: center;
+    float:left;
 }
 .header{
     display: flex;
