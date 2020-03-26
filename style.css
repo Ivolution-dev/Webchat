@@ -199,8 +199,7 @@ p{
 	z-index: -1;
 	
 	will-change: width;
-	transform: rotate(-2deg);
-	transform-origin: left bottom
+
 }
 .link:hover::after{
 	width: 0;
