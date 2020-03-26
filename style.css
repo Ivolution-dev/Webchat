@@ -182,6 +182,7 @@ p{
 	padding-bottom: 5px;
     padding-right: 10px;
     white-space: nowrap;
+    font-size: 14px;
 }
 .link::after{
 	content: "";
