@@ -173,12 +173,9 @@ p{
 .link{
     text-align: center;
     color:white;
-    /*display: inline-block;*/
     overflow: hidden;
     text-decoration: none;
-}
-.link{
-	position: relative;
+    position: relative;
 	z-index: 1;
 	display: inline-flex;
 	padding-left: 10px;
