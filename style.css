@@ -174,8 +174,10 @@ p{
     text-align: center;
     color:white;
     overflow: hidden;
-    text-decoration: none;	
-    position: relative;
+    text-decoration: none;
+}
+.link{
+	position: relative;
 	z-index: 1;
 	display: inline;
 	padding-left: 10px;
