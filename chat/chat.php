@@ -20,7 +20,7 @@
             
         ?>
         <div class="header">
-            <h1>Webchat by</h1>
+            <h1>Webchat by </h1>
             <img src="../logo.png">
         </div>
 
