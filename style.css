@@ -13,6 +13,7 @@ h1{
     height:40px;
     background-color: gray;
     background-size: 40px 100%;
+    margin-right: 10%;
 }
 form {
     margin: auto;
@@ -169,6 +170,7 @@ p{
     height:40px;
     background-color: gray;
 }
+
 
 
 /*Made and written by Collin Schulz */
