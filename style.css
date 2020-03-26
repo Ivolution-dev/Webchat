@@ -150,5 +150,7 @@ input:focus {
     -ms-animation: fadein 2s;
     animation-iteration-count: 1;
 }
-
+p{
+    margin-right: 0%;
+}
 /*Made and written by Collin Schulz */

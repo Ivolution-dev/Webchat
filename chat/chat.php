@@ -16,7 +16,7 @@
                 exit();
             }
             else {
-                echo("<h1>Willkommen ".$_SESSION['username']."</h1>");
+                echo("<p>Du bist eingeloggt als ".$_SESSION['username']."</p>");
             }
         ?>
 
