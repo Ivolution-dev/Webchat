@@ -176,23 +176,40 @@ p{
     padding: 10px;
     display: inline-block;
     overflow: hidden;
+    text-decoration: none;
+	text-transform: uppercase;
 }
-.link::before, .link::after {
-    left: 0;
-    width: 100%;
-    height: 2px;
+.link{
+	position: relative;
+	z-index: 1;
+	display: inline-flex;
+	
+	padding-left: 10px;
+	padding-bottom: 5px;
+	padding-right: 10px;
 }
-.link::before {
-    bottom: 0;
-    transform:  translateX(-100%);
+.link::before{
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to top, #fed330 25%, rgba(0, 0, 0, 0) 40%);
+	
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	z-index: -1;
+	
+	will-change: width;
+	transform: rotate(-2deg);
+	transform-origin: left bottom
 }
-.link::after {
-    top: 0;
-    transform:  translateX(100%);
+.link:hover::before{
+	width: 0;
 }
-.link:hover::before, .link:hover::after {
-    transform:  translateX(0);
+.link::before{
+	transition: width .1s ease-out;
 }
-
-
+.link:hover::before{
+	transition-duration: .15s;
+}
 /*Made and written by Collin Schulz */
