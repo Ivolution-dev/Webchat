@@ -155,6 +155,7 @@ p{
     margin-bottom: 0.2%;
 }
 #logo{
+    size: 40px;
     margin-right: 40%;
     background: url(logo.png);
     background-repeat: no-repeat;
