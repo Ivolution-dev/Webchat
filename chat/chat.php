@@ -21,7 +21,7 @@
         ?>
         <div class="header">
             <h1>Webchat by</h1>
-            <img src="../logo.png">
+            <img src="../logo.png" height="40px" width="40px">
         </div>
 
         <?php
