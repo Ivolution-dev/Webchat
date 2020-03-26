@@ -4,7 +4,7 @@
             <title>Webchat</title> 
             <meta charset="utf-8">
             <link rel="stylesheet" href="../style.css?v=1">
-            <link rel="icon" type="image/png" href="logo.png">
+            <link rel="icon" type="image/png" href="../logo.png">
         </head>
     <body>
             <?php

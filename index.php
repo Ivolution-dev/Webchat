@@ -22,6 +22,7 @@
                     Nutzername oder Email  : <input type="text" name="nutzer" autofocus autocomplete="off"><br><br>
                     Passwort    : <input type="password" name="passwort" autocomplete="off"><br><br>
                     <input type="submit" value="Anmelden" name="login">
+                    <a href="account/register.php">Noch keinen Account? Hier registrieren!</a>
                 </form>
             </div>
 
@@ -29,23 +30,6 @@
                 if (isset($_SESSION['codeAnmelden']) && $_SESSION['codeAnmelden'] != "") {
                     echo($_SESSION['codeAnmelden']);
                     $_SESSION['codeAnmelden'] = "";
-                }
-            ?>
-
-            <h1 id="reghd"> Registrieren </h1>
-            <div class="feld">
-                <form action="account/register.php" method="post">
-                    Nutzername              : <input type="text" name="nutzer" autofocus autocomplete="off"><br><br>
-                    Email                   : <input type="text" name="email" autocomplete="off"><br><br>
-                    Passwort                : <input type="password" name="passwort" autocomplete="off"><br><br>
-                    Passwort wiederholen    : <input type="password" name="passwortwh" autocomplete="off"><br><br>
-                    <input type="submit" value="Registrieren" name="register">
-                </form>
-            </div>
-            <?php
-                if (isset($_SESSION['codeRegister']) && $_SESSION['codeRegister'] != "") {
-                    echo($_SESSION['codeRegister']);
-                    $_SESSION['codeRegister'] = "";
                 }
             ?>
 

@@ -170,7 +170,11 @@ p{
     height:40px;
     background-color: gray;
 }
-
+a{
+    text-align: center;
+    margin-left: auto;
+    clear: both;
+}
 
 
 /*Made and written by Collin Schulz */
