@@ -16,7 +16,7 @@
                 exit();
             }               
             echo("<h1>Webchat</h1>");
-            echo("<p>Du bist eingeloggt als : ".$_SESSION['username']."</p>");
+            echo("<p>Du bist eingeloggt als: ".$_SESSION['username']."</p>");
             
         ?>
 

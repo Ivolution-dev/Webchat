@@ -12,6 +12,7 @@ h1 {
     color: white;
     text-align: center;
     height:40px;
+    background:url(logo.png) 40px no-repeat center;
 }
 form {
     margin: auto;
