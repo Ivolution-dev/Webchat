@@ -7,11 +7,14 @@ body {
     width:auto;
     overflow-x: hidden;
 }
-h1 {
+h1{
     color: white;
     text-align: center;
     height:40px;
     background-color: gray;
+}
+h1.img{
+    size: 40px;
 }
 form {
     margin: auto;
