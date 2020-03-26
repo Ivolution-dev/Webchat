@@ -13,9 +13,6 @@ h1{
     height:40px;
     background-color: gray;
 }
-h1.img{
-    size: 40px;
-}
 form {
     margin: auto;
     text-align: center;
@@ -156,6 +153,10 @@ input:focus {
 p{
     text-align: right;
     margin-bottom: 0.2%;
+}
+.header img{
+    float: left;
+    size:40px;
 }
 
 /*Made and written by Collin Schulz */

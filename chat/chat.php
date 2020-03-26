@@ -19,8 +19,10 @@
             
             
         ?>
-
-        <h1>Webchat by <img src="../logo.png"></h1>
+        <div class="header">
+            <h1>Webchat by</h1>
+            <img src="../logo.png">
+        </div>
 
         <?php
             echo("<p>Du bist eingeloggt als: ".$_SESSION['username']."</p>");
