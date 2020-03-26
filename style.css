@@ -157,6 +157,7 @@ p{
 .header img{
     float:left;
     background-color: gray;
+    text-align: center;
 }
 .header h1{
     float:left;
