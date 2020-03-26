@@ -14,7 +14,7 @@ h1 {
     background:url(logo.png);
     background-repeat: no-repeat;
     background-size: 40px;
-    background-position: right;
+    background-position: right center;
     background-color: gray;
 }
 form {
