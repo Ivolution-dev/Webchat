@@ -3,7 +3,7 @@
         <head>
             <title>Webchat</title> 
             <meta charset="utf-8">
-            <link rel="stylesheet" href="../style.css?v=2">
+            <link rel="stylesheet" href="../style.css?v=3">
             <link rel="icon" type="image/png" href="../logo.png">
         </head>
     <body>
@@ -35,6 +35,14 @@
         <table id="chat">
         </table>
         </div><br>    
+
+        <div class="feld">
+            <form action="sendmessage.php" method="post">
+                <input type="text" name="message" autofocus autocomplete="off"><br><br>
+                <input  type="submit" value="Senden" name="send"><br><br>
+            </form>
+        </div>
+
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script>
 
@@ -89,13 +97,7 @@
             updater();
             t = setInterval(updater, 1000);
 
-        </script> 
-        <div class="feld">
-            <form action="sendmessage.php" method="post">
-                <input type="text" name="message" autofocus autocomplete="off"><br><br>
-                <input  type="submit" value="Senden" name="send"><br><br>
-            </form>
-        </div>
+        </script>
     </body>
 </html>
 
