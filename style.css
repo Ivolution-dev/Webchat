@@ -12,6 +12,7 @@ h1 {
     text-align: center;
     height:40px;
     background-color: gray;
+    vertical-align: middle;
 }
 form {
     margin: auto;
