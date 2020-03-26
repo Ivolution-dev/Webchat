@@ -8,11 +8,14 @@ body {
     overflow-x: hidden;
 }
 h1 {
-    /*background-color: gray;*/
+    background-color: gray;
     color: white;
     text-align: center;
     height:40px;
-    background:url(logo.png) 40px no-repeat center;
+    background:url(logo.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center;
 }
 form {
     margin: auto;
