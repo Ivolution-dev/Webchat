@@ -155,8 +155,9 @@ p{
     margin-bottom: 0.2%;
 }
 #logo{
-    size: 40px;
-    margin-right: 40%;
+    height: 40px;
+    width: 40px;
+    position:center;
     background-color: gray;
 }
 /*Made and written by Collin Schulz */
