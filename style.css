@@ -11,10 +11,6 @@ h1 {
     color: white;
     text-align: center;
     height:40px;
-    background:url(logo.png);
-    background-repeat: no-repeat;
-    background-size: 40px;
-    background-position: right center;
     background-color: gray;
 }
 form {
@@ -157,5 +153,12 @@ input:focus {
 p{
     text-align: right;
     margin-bottom: 0.2%;
+}
+#logo{
+    margin-right: 40%;
+    background: url(logo.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center;
 }
 /*Made and written by Collin Schulz */
