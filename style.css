@@ -159,9 +159,11 @@ p{
     width: 40px;
     background-color: gray;
     text-align: center;
+    display:inline;
 }
 .header h1{
     position:relative;
+    display:inline;
 }
 
 /*Made and written by Collin Schulz */
