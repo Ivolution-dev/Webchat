@@ -15,10 +15,16 @@
                 header('location: ../index.php');
                 exit();
             }               
-            echo("<h1>Webchat by</h1>");
-            //echo("<div id="logo"></div>");
-            echo("<p>Du bist eingeloggt als: ".$_SESSION['username']."</p>");
             
+            
+            
+        ?>
+        
+        <h1>Webchat by</h1>
+        <div id="logo"></div>
+
+        <?php
+            echo("<p>Du bist eingeloggt als: ".$_SESSION['username']."</p>");
         ?>
 
         <div class="logout">
