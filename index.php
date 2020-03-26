@@ -19,7 +19,7 @@
             <h1 id="loghd"> Log in </h1>
             <div class="feld">
                 <form action="account/login.php" method="post"> 
-                    Nutzername  : <input type="text" name="nutzer" autofocus autocomplete="off"><br><br>
+                    Nutzername oder Email  : <input type="text" name="nutzer" autofocus autocomplete="off"><br><br>
                     Passwort    : <input type="password" name="passwort" autocomplete="off"><br><br>
                     <input type="submit" value="Anmelden" name="login">
                 </form>
