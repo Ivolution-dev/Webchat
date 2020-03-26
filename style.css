@@ -161,8 +161,6 @@ p{
     width: 40px;
     background-color: gray;
     text-align: center;
-    align-items: center;
-    justify-content: center;
 }
 .header{
     display: flex;
