@@ -202,10 +202,10 @@ p{
 
 }
 .link:hover::after{
-	width: 0;
+	width: 100%;
 }
 .link::after{
-	transition: width .1s ease-out;
+	transition: width .1s ease-in;
 }
 .link:hover::after{
 	transition-duration: .15s;
