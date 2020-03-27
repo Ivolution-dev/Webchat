@@ -9,17 +9,17 @@
         if (empty($nutzer) || empty($email) || empty($passwort)|| empty($passwortwh) || !ctype_alnum($nutzer)) {
             session_start();
             $_SESSION['codeRegister'] = "<div id='error'>Ungültige Daten! Du darfst nur Zeichen von a-z und 0-9 verwenden!</div>";
-            header('location: create.php');
+            header('location: ../account/create.php');
             exit();
         } else if ($passwort != $passwortwh) {
             session_start();
             $_SESSION['codeRegister'] = "<div id='error'>Die Passwörter stimmen nicht überein!</div>";
-            header('location: create.php');
+            header('location: ../account/create.php');
             exit();
         } else if (strlen($nutzer) > 8) {
             session_start();
             $_SESSION['codeRegister'] = "<div id='error'>Der Benutzername ist zu lang! <br>Der Name darf nicht länger als 8 Zeichen sein!</div>";
-            header('location: create.php');
+            header('location: ../account/create.php');
             exit();
         } else {
             $ini = parse_ini_file('../credentials.ini');
@@ -41,7 +41,7 @@
             if (intval($rowcount) > 0) {
                 session_start();
                 $_SESSION['codeRegister'] = "<div id='error'>Der Benutzer existiert bereits oder diese Email wurde bereits verwendet!</div>";
-                header('location: create.php');
+                header('location: ../account/create.php');
                 exit();
             }
             
@@ -61,7 +61,7 @@
             $_SESSION['codeRegister'] = "<div id='success'>Du hast dich erfolgreich Registriert! <br>Du musst erst noch deine Email Bestätigen!</div>";
             $_SESSION['backTo'] = "../account/create.php";
 
-            header('location: ../components/sendmail.php');
+            header('location: sendmail.php');
             exit();
         }
     }
