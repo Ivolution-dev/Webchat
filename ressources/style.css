@@ -1,5 +1,5 @@
 html{
-    background: url(bg1.png) no-repeat center fixed;
+    background-color: black;
 }
 body {
     font-family: Source Sans Pro, sans-serif;
@@ -8,7 +8,7 @@ body {
     color: #e4e4e4;
     width: auto;
     overflow-x: hidden;
-    background-color: black;
+    background: url(bg1.png) no-repeat center fixed;
 }
 
 h1 {
