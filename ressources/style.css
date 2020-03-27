@@ -7,6 +7,7 @@ body {
     width: auto;
     overflow-x: hidden;
     background: url(bg1.png);
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -211,7 +212,7 @@ input:focus {
 
 .link {
     text-align: center;
-    color: white;
+    color:gray;
     overflow: hidden;
     text-decoration: none;
     position: relative;
