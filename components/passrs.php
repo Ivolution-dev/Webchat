@@ -1,6 +1,6 @@
 <?php
     if (isset($_POST["newpwbtn"])) {
-        $nutzer = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
+        $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
 
         $ini = parse_ini_file('../credentials.ini');
         $servername = $ini['db_ip'];
@@ -21,7 +21,7 @@
 
 
         # Holt die Daten aus der Datenbank
-        $sql = "SELECT U_ID, Nutzername, Email FROM Nutzer where Nutzername = '$nutzer' OR Email = '$nutzer'";
+        $sql = "SELECT U_ID, Nutzername, Email FROM Nutzer WHERE Email = '$email'";
         $result = $conn->query($sql);
         $row = mysqli_fetch_row($result);
         $sql2 = "UPDATE Nutzer SET Passwort = '$hash' WHERE U_ID = '$row[0]'";
