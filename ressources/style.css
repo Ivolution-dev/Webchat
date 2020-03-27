@@ -40,7 +40,7 @@ form {
     margin-top: 0.8%;
     margin-bottom: -2%;
     visibility: hidden;
-    transition-property: visibility 3s;
+    transition-property: visibility 2s;
 }
 
 #logout {
