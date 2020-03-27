@@ -182,11 +182,14 @@ input:focus {
     animation-iteration-count: 1;
 }
 
-p {
+.username {
     text-align: right;
     margin-bottom: 0.2%;
 }
-
+.unchpw {
+    text-align: center;
+    margin-bottom: 0.2%;
+}
 .header img {
     height: 40px;
     width: 40px;

@@ -21,7 +21,7 @@
     
     <h1 id="reghd"> Passwort ändern </h1>
     <?php
-    echo ("<p>Du bist eingeloggt als: " . $_SESSION['username'] . "</p>");
+    echo ("<p class=unchpw>Du bist eingeloggt als: " . $_SESSION['username'] . "</p>");
     ?>
     <div class="feld">
         <form action="../components/register.php" method="post">
