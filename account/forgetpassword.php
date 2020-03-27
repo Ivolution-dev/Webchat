@@ -20,9 +20,9 @@
     <h1 id="reghd"> Passwort zurücksetzen </h1>
     <div class="feld">
         <form action="../components/passrs.php" method="post">
-            Email : <input type="text" name="email" autocomplete="off"><br><br>
+            Email oder Benutzername: <input type="text" name="email" autocomplete="off"><br><br>
             <input type="submit" value="Passwort zurücksetzen!" name="newpwbtn">
-            <a class="link" href="../index.php">Zurück zur Registrierung!</a>
+            <a class="link" href="../index.php">Zurück zum Login!</a>
         </form>
     </div>
     <?php
