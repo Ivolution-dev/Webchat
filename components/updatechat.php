@@ -41,4 +41,3 @@
         $jsonData = json_encode($tempArray);
         echo $jsonData;
     }
-?>

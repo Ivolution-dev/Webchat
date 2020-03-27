@@ -9,4 +9,3 @@
 
     header("location: $backTo");
     exit();
-?>
