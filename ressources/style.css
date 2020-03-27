@@ -36,9 +36,11 @@ form {
     text-align: center;
 }
 #success, #error {
-    transition: 2s linear;
+    transition-duration: 2s;
     margin-top: 0.8%;
     margin-bottom: -2%;
+    opacity: 0;
+    transition-property: opacitiy;
 }
 
 #logout {
