@@ -38,6 +38,7 @@ form {
 
 #success,
 #error {
+    transition-property: opacitiy;
     transition:2s ease-out;
     margin-top: 0.8%;
     margin-bottom: -2%;
