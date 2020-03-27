@@ -7,7 +7,7 @@ body {
     font-family: Source Sans Pro, sans-serif;
     padding: 10px;
     margin: auto;
-    color: #e4e4e4;
+    color: white;
     width: auto;
     overflow-x: hidden;
 }
@@ -104,7 +104,7 @@ td {
 }
 
 input[type=submit] {
-    color: #fff;
+    color: white;
     text-transform: uppercase;
     text-decoration: none;
     background-color: #ed3330;
@@ -197,7 +197,7 @@ input:focus {
 .header img {
     height: 40px;
     width: 40px;
-    background-color: gray;
+    background-color: red;
     text-align: center;
     float: left;
 }
@@ -208,7 +208,7 @@ input:focus {
     align-items: center;
     justify-content: center;
     height: 40px;
-    background-color: gray;
+    background-color: red;
 }
 
 .link {
