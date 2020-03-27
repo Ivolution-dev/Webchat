@@ -4,7 +4,7 @@
 <head>
     <title>Webchat</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="ressources/style.css?v=2">
+    <link rel="stylesheet" href="ressources/style.css?v=1">
     <link rel="icon" type="image/png" href="ressources/logo.png">
 </head>
 
@@ -30,21 +30,29 @@
         </form>
     </div>
 
-        <?php
-        if (isset($_SESSION['codeAnmelden']) && $_SESSION['codeAnmelden'] != "") {
-            echo ($_SESSION['codeAnmelden']);
-            $_SESSION['codeAnmelden'] = "";
-        }
-        ?>
+    <?php
+    if (isset($_SESSION['codeAnmelden']) && $_SESSION['codeAnmelden'] != "") {
+        echo ($_SESSION['codeAnmelden']);
+        $_SESSION['codeAnmelden'] = "";
+    }
+    ?>
 
-        <?php
-        if (isset($_SESSION['codeAbmelden']) && $_SESSION['codeAbmelden'] != "") {
-            echo ($_SESSION['codeAbmelden']);
-            $_SESSION['codeAbmelden'] = "";
-        }
-        ?>
-    
+    <?php
+    if (isset($_SESSION['codeAbmelden']) && $_SESSION['codeAbmelden'] != "") {
+        echo ($_SESSION['codeAbmelden']);
+        $_SESSION['codeAbmelden'] = "";
+    }
+    ?>
 
+    <script language="JavaScript">
+        function disablediv(div) {
+            var objDiv = document.getElementById(div);
+            if (objDiv)
+                objDiv.style.display = "none";
+        }
+        window.setTimeout("disablediv('error')", 2000);
+        window.setTimeout("disablediv('success')", 2000);
+    </script>
 </body>
 
 </html>
