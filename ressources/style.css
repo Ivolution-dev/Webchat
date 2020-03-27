@@ -212,7 +212,7 @@ input:focus {
 
 .link {
     text-align: center;
-    color:white;
+    color:gray;
     overflow: hidden;
     text-decoration: none;
     position: relative;
