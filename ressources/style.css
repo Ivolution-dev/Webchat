@@ -27,24 +27,15 @@ form {
 }
 
 #success {
-    font-weight: bold;
     color: green;
     text-align: center;
 }
 
 #error {
-    font-weight: bold;
     color: red;
     text-align: center;
 }
 
-#success,
-#error {
-    transition-duration: 8s;
-    margin-top: 0.8%;
-    margin-bottom: -2%;
-    opacity: 0;
-}
 
 #logout {
     margin-right: auto;
@@ -179,16 +170,6 @@ input:focus {
         opacity: 1;
     }
 }
-@keyframes fadeout{
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
 .fade {
     animation: fadein 2s;
     -webkit-animation: fadein 2s;
