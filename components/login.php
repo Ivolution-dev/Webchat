@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="de">
-
-<head>
-    <title>Webchat</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../style.css?v=1">
-    <link rel="icon" type="image/png" href="../logo.png">
-</head>
-
-<body>
-    <?php
+<?php
     if (isset($_POST["login"])) {
         $nutzer = filter_input(INPUT_POST, 'nutzer', FILTER_SANITIZE_STRING);
         $passwort = filter_input(INPUT_POST, 'passwort', FILTER_SANITIZE_STRING);
@@ -60,7 +49,4 @@
         header('location: ../index.php');
         exit();
     }
-    ?>
-</body>
-
-</html>
+?>
