@@ -18,7 +18,7 @@
 
             <h1 id="loghd"> Log in </h1>
             <div class="feld">
-                <form action="account/login.php" method="post"> 
+                <form action="components/login.php" method="post"> 
                     Nutzername oder Email  : <input type="text" name="nutzer" autofocus autocomplete="off"><br><br>
                     Passwort    : <input type="password" name="passwort" autocomplete="off">
                     <a class="link" href="account/forgetpassword.php">Passwort vergessen?</a><br><br>
