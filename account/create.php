@@ -25,7 +25,7 @@
                     Passwort wiederholen    : <input type="password" name="passwortwh" autocomplete="off"><br><br>
                     <input type="submit" value="Registrieren" name="register">
                     <a class="link" href="../index.php">Zurück zur Anmeldung!</a>
-                    <a class="link" href="../index.php">Keine E-Mail erhalten? sssHier klicken!</a>
+                    <a class="link" href="../index.php">Keine E-Mail erhalten? Hier klicken!</a>
                 </form>
             </div>
             <?php
