@@ -27,14 +27,14 @@ form {
 }
 
 #success {
-    text-align: center;
     color: green;
+    text-align: center;
     opacity: 1;
 }
 
 #error {
-    text-align: center;
     color: red;
+    text-align: center;
     opacity: 1;
 }
 
