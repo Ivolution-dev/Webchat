@@ -20,9 +20,9 @@
     <h1 id="reghd"> Neue E-Mail anfordern </h1>
     <div class="feld">
         <form action="../components/register.php" method="post">
-            Email : <input type="text" name="email" autocomplete="off"><br><br>
+            Email oder Benutzername : <input type="text" name="email" autocomplete="off"><br><br>
             <input type="submit" value="Erneut senden!" name="resend">
-            <a class="link" href="../index.php">Zurück zur Registrierung!</a>
+            <a class="link" href="../index.php">Zurück zum Login!</a>
         </form>
     </div>
     <?php
