@@ -42,7 +42,6 @@ form {
     margin-top: 0.8%;
     margin-bottom: -2%;
     opacity: 0;
-    transition-property: opacitiy 8s;
 }
 
 #logout {
