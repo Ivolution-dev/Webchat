@@ -41,7 +41,7 @@ form {
     margin-top: 0.8%;
     margin-bottom: -2%;
     
-    transition: fadein 4s fadeout 2s;
+    transition: fadein 4s;
 }
 
 #logout {
