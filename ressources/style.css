@@ -35,14 +35,6 @@ form {
     color: red;
     text-align: center;
 }
-#success, #error {
-    transition-duration: 2s;
-    margin-top: 0.8%;
-    margin-bottom: -2%;
-    visibility: hidden;
-    transition-property: visibility 3s;
-}
-
 #logout {
     margin-right: auto;
 }
