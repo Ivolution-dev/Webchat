@@ -177,7 +177,7 @@ input:focus {
     }
 }
 
-.fade {
+.fade, #error, #success {
     animation: fadein 2s;
     -webkit-animation: fadein 2s;
     -moz-animation: fadein 2s;
