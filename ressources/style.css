@@ -1,6 +1,7 @@
 html{
     background-color: black;
     background: url(bg1.png) no-repeat center fixed;
+    background-size: cover;
 }
 body {
     font-family: Source Sans Pro, sans-serif;
