@@ -3,7 +3,7 @@
         $oldpw = filter_input(INPUT_POST, 'oldpw', FILTER_SANITIZE_STRING);
         $newpw = filter_input(INPUT_POST, 'newpw', FILTER_SANITIZE_STRING);
         $newpwcn = filter_input(INPUT_POST, 'newpwcn', FILTER_SANITIZE_STRING);
-        $username = $_SESSION['username'];
+        $nutzer = $_SESSION['username'];
 
         $ini = parse_ini_file('../ressources/credentials.ini');
         $servername = $ini['db_ip'];
@@ -19,7 +19,7 @@
         }
 
         if ($newpw == $newpwcn) {
-            $sql = "SELECT U_ID, Nutzername, Passwort FROM Nutzer where Nutzername = '$nutzer' OR Email = '$nutzer'";
+            $sql = "SELECT U_ID, Nutzername, Passwort FROM Nutzer WHERE Nutzername = '$nutzer'";
             $result = $conn->query($sql);
             $row = mysqli_fetch_row($result);
             if (password_verify($oldpw, $row[2])) {
@@ -28,7 +28,7 @@
 
                 # Holt die Daten aus der Datenbank
                 $sql2 = "UPDATE Nutzer SET Passwort = '$hash' WHERE U_ID = '$row[0]'";
-                $result2 = $conn->query($sql2);
+                $conn->query($sql2);
                 $conn->close();
                 
                 session_start();
