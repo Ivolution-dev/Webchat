@@ -11,7 +11,7 @@
 
         if (empty($message))
         {
-            header('location: chat.php');
+            header('location: ../chat/chat.php');
             exit();
         }
 
@@ -37,7 +37,7 @@
             echo "Nachricht konnte nicht gesendet werden!";
         }
         $conn->close();
-        header('location: chat.php');
+        header('location: ../chat/chat.php');
         exit();
     }
 ?>
