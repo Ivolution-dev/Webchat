@@ -40,7 +40,6 @@ form {
     margin-top: 0.8%;
     margin-bottom: -2%;
     opacity: 1;
-    opacity: 0;
     transition-property: opacitiy 10s;
 }
 
