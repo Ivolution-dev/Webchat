@@ -36,7 +36,7 @@ form {
     text-align: center;
 }
 
-#success,#error {
+#divid {
     transition: 2s ease-out;
     margin-top: 0.8%;
     margin-bottom: -2%;
