@@ -43,16 +43,8 @@
             $_SESSION['codeAbmelden'] = "";
         }
         ?>
+    
 
-    <script language="JavaScript">
-        function disablediv(div) {
-            var objDiv = document.getElementById(div);
-            if (objDiv)
-                objDiv.style.display = "none";
-        }
-        window.setTimeout("disablediv('error')", 2000);
-        window.setTimeout("disablediv('success')", 2000);
-    </script>
 </body>
 
 </html>
