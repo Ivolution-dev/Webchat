@@ -23,6 +23,11 @@
             $result = $conn->query($sql);
             $row = mysqli_fetch_row($result);
             if (password_verify($oldpw, $row[2])) {
+                session_start();
+                $_SESSION['codeChangePassword'] = "<div id='error'>Bin hier!</div>";
+                header('location: ../account/changepassword.php');
+                exit();
+
                 $hash = password_hash($newpw, PASSWORD_DEFAULT);
 
                 # Holt die Daten aus der Datenbank
