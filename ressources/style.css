@@ -1,3 +1,6 @@
+html{
+    background: url(bg1.png) no-repeat center fixed;
+}
 body {
     font-family: Source Sans Pro, sans-serif;
     padding: 10px;
@@ -6,8 +9,6 @@ body {
     width: auto;
     overflow-x: hidden;
     background-color: black;
-    background: url(bg1.png) no-repeat center fixed;
-
 }
 
 h1 {
