@@ -34,18 +34,19 @@
                 session_start();
                 $_SESSION['codeChangePassword'] = "<div id='success'>Dein Passwort wurde erfolgreich geändert!</div>";
                 header('location: ../account/changepassword.php');
+                exit();
             } else {
                 session_start();
                 $_SESSION['codeChangePassword'] = "<div id='error'>Dein altes Passwort stimmt nicht!</div>";
                 header('location: ../account/changepassword.php');
+                exit();
             }
         } else {
             session_start();
             $_SESSION['codeChangePassword'] = "<div id='error'>Deine daten stimmen nicht überein!</div>";
             header('location: ../account/changepassword.php');
+            exit();
         }
-        header('location: sendmail.php');
-        exit();
     } else {
         header('location: ../account/changepassword.php');
         exit();
