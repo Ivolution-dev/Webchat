@@ -36,6 +36,10 @@ form {
     text-align: center;
 }
 
+#divid {
+    margin-top: 0.8%;
+    margin-bottom: -2%;
+}
 
 #logout {
     margin-right: auto;
