@@ -16,11 +16,11 @@
                 
             ?>
 
-            <h1 id="reghd"> Passwort ändern </h1>
+            <h1 id="reghd"> Passwort zurücksetzen </h1>
             <div class="feld">
                 <form action="../components/register.php" method="post">
                     Email                   : <input type="text" name="email" autocomplete="off"><br><br>
-                    <input type="submit" value="Passwort ändern!" name="change">
+                    <input type="submit" value="Passwort zurücksetzen!" name="change">
                     <a class="link" href="../index.php">Zurück zur Registrierung!</a>
                 </form>
             </div>
