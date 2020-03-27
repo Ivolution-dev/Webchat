@@ -15,7 +15,6 @@
         header('location: ../chat/chat.php');
         exit();
     }
-
     ?>
 
     <h1 id="reghd"> Neue E-Mail anfordern </h1>
