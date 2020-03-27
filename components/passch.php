@@ -22,9 +22,7 @@
             $sql = "SELECT U_ID, Nutzername, Passwort FROM Nutzer WHERE Nutzername = '$nutzer'";
             $result = $conn->query($sql);
             $row = mysqli_fetch_row($result);
-            
             if (password_verify($oldpw, $row[2])) {
-
                 $hash = password_hash($newpw, PASSWORD_DEFAULT);
 
                 # Holt die Daten aus der Datenbank
