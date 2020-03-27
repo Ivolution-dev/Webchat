@@ -189,7 +189,7 @@ input:focus {
 .unchpw {
     text-align: center;
     margin-bottom: 0.3%;
-    font-style: bold;
+    font-weight: bold;
 }
 .header img {
     height: 40px;
