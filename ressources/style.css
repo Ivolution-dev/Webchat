@@ -41,6 +41,12 @@ form {
     transition-duration: 2s;
     margin-top: 0.8%;
     margin-bottom: -2%;
+    animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    animation-iteration-count: 1;
 }
 
 #logout {
@@ -177,7 +183,7 @@ input:focus {
     }
 }
 
-.fade, #error, #success {
+.fade {
     animation: fadein 2s;
     -webkit-animation: fadein 2s;
     -moz-animation: fadein 2s;
