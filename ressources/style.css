@@ -38,13 +38,14 @@ form {
 
 #success,
 #error {
+    transition-duration: 2s;
     margin-top: 0.8%;
     margin-bottom: -2%;
-    transition: fadein 2s;
-    -webkit-transition: fadein 2s;
-    -moz-transition: fadein 2s;
-    -o-transition: fadein 2s;
-    -ms-transitionn: fadein 2s;
+    animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    -ms-animation: fadein 2s;
     animation-iteration-count: 1;
 }
 
