@@ -38,10 +38,10 @@ form {
 
 #success,
 #error {
-    transition-property: opacitiy;
-    transition:2s ease-out;
+    opacity: 0;
     margin-top: 0.8%;
     margin-bottom: -2%;
+    transition: opacitiy 2s;
 }
 
 #logout {
