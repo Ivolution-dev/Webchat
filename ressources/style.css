@@ -35,6 +35,14 @@ form {
     color: red;
     text-align: center;
 }
+#success, #error {
+    transition-duration: 2s;
+    margin-top: 0.8%;
+    margin-bottom: -2%;
+    display: none;
+    transition-property: display 3s;
+}
+
 #logout {
     margin-right: auto;
 }
