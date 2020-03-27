@@ -24,7 +24,7 @@
     echo ("<p class=unchpw>Du bist eingeloggt als: " . $_SESSION['username'] . "</p>");
     ?>
     <div class="feld">
-        <form action="../components/register.php" method="post">
+        <form action="../components/passch.php" method="post">
             Altes Passwort : <input type="text" name="oldpw" autocomplete="off"><br><br>
             Neues Passwort : <input type="text" name="newpw" autocomplete="off"><br><br>
             Neues Passwort bestätigen : <input type="text" name="newpwcn" autocomplete="off"><br><br>
