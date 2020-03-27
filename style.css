@@ -245,5 +245,3 @@ input:focus {
 .link:hover::after {
     transition-duration: .15s;
 }
-
-/*Made and written by Collin Schulz */
