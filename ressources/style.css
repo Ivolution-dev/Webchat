@@ -37,7 +37,7 @@ form {
 }
 
 #success,#error {
-    transition-duration: 2s;
+    transition: 2s ease-out;
     margin-top: 0.8%;
     margin-bottom: -2%;
 }
