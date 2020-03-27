@@ -2,10 +2,10 @@ body {
     font-family: Source Sans Pro, sans-serif;
     padding: 10px;
     margin: auto;
-    background-color: #444;
     color: #e4e4e4;
     width: auto;
     overflow-x: hidden;
+    background-color: black;
     background: url(bg1.png) no-repeat center fixed;
 
 }
