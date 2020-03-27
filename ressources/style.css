@@ -36,7 +36,7 @@ form {
     text-align: center;
 }
 #success, #error {
-    transition-duration: 2s;
+    transition: 2s linear;
     margin-top: 0.8%;
     margin-bottom: -2%;
 }
