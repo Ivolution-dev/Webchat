@@ -38,11 +38,11 @@ form {
 
 #success,
 #error {
-    transition-duration: 2s;
+    transition-duration: 4s;
     margin-top: 0.8%;
     margin-bottom: -2%;
     opacity: 0;
-    transition-property: opacitiy 4s;
+    transition-property: opacitiy 6s;
 }
 
 #logout {
