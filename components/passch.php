@@ -22,7 +22,7 @@
             $sql = "SELECT U_ID, Nutzername, Passwort FROM Nutzer where Nutzername = '$nutzer' OR Email = '$nutzer'";
             $result = $conn->query($sql);
             $row = mysqli_fetch_row($result);
-            if (password_verify($oldpw, $row[2]) {
+            if (password_verify($oldpw, $row[2])) {
 
                 $hash = password_hash($newpwcn, PASSWORD_DEFAULT);
 
