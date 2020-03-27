@@ -22,21 +22,21 @@
             $sql = "SELECT U_ID, Nutzername, Passwort FROM Nutzer where Nutzername = '$nutzer' OR Email = '$nutzer'";
             $result = $conn->query($sql);
             $row = mysqli_fetch_row($result);
-            if () {
-            $hash = 
+            if (password_verify($oldpw, $row[2]) {
 
-            # Holt die Daten aus der Datenbank
-            $sql = "UPDATE Nutzer SET Passwort = '$hash' WHERE Nutzername = '$username'";
-            $result = $conn->query($sql);
-            $row = mysqli_fetch_row($result);
-            $conn->close();
-            
-            session_start();
-            $_SESSION['codeChangePassword'] = "<div id='error'>Melde dich bitte erstmal an!</div>";
-            header('location: ../account/changepassword.php');
+                $hash = password_hash($newpwcn, PASSWORD_DEFAULT);
+
+                # Holt die Daten aus der Datenbank
+                $sql2 = "UPDATE Nutzer SET Passwort = '$hash' WHERE U_ID = '$row[0]'";
+                $result2 = $conn->query($sql2);
+                $conn->close();
+                
+                session_start();
+                $_SESSION['codeChangePassword'] = "<div id='success'>Dein Passwort wurde erfolgreich geändert!</div>";
+                header('location: ../account/changepassword.php');
             } else {
                 session_start();
-                $_SESSION['codeChangePassword'] = "<div id='error'>Dein alten Passwort stimmt nicht!</div>";
+                $_SESSION['codeChangePassword'] = "<div id='error'>Dein altes Passwort stimmt nicht!</div>";
                 header('location: ../account/changepassword.php');
             }
         } else {
