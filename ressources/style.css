@@ -8,6 +8,7 @@ body {
     overflow-x: hidden;
     background: url(bg.png);
     background-repeat: no-repeat;
+    background-size: auto;
 }
 
 h1 {
