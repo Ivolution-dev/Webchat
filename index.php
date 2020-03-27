@@ -30,7 +30,6 @@
         </form>
     </div>
 
-    <div id="divid">
         <?php
         if (isset($_SESSION['codeAnmelden']) && $_SESSION['codeAnmelden'] != "") {
             echo ($_SESSION['codeAnmelden']);
@@ -44,7 +43,6 @@
             $_SESSION['codeAbmelden'] = "";
         }
         ?>
-    </div>
 
     <script language="JavaScript">
         function disablediv(div) {
@@ -52,7 +50,8 @@
             if (objDiv)
                 objDiv.style.display = "none";
         }
-        window.setTimeout("disablediv('divid')", 2000);
+        window.setTimeout("disablediv('error')", 2000);
+        window.setTimeout("disablediv('success')", 2000);
     </script>
 </body>
 
