@@ -18,17 +18,18 @@
         exit();
     }
     ?>
+    
+    <h1 id="reghd"> Passwort ändern </h1>
     <?php
     echo ("<p>Du bist eingeloggt als: " . $_SESSION['username'] . "</p>");
     ?>
-    <h1 id="reghd"> Passwort ändern </h1>
     <div class="feld">
         <form action="../components/register.php" method="post">
             Altes Passwort : <input type="text" name="oldpw" autocomplete="off"><br><br>
             Neues Passwort : <input type="text" name="newpw" autocomplete="off"><br><br>
             Neues Passwort bestätigen : <input type="text" name="newpwcn" autocomplete="off"><br><br>
             <input type="submit" value="Passwort ändern!" name="change">
-            <a class="link" href="../index.php">Zurück zur Registrierung!</a>
+            <a class="link" href="../index.php">Zurück zum Chat!</a>
         </form>
     </div>
     <?php
