@@ -29,17 +29,18 @@ form {
 #success {
     color: green;
     text-align: center;
+    font-weight: bold;
 }
 
 #error {
     color: red;
     text-align: center;
+    font-weight: bold;
 }
 
 #success,
 #error {
     transition-duration: 8s;
-    transform-style: none;
     margin-top: 0.8%;
     margin-bottom: -2%;
     opacity: 0;
