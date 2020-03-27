@@ -6,7 +6,7 @@ body {
     color: #e4e4e4;
     width: auto;
     overflow-x: hidden;
-    background: url(bg1.png);
+    background: url(bg.png);
     background-repeat: no-repeat;
 }
 
@@ -212,7 +212,7 @@ input:focus {
 
 .link {
     text-align: center;
-    color:gray;
+    color:white;
     overflow: hidden;
     text-decoration: none;
     position: relative;
