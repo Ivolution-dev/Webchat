@@ -22,7 +22,7 @@
         <form action="../components/register.php" method="post">
             Email : <input type="text" name="email" autocomplete="off"><br><br>
             <input type="submit" value="Erneut senden!" name="resend">
-            <a class="link" href="../index.php">Zurück zur Registrierung!</a>
+            <a class="link" href="../index.php">Zurück zum Login!</a>
         </form>
     </div>
     <?php
