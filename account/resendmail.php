@@ -16,7 +16,7 @@
                 
             ?>
 
-            <h1 id="reghd"> Registrieren </h1>
+            <h1 id="reghd"> Neue E-Mail anfordern </h1>
             <div class="feld">
                 <form action="../components/register.php" method="post">
                     Email                   : <input type="text" name="email" autocomplete="off"><br><br>
