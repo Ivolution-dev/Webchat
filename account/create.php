@@ -15,7 +15,6 @@
         header('location: ../chat/chat.php');
         exit();
     }
-
     ?>
 
     <h1 id="reghd"> Registrieren </h1>

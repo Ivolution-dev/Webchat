@@ -40,3 +40,4 @@
         header('location: ../chat/chat.php');
         exit();
     }
+?>

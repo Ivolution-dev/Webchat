@@ -23,3 +23,4 @@
     $_SESSION['codeAnmelden'] = "<div id='success'>Dein Account wurde aktiviert! Du kannst dich jetzt anmelden!</div>";
     header('location: ../index.php');
     exit();
+?>

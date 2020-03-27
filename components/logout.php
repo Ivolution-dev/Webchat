@@ -5,3 +5,4 @@
     $_SESSION['codeAbmelden'] = "<div id='success'>Du hast dich erfolgreich abgemeldet!</div>";
     header('location: ../index.php');
     exit();
+?>
