@@ -30,19 +30,30 @@
         </form>
     </div>
 
-    <?php
-    if (isset($_SESSION['codeAnmelden']) && $_SESSION['codeAnmelden'] != "") {
-        echo ($_SESSION['codeAnmelden']);
-        $_SESSION['codeAnmelden'] = "";
-    }
-    ?>
+    <div id="divid">
+        <?php
+        if (isset($_SESSION['codeAnmelden']) && $_SESSION['codeAnmelden'] != "") {
+            echo ($_SESSION['codeAnmelden']);
+            $_SESSION['codeAnmelden'] = "";
+        }
+        ?>
 
-    <?php
-    if (isset($_SESSION['codeAbmelden']) && $_SESSION['codeAbmelden'] != "") {
-        echo ($_SESSION['codeAbmelden']);
-        $_SESSION['codeAbmelden'] = "";
-    }
-    ?>
+        <?php
+        if (isset($_SESSION['codeAbmelden']) && $_SESSION['codeAbmelden'] != "") {
+            echo ($_SESSION['codeAbmelden']);
+            $_SESSION['codeAbmelden'] = "";
+        }
+        ?>
+    </div>
+
+    <script language="JavaScript">
+        function disablediv(div) {
+            var objDiv = document.getElementById(div);
+            if (objDiv)
+                objDiv.style.display = "none";
+        }
+        window.setTimeout("disablediv('divid')", 2000);
+    </script>
 </body>
 
 </html>
