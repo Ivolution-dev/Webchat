@@ -27,15 +27,15 @@ form {
 }
 
 #success {
+    font-weight: bold;
     color: green;
     text-align: center;
-    opacity: 2;
 }
 
 #error {
+    font-weight: bold;
     color: red;
     text-align: center;
-    opacity: 2;
 }
 
 #success,
