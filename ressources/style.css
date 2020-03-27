@@ -37,7 +37,7 @@ form {
 }
 
 #divid,#success,#error {
-    transition: 2s ease-out;
+    transition-duration: 2s ease-out;
     margin-top: 0.8%;
     margin-bottom: -2%;
 }
