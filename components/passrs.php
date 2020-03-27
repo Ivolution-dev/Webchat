@@ -21,15 +21,17 @@
 
 
         # Holt die Daten aus der Datenbank
-        $sql = "SELECT Nutzername, Email FROM Nutzer where Nutzername = '$nutzer' OR Email = '$nutzer' SET Passwort = '$hash'";
+        $sql = "SELECT U_ID, Nutzername, Email FROM Nutzer where Nutzername = '$nutzer' OR Email = '$nutzer'";
         $result = $conn->query($sql);
         $row = mysqli_fetch_row($result);
+        $sql2 = "UPDATE Nutzer SET Passwort = '$hash' WHERE U_ID = '$row[0]'";
+        $conn->query($sql2);
         $conn->close();
 
         session_start();
-        $_SESSION['empfaenger'] = $row[1];
+        $_SESSION['empfaenger'] = $row[2];
         $_SESSION['betreff'] = 'Account Bestätigung';
-        $_SESSION['mail'] = "Dein Benutzername: $row[0]\r\nDein Neues Passwort: $newpasswd \r\nDu kannst dein Passwort jederzeit unter http://gamer-server.eu/Webchat/account/changepassword.php ändern";
+        $_SESSION['mail'] = "Dein Benutzername: $row[1]\r\nDein Neues Passwort: $newpasswd \r\nDu kannst dein Passwort jederzeit unter http://gamer-server.eu/Webchat/account/changepassword.php ändern";
         $_SESSION['codePassrs'] = "<div id='success'>Wenn deine Daten stimmen hast du jetzt eine Email bekommen!</div>";
         $_SESSION['backTo'] = "../account/forgetpassword.php";
 
