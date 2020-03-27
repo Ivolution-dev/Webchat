@@ -38,10 +38,9 @@ form {
 
 #success,
 #error {
-    transition: fadeout 2s;
     margin-top: 0.8%;
     margin-bottom: -2%;
-    
+    transition: fadeout 2s;
 }
 
 #logout {
