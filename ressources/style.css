@@ -38,8 +38,8 @@ form {
 
 #success,
 #error {
-    opacity: 0;
-    transition: opacitiy 2s;
+    transition: fadein 2s;
+    transition: fadeout 2s;
     margin-top: 0.8%;
     margin-bottom: -2%;
     
@@ -176,6 +176,15 @@ input:focus {
 
     to {
         opacity: 1;
+    }
+}
+@keyframes fadeout{
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
     }
 }
 
