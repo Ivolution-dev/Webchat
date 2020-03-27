@@ -1,5 +1,6 @@
 <?php
     if (isset($_POST["change"])) {
+        session_start();
         $oldpw = filter_input(INPUT_POST, 'oldpw', FILTER_SANITIZE_STRING);
         $newpw = filter_input(INPUT_POST, 'newpw', FILTER_SANITIZE_STRING);
         $newpwcn = filter_input(INPUT_POST, 'newpwcn', FILTER_SANITIZE_STRING);
@@ -22,10 +23,6 @@
             $sql = "SELECT U_ID, Nutzername, Passwort FROM Nutzer WHERE Nutzername = '$nutzer'";
             $result = $conn->query($sql);
             $row = mysqli_fetch_row($result);
-            session_start();
-            $_SESSION['codeChangePassword'] = "<div id='error'>$oldpw $row[2]</div>";
-            header('location: ../account/changepassword.php');
-            exit();
             if (password_verify($oldpw, $row[2])) {
                 $hash = password_hash($newpw, PASSWORD_DEFAULT);
 
