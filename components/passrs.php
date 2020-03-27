@@ -2,7 +2,7 @@
     if (isset($_POST["newpwbtn"])) {
         $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
 
-        $ini = parse_ini_file('../credentials.ini');
+        $ini = parse_ini_file('../ressources/credentials.ini');
         $servername = $ini['db_ip'];
         $username = $ini['db_user'];
         $password = $ini['db_password'];

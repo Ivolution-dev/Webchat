@@ -5,7 +5,7 @@
         $newpwcn = filter_input(INPUT_POST, 'newpwcn', FILTER_SANITIZE_STRING);
         $username = $_SESSION['username'];
 
-        $ini = parse_ini_file('../credentials.ini');
+        $ini = parse_ini_file('../ressources/credentials.ini');
         $servername = $ini['db_ip'];
         $username = $ini['db_user'];
         $password = $ini['db_password'];

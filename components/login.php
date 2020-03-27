@@ -3,7 +3,7 @@
         $nutzer = filter_input(INPUT_POST, 'nutzer', FILTER_SANITIZE_STRING);
         $passwort = filter_input(INPUT_POST, 'passwort', FILTER_SANITIZE_STRING);
 
-        $ini = parse_ini_file('../credentials.ini');
+        $ini = parse_ini_file('../ressources/credentials.ini');
         $servername = $ini['db_ip'];
         $username = $ini['db_user'];
         $password = $ini['db_password'];
