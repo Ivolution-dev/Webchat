@@ -29,7 +29,7 @@
         ?>
 
         <div class="logout">
-            <form id="lgbtn" action="../account/logout.php" method="post">
+            <form id="lgbtn" action="../components/logout.php" method="post">
                 <input id="logobtn" type="submit" value="Logout" name="logout">
             </form>
         </div><br>
@@ -45,7 +45,7 @@
         </div><br>    
 
         <div class="feld">
-            <form action="sendmessage.php" method="post">
+            <form action="../components/sendmessage.php" method="post">
                 <input type="text" name="message" autofocus autocomplete="off"><br><br>
                 <input  type="submit" value="Senden" name="send"><br><br>
             </form>
@@ -92,7 +92,7 @@
                 jQuery.ajax(
                 {
                     type: "POST",
-                    url: 'updatechat.php',
+                    url: '../components/updatechat.php',
                     dataType: 'json',
 
                     success: function (obj, textstatus) {

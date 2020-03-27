@@ -18,7 +18,7 @@
 
             <h1 id="reghd"> Registrieren </h1>
             <div class="feld">
-                <form action="register.php" method="post">
+                <form action="../components/register.php" method="post">
                     Nutzername              : <input type="text" name="nutzer" autofocus autocomplete="off"><br><br>
                     Email                   : <input type="text" name="email" autocomplete="off"><br><br>
                     Passwort                : <input type="password" name="passwort" autocomplete="off"><br><br>
