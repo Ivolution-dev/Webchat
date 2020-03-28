@@ -8,7 +8,7 @@
     } else {
         $message = filter_input(INPUT_POST, 'message',FILTER_SANITIZE_STRING); 
         
-        $message =  str_replace(strval($message), "&#34;", "'");
+        $message =  str_replace("&#34;", "'", strval($message));
 
         if (empty($message))
         {
