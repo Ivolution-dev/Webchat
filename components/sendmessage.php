@@ -5,9 +5,10 @@
         $_SESSION['codeAnmelden'] = "<div id='error'>Melde dich bitte erstmal an!</div>";
         header('location: ../index.php');
         exit();
-    }
-    else {
+    } else {
         $message = filter_input(INPUT_POST, 'message',FILTER_SANITIZE_STRING); 
+        
+        $message =  str_replace(strval($message), "&#34;", "'");
 
         if (empty($message))
         {
