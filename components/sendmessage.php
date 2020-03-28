@@ -34,7 +34,7 @@
         $message = strval($message);
 
         # Holt die Daten aus der Datenbank
-        $sql = "INSERT INTO Chat (U_ID, Nachricht) VALUES ('$u_id', '$message')";
+        $sql = "INSERT INTO Chat (U_ID, Nachricht) VALUES ('$u_id', $message)";
         if (!$conn->query($sql) === TRUE) {
             echo "Nachricht konnte nicht gesendet werden!";
         }
