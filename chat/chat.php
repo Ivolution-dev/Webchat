@@ -70,7 +70,7 @@
                     td1.setAttribute("id", "Uname");
                     td2.setAttribute("id", "Message");
                     var te1 = document.createTextNode(ChatData[i][0]);
-                    var te2 = document.createTextNode(String(ChatData[i][1]));
+                    var te2 = document.createTextNode(ChatData[i][1]);
                     td1.appendChild(te1);
                     td2.appendChild(te2);
                     tr.appendChild(td1);
