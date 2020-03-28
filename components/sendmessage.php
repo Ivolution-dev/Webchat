@@ -32,8 +32,6 @@
             die("Connection failed: ".$conn->connect_error);
         }
 
-        $message = htmlentities($message);
-
         # Holt die Daten aus der Datenbank
         $sql = "INSERT INTO Chat (U_ID, Nachricht) VALUES ('$u_id', '$message')";
         if (!$conn->query($sql) === TRUE) {
