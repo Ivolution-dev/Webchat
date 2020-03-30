@@ -175,13 +175,15 @@ input:focus {
 	margin-right: 0%;
 	width: 80px;
 }
-
-#logobtn, #mypbtn {
-	text-align: left;
+#logobtn{
 	background: url(logout.png);
 	background-size: 15px;
 	background-position: right;
 	background-repeat: no-repeat;
+}
+#logobtn, #mypbtn {
+	text-align: left;
+	
 	background-color: #ed3330;
 }
 
