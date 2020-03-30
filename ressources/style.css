@@ -186,7 +186,6 @@ input:focus {
 	background-size: 15px;
 	background-position: right;
 	background-repeat: no-repeat;
-	float: left;
 }
 #logobtn, #mypbtn {
 	text-align: left;
