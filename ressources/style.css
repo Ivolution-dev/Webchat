@@ -62,6 +62,7 @@ form {
 	}
 
 	25% {
+        position: relative;
         color: yellow;
         top: 200px;
 	}
