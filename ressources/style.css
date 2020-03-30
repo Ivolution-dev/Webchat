@@ -30,13 +30,13 @@ form {
 #success {
 	color: green;
     text-align: center;
-    visibility: hidden;
+    opacity: 0;
 }
 
 #error {
 	color: red;
     text-align: center;
-    visibility: hidden;
+    opacity: 0;
 }
 
 #success, #error {
@@ -53,21 +53,10 @@ form {
 	animation-duration: 16s;
 }
 
-@keyframes fadeintwo {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
-
 @keyframes textanimation {
 	0% {
         visibility: initial;
-        color: gray;
-        animation-name: fadeintwo;
+        opacity: 1;
         animation-duration: 4s;
 	}
 
