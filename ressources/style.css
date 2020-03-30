@@ -56,25 +56,25 @@ form {
 @keyframes textanimation {
 	0% {
         visibility: initial;
-        opacity: 0;
+        opacity: 1;
         top: 0px;
 	}
 
 	25% {
         visibility: initial;
-        opacity: 0;
+        opacity: 1;
         top: 20px;
 	}
 
 	50% {
         visibility: initial;
-        opacity: 0;
+        opacity: 1;
 		top: 20px;
 	}
 
 	75% {
         visibility: initial;
-        opacity: 0;
+        opacity: 1;
         top: 40px;
 	}
 
