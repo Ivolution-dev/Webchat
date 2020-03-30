@@ -38,18 +38,18 @@ form {
 }
 
 #success, #error {
-	/*transition-duration: 2s;*/
+	transition-duration: 2s;
 	margin-top: 0.8%;
 	margin-bottom: -2%;
-	/*visibility: hidden;
+	visibility: hidden;
     transition-property: visibility 2s;
     -webkit-transition-property: visibility 2s;
     -moz-transition-property: visibility 2s;
     -o-transition-property: visibility 2s;
-    -ms-transition-property: visibility 2s;*/
-	animation-name: textanimation;
+    -ms-transition-property: visibility 2s;
+	/*animation-name: textanimation;
 	animation-duration: 4s;
-	animation-delay: 2s;
+	animation-delay: 2s;*/
 }
 
 @keyframes textanimation {
