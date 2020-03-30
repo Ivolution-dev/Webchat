@@ -27,7 +27,7 @@
             ?>
             E-Mail :
             <?php
-                echo ("<p class=unp>". $_SESSION[$email] . "</p>");
+                echo ("<p class=unp>". $_SESSION['email'] . "</p>");
             ?>
             <a class="link" href="account/forgetpassword.php">Passwort vergessen?</a><br><br>
 
