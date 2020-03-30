@@ -63,7 +63,8 @@ form {
 	}
 
 	25% {
-		color: yellow;
+        color: yellow;
+        top: 200px;
 	}
 
 	50% {
