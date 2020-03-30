@@ -36,7 +36,6 @@ form {
 }
 
 #success, #error {
-    top: 0px;
     text-align: center;
     opacity: 0;
     visibility: hidden;
@@ -58,7 +57,7 @@ form {
 	0% {
         visibility: initial;
         opacity: 1;
-        top: 20px;
+        top: 0px;
 	}
 
 	25% {
@@ -70,12 +69,12 @@ form {
 	}
 
 	75% {
-        top: 20px;
+        top: 40px;
 	}
 
 	100% {
         opacity: 0;
-        top: 40px;
+        visibility: hidden;
 	}
 }
 
