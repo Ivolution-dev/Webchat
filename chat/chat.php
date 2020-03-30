@@ -57,9 +57,24 @@
         var tbl = document.getElementById('chat');
         var tbdy = document.createElement('tbody');
 
+        function getCookie(cookie) {
+            var name = cookie + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
         function createTable(ChatData) {
-            if (ChatData.length > length) {
-                length = ChatData.length;
+            if (ChatData.length > getCookie("length")) {
+                document.cookie = "length=" + ChatData.length;
                 var tbl = document.getElementById('chat');
                 tbdy.remove();
                 tbdy = document.createElement('tbody');
