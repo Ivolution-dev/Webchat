@@ -80,6 +80,7 @@ form {
 	100% {
         visibility: hidden;
         display: none;
+        opacity: 1;
 	}
 }
 
