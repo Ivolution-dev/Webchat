@@ -24,7 +24,7 @@ h1 {
 
 form {
 	margin: auto;
-    text-align: center;
+	text-align: center;
 }
 
 #success {
@@ -35,11 +35,12 @@ form {
 	color: red;
 }
 
-#success, #error {
-    text-align: center;
-    opacity: 0;
-    visibility: hidden;
-    position: relative;
+#success,
+#error {
+	text-align: center;
+	opacity: 0;
+	visibility: hidden;
+	position: relative;
 	margin-top: 0.2%;
 	margin-bottom: -2%;
 	animation-name: textanimation;
@@ -48,27 +49,27 @@ form {
 
 @keyframes textanimation {
 	0% {
-        visibility: initial;
-        opacity: 0;
-        top: 0px;
+		visibility: initial;
+		opacity: 0;
+		top: 0px;
 	}
 
 	25% {
-        visibility: initial;
-        opacity: 1;
-        top: 5px;
+		visibility: initial;
+		opacity: 1;
+		top: 5px;
 	}
 
 	75% {
-        visibility: initial;
-        opacity: 1;
-        top: 5px;
+		visibility: initial;
+		opacity: 1;
+		top: 5px;
 	}
 
 	100% {
-        visibility: hidden;
-        opacity: 0;
-        top: 10px;
+		visibility: hidden;
+		opacity: 0;
+		top: 10px;
 	}
 }
 
