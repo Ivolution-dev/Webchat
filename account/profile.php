@@ -18,7 +18,7 @@
 
     ?>
 
-    <h1 id="loghd"> Log in </h1>
+    <h1 id="loghd"> Mein Profil </h1>
     <div class="feld">
         <form action="components/login.php" method="post">
             Nutzername oder Email : <input type="text" name="nutzer" autofocus autocomplete="off"><br><br>
