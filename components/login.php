@@ -17,7 +17,7 @@
         }
 
         # Holt die Daten aus der Datenbank
-        $sql = "SELECT U_ID, Nutzername, Passwort, Active FROM Nutzer where Nutzername = '$nutzer' OR Email = '$nutzer'";
+        $sql = "SELECT U_ID, Nutzername, Passwort, Active, Email FROM Nutzer where Nutzername = '$nutzer' OR Email = '$nutzer'";
         $result = $conn->query($sql);
         $row = mysqli_fetch_row($result);
         $conn->close();
@@ -26,6 +26,7 @@
                 session_start();
                 $_SESSION['username'] = $row[1];
                 $_SESSION['u_id'] = $row[0];
+                $_SESSION['email'] = $row[4];
                 header('location: ../chat/chat.php');
                 exit();
             } else {
