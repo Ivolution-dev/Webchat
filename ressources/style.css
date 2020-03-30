@@ -31,12 +31,14 @@ form {
 	color: green;
     text-align: center;
     opacity: 0;
+    visibility: hidden;
 }
 
 #error {
 	color: red;
     text-align: center;
     opacity: 0;
+    visibility: hidden;
 }
 
 #success, #error {
