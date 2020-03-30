@@ -185,11 +185,9 @@ input:focus {
 #mypbtn{
 	background: url(user.png);
 	background-size: 15px;
+	background-position: right 1%;
 	background-repeat: no-repeat;
 
-}
-#mypbtn.background{
-	margin-right: 1%;
 }
 #logobtn, #mypbtn {
 	text-align: left;
