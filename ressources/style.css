@@ -181,9 +181,14 @@ input:focus {
 	background-position: right;
 	background-repeat: no-repeat;
 }
+#mypbtn{
+	background: url(logout.png);
+	background-size: 15px;
+	background-position: right;
+	background-repeat: no-repeat;
+}
 #logobtn, #mypbtn {
 	text-align: left;
-	
 	background-color: #ed3330;
 }
 
