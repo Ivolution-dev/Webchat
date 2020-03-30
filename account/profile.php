@@ -23,7 +23,7 @@
         <form action="components/login.php" method="post">
             Nutzername : 
             <?php
-                echo ("<p class=username>Du bist eingeloggt als: " . $_SESSION['username'] . "</p>");
+                echo ("<p class=username>". $_SESSION['username'] . "</p>");
             ?>
             <a class="link" href="account/forgetpassword.php">Passwort vergessen?</a><br><br>
 
