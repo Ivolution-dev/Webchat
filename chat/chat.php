@@ -75,6 +75,8 @@
         function createTable(ChatData) {
             if (getCookie("length") == "") {
                 document.cookie = "length=0";
+            } else if (ChatData.length < parseInt(getCookie("length"))) {
+                document.cookie = "length=" + ChatData.length;
             }
             var tbl = document.getElementById('chat');
             tbdy.remove();
@@ -97,9 +99,6 @@
                     document.cookie = "length=" + ChatData.length;
                 }
                 tbl.appendChild(tbdy);
-            }
-            if (ChatData.length < parseInt(getCookie("length"))) {
-                document.cookie = "length=" + ChatData.length;
             }
         }
 
