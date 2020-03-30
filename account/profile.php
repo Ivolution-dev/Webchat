@@ -21,7 +21,7 @@
     <h1 id="loghd"> Mein Profil </h1>
     <div class="feld">
         <form action="components/login.php" method="post">
-            Nutzername oder Email : 
+            Nutzername : 
             <?php
                 echo ("<p class=username>Du bist eingeloggt als: " . $_SESSION['username'] . "</p>");
             ?>
