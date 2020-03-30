@@ -56,7 +56,7 @@ form {
 @keyframes textanimation {
 	0% {
         visibility: initial;
-        opacity: 1;
+        opacity: 0;
         top: 0px;
 	}
 
