@@ -89,11 +89,14 @@
                 tr.appendChild(td1);
                 tr.appendChild(td2);
                 tbdy.appendChild(tr);
-                if ((ChatData.length - 1 == i && ChatData.length > parseInt(getCookie("length"))) || ChatData.length < parseInt(getCookie("length"))) {
+                if ((ChatData.length - 1 == i && ChatData.length > parseInt(getCookie("length")))) {
                     tr.setAttribute("class", "fade");
                     document.cookie = "length=" + ChatData.length;
                 }
                 tbl.appendChild(tbdy);
+            }
+            if (ChatData.length < parseInt(getCookie("length"))) {
+                document.cookie = "length=" + ChatData.length;
             }
         }
 
