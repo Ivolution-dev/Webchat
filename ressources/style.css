@@ -53,16 +53,21 @@ form {
 	animation-duration: 16s;
 }
 
-@keyframes fadein {
-    from {background-color: red;}
-    to {background-color: yellow;}
+@keyframes fadeintwo {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
 }
 
 @keyframes textanimation {
 	0% {
         visibility: initial;
         color: gray;
-        animation-name: fadein;
+        animation-name: fadeintwo;
         animation-duration: 4s;
 	}
 
