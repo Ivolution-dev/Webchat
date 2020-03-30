@@ -40,17 +40,10 @@ form {
     opacity: 0;
     visibility: hidden;
     position: relative;
-	/*transition-duration: 2s;*/
 	margin-top: 0.8%;
 	margin-bottom: -2%;
-	/*visibility: hidden;
-    transition-property: visibility 2s;
-    -webkit-transition-property: visibility 2s;
-    -moz-transition-property: visibility 2s;
-    -o-transition-property: visibility 2s;
-    -ms-transition-property: visibility 2s;*/
 	animation-name: textanimation;
-	animation-duration: 5s;
+	animation-duration: 7s;
 }
 
 @keyframes textanimation {
