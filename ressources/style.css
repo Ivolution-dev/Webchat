@@ -192,7 +192,7 @@ input:focus {
 #logobtn, #mypbtn {
 	text-align: left;
 	background-color: #ed3330;
-	clear: both;
+	float: left;
 }
 
 #scroll {
