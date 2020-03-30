@@ -180,7 +180,6 @@ input:focus {
 	background-size: 15px;
 	background-position: right;
 	background-repeat: no-repeat;
-	clear: both;
 }
 #mypbtn{
 	background: url(user.png);
