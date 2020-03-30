@@ -63,23 +63,21 @@ form {
 	25% {
         visibility: initial;
         opacity: 1;
-        top: 20px;
 	}
 
 	50% {
         visibility: initial;
         opacity: 1;
-		top: 20px;
 	}
 
 	75% {
         visibility: initial;
         opacity: 1;
-        top: 40px;
 	}
 
 	100% {
-        opacity: 1;
+        top: 40px;
+        opacity: 0;
         visibility: hidden;
 	}
 }
