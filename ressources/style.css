@@ -54,25 +54,25 @@ form {
 
 @keyframes textanimation {
 	0% {
-		background-color: red;
+	    color: red;
 		left: 0px;
 		top: 0px;
 	}
 
 	25% {
-		background-color: yellow;
+		color: yellow;
 		left: 200px;
 		top: 0px;
 	}
 
 	50% {
-		background-color: blue;
+		color: blue;
 		left: 200px;
 		top: 200px;
 	}
 
 	75% {
-		background-color: green;
+		color: green;
 		left: 0px;
 		top: 200px;
 	}
