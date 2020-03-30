@@ -24,7 +24,7 @@
     </div>
 
     <?php
-    echo ("<p class=username>Du bist eingeloggt als: " . $_SESSION['username'] . "</p>");
+        echo ("<p class=username>Du bist eingeloggt als: " . $_SESSION['username'] . "</p>");
     ?>
 
     <div class="btn">
