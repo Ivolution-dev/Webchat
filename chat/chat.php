@@ -27,7 +27,7 @@
     echo ("<p class=username>Du bist eingeloggt als: " . $_SESSION['username'] . "</p>");
     ?>
 
-    <div class="logout">
+    <div class="btn">
         <form id="lgbtn" action="../components/logout.php" method="post">
             <input id="logobtn" type="submit" value="Logout" name="logout">
             <input id="mypbtn" type="submit" value="Profil" name="profile">
