@@ -50,13 +50,20 @@ form {
     -o-transition-property: visibility 2s;
     -ms-transition-property: visibility 2s;*/
 	animation-name: textanimation;
-	animation-duration: 4s;
+	animation-duration: 16s;
+}
+
+@keyframes fadein {
+    from {background-color: red;}
+    to {background-color: yellow;}
 }
 
 @keyframes textanimation {
 	0% {
         visibility: initial;
         color: gray;
+        animation-name: fadein;
+        animation-duration: 4s;
 	}
 
 	25% {
