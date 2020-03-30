@@ -182,7 +182,7 @@ input:focus {
 	background-repeat: no-repeat;
 }
 #mypbtn{
-	background: url(logout.png);
+	background: url(user.png);
 	background-size: 15px;
 	background-position: right;
 	background-repeat: no-repeat;
