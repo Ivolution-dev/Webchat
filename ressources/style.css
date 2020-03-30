@@ -44,7 +44,7 @@ form {
 	margin-top: 0.2%;
 	margin-bottom: -2%;
 	animation-name: textanimation;
-	animation-duration: 7s;
+    animation-duration: 7s;
 }
 
 @keyframes textanimation {
