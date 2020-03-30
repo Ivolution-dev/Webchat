@@ -4,7 +4,7 @@
 <head>
     <title>Webchat</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="ressources/style.css?v=<? echo date('his'); ?>">
+    <link rel="stylesheet" type="text/css" href="ressources/style.css?<?php echo date('l jS \of F Y h:i:s A'); ?>" />
     <link rel="icon" type="image/png" href="ressources/logo.png">
 </head>
 
