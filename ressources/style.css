@@ -185,7 +185,7 @@ input:focus {
 #mypbtn{
 	background: url(user.png);
 	background-size: 15px;
-	background-position: right 1%;
+	background-position: 1% right;
 	background-repeat: no-repeat;
 
 }
