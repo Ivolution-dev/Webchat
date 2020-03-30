@@ -31,7 +31,7 @@
         <form id="lgbtn" action="../components/logout.php" method="post">
             <input id="logobtn" type="submit" value="Logout" name="logout">
         </form>
-        <form id="lgbtn" action="../components/logout.php" method="post">
+        <form id="lgbtn" action="../account/profile.php" method="post">
             <input id="mypbtn" type="submit" value="Profil" name="profile">
         </form>
     </div><br>
