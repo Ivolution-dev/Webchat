@@ -1,254 +1,294 @@
-html{
-    background-color: black;
-    background: url(bg3.png) no-repeat center fixed;
-    background-size: cover;
+html {
+	background-color: black;
+	background: url(bg3.png) no-repeat center fixed;
+	background-size: cover;
 }
+
 body {
-    font-family: Source Sans Pro, sans-serif;
-    padding: 10px;
-    margin: auto;
-    color: white;
-    width: auto;
-    overflow-x: hidden;
+	font-family: Source Sans Pro, sans-serif;
+	padding: 10px;
+	margin: auto;
+	color: white;
+	width: auto;
+	overflow-x: hidden;
 }
 
 h1 {
-    color: white;
-    text-align: center;
-    height: 40px;
-    background-color: red;
-    background-size: 40px 100%;
-    margin-right: 0.2%;
+	color: white;
+	text-align: center;
+	height: 40px;
+	background-color: red;
+	background-size: 40px 100%;
+	margin-right: 0.2%;
 }
 
 form {
-    margin: auto;
-    text-align: center;
+	margin: auto;
+	text-align: center;
 }
 
 #success {
-    color: green;
-    text-align: center;
+	color: green;
+	text-align: center;
 }
 
 #error {
-    color: red;
-    text-align: center;
+	color: red;
+	text-align: center;
 }
+
 #success, #error {
-    /*transition-duration: 2s;*/
-    margin-top: 0.8%;
-    margin-bottom: -2%;
-    /*visibility: hidden;
+	/*transition-duration: 2s;*/
+	margin-top: 0.8%;
+	margin-bottom: -2%;
+	/*visibility: hidden;
     transition-property: visibility 2s;
     -webkit-transition-property: visibility 2s;
     -moz-transition-property: visibility 2s;
     -o-transition-property: visibility 2s;
     -ms-transition-property: visibility 2s;*/
+	animation-name: textanimation;
+	animation-duration: 4s;
+	animation-delay: 2s;
+}
+
+@keyframes textanimation {
+	0% {
+		background-color: red;
+		left: 0px;
+		top: 0px;
+	}
+
+	25% {
+		background-color: yellow;
+		left: 200px;
+		top: 0px;
+	}
+
+	50% {
+		background-color: blue;
+		left: 200px;
+		top: 200px;
+	}
+
+	75% {
+		background-color: green;
+		left: 0px;
+		top: 200px;
+	}
+
+	100% {
+		background-color: red;
+		left: 0px;
+		top: 0px;
+	}
 }
 
 #logout {
-    margin-right: auto;
+	margin-right: auto;
 }
 
 table {
-    width: 100%;
+	width: 100%;
 }
 
 #Message,
 #Messagehd {
-    width: 90%;
-    text-align: left;
-    margin-left: auto;
-    padding: 8px;
+	width: 90%;
+	text-align: left;
+	margin-left: auto;
+	padding: 8px;
 }
 
 #Uname,
 #Unahmehd {
-    width: 10%;
-    text-align: center;
-    font-weight: bold;
+	width: 10%;
+	text-align: center;
+	font-weight: bold;
 }
 
 #Unamehd,
 #Messagehd {
-    background-color: #ed3330;
+	background-color: #ed3330;
 
 }
 
 td {
-    margin-left: auto;
-    padding: 8px;
-    color: white;
+	margin-left: auto;
+	padding: 8px;
+	color: white;
 }
 
 .feld {
-    margin-left: auto;
-    margin-right: auto;
-    width: 250px;
-    clear: both;
-    font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+	clear: both;
+	font-weight: bold;
 }
 
 .feld input {
-    margin-left: auto;
-    color: white;
-    width: 100%;
-    clear: both;
-    text-align: center;
-    background-color: #555555;
-    border: 1px solid black;
+	margin-left: auto;
+	color: white;
+	width: 100%;
+	clear: both;
+	text-align: center;
+	background-color: #555555;
+	border: 1px solid black;
 }
 
 table,
 th,
 td {
-    border: 1px solid black;
-    border-collapse: collapse;
+	border: 1px solid black;
+	border-collapse: collapse;
 }
 
 input[type=submit] {
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: #ed3330;
-    padding: 2%;
-    border-radius: 5px;
-    display: inline-block;
-    border: none;
-    transition: all 0.4s ease 0s;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: #ed3330;
+	padding: 2%;
+	border-radius: 5px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
 }
 
 input[type=submit]:hover,
 #logobtn:hover {
-    background-color: #21888F;
-    /*letter-spacing: 2px;*/
-    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
-    transition: all 0.4s ease 0s;
+	background-color: #21888F;
+	/*letter-spacing: 2px;*/
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+	box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+	transition: all 0.4s ease 0s;
 }
 
 input:focus {
-    outline: none;
-    border-color: #ed3330;
-    box-shadow: 0 0 10px #ed3330;
+	outline: none;
+	border-color: #ed3330;
+	box-shadow: 0 0 10px #ed3330;
 }
 
 .logout {
-    margin-left: auto;
-    margin-right: 0%;
-    clear: both;
+	margin-left: auto;
+	margin-right: 0%;
+	clear: both;
 }
 
 .logout input {
-    width: 100%;
+	width: 100%;
 }
 
 #lgbtn {
-    margin-right: 0%;
-    width: 80px;
+	margin-right: 0%;
+	width: 80px;
 }
 
 #logobtn {
-    text-align: left;
-    background: url(logout.png);
-    background-size: 15px;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-color: #ed3330;
+	text-align: left;
+	background: url(logout.png);
+	background-size: 15px;
+	background-position: right;
+	background-repeat: no-repeat;
+	background-color: #ed3330;
 }
 
 #scroll {
-    height: 500px;
-    width: auto;
-    overflow-y: auto;
-    overflow-x: hidden;
-    position: static;
-    border: 1px solid #000;
-    margin: auto;
-    display: flex;
-    flex-direction: column-reverse;
+	height: 500px;
+	width: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
+	position: static;
+	border: 1px solid #000;
+	margin: auto;
+	display: flex;
+	flex-direction: column-reverse;
 }
 
 @keyframes fadein {
-    from {
-        opacity: 0;
-    }
+	from {
+		opacity: 0;
+	}
 
-    to {
-        opacity: 1;
-    }
+	to {
+		opacity: 1;
+	}
 }
+
 .fade {
-    animation: fadein 2s;
-    -webkit-animation: fadein 2s;
-    -moz-animation: fadein 2s;
-    -o-animation: fadein 2s;
-    -ms-animation: fadein 2s;
-    animation-iteration-count: 1;
+	animation: fadein 2s;
+	-webkit-animation: fadein 2s;
+	-moz-animation: fadein 2s;
+	-o-animation: fadein 2s;
+	-ms-animation: fadein 2s;
+	animation-iteration-count: 1;
 }
 
 .username {
-    text-align: right;
-    margin-bottom: 0.2%;
+	text-align: right;
+	margin-bottom: 0.2%;
 }
+
 .unchpw {
-    text-align: center;
-    margin-bottom: 0.3%;
-    font-weight: bold;
+	text-align: center;
+	margin-bottom: 0.3%;
+	font-weight: bold;
 }
+
 .header img {
-    height: 40px;
-    width: 40px;
-    background-color: red;
-    text-align: center;
-    float: left;
+	height: 40px;
+	width: 40px;
+	background-color: red;
+	text-align: center;
+	float: left;
 }
 
 .header {
-    margin-top: 21px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    background-color: red;
+	margin-top: 21px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	background-color: red;
 }
 
 .link {
-    text-align: center;
-    color:white;
-    overflow: hidden;
-    text-decoration: none;
-    position: relative;
-    z-index: 1;
-    display: inline-flex;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    white-space: nowrap;
-    font-size: 14px;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+	text-decoration: none;
+	position: relative;
+	z-index: 1;
+	display: inline-flex;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	white-space: nowrap;
+	font-size: 14px;
 }
 
 .link::after {
-    content: "";
-    width: 0;
-    height: 100%;
-    background-image: linear-gradient(to top, #ed3330 10%, rgba(0, 0, 0, 0) 40%);
-    position: absolute;
-    left: 0;
-    bottom: 2px;
-    z-index: -1;
-    will-change: width;
+	content: "";
+	width: 0;
+	height: 100%;
+	background-image: linear-gradient(to top, #ed3330 10%, rgba(0, 0, 0, 0) 40%);
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	z-index: -1;
+	will-change: width;
 }
 
 .link:hover::after {
-    width: 100%;
+	width: 100%;
 }
 
 .link::after {
-    transition: width .1s ease-out;
+	transition: width .1s ease-out;
 }
 
 .link:hover::after {
-    transition-duration: .15s;
+	transition-duration: .15s;
 }
