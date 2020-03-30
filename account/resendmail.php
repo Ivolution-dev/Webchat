@@ -19,23 +19,16 @@
 
     <h1 id="reghd"> Neue E-Mail anfordern </h1>
     <div class="feld">
-        <form action="../components/register.php" method="post">
+        <form action="../components/mailrs.php" method="post">
             Email : <input type="text" name="email" autocomplete="off"><br><br>
             <input type="submit" value="Erneut senden!" name="resend">
             <a class="link" href="../index.php">Zurück zum Login!</a>
         </form>
     </div>
     <?php
-    if (isset($_SESSION['codeRegister']) && $_SESSION['codeRegister'] != "") {
-        echo ($_SESSION['codeRegister']);
-        $_SESSION['codeRegister'] = "";
-    }
-    ?>
-
-    <?php
-    if (isset($_SESSION['codeAbmelden']) && $_SESSION['codeAbmelden'] != "") {
-        echo ($_SESSION['codeAbmelden']);
-        $_SESSION['codeAbmelden'] = "";
+    if (isset($_SESSION['codeResend']) && $_SESSION['codeResend'] != "") {
+        echo ($_SESSION['codeResend']);
+        $_SESSION['codeResend'] = "";
     }
     ?>
 </body>
