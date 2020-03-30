@@ -52,13 +52,14 @@ form {
     -o-transition-property: visibility 2s;
     -ms-transition-property: visibility 2s;*/
 	animation-name: textanimation;
-	animation-duration: 16s;
+	animation-duration: 4s;
 }
 
 @keyframes textanimation {
 	0% {
         visibility: initial;
         opacity: 1;
+        top: 0px;
 	}
 
 	25% {
