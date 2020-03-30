@@ -15,7 +15,6 @@
         header('location: ../index.php');
         exit();
     }
-
     ?>
 
     <h1 id="loghd"> Mein Profil </h1>
