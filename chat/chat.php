@@ -98,7 +98,7 @@
                 }
                 tbl.appendChild(tbdy);
             }
-            if (parseInt(getCookie("length")) < ChatData.length) {
+            if (ChatData.length < parseInt(getCookie("length"))) {
                 document.cookie = "length=" + ChatData.length;
             }
         }
