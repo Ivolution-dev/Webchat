@@ -172,7 +172,9 @@ input:focus {
 }
 
 #lgbtn {
+	margin-right: 0%;
 	width: 80px;
+	clear: both;
 	text-align: center;
 }
 #logobtn{
@@ -180,7 +182,7 @@ input:focus {
 	background-size: 15px;
 	background-position: right;
 	background-repeat: no-repeat;
-	margin-right: 0%;
+	
 }
 #mypbtn{
 	background: url(user.png);
@@ -191,6 +193,7 @@ input:focus {
 #logobtn, #mypbtn {
 	text-align: left;
 	background-color: #ed3330;
+	clear: both;
 }
 
 #scroll {
