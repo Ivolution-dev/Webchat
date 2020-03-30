@@ -55,36 +55,26 @@ form {
 
 @keyframes textanimation {
 	0% {
-	    color: red;
         visibility: initial;
+        color: gray;
 	}
 
 	25% {
 		color: yellow;
-		left: 200px;
-        top: 0px;
-        visibility: initial;
 	}
 
 	50% {
 		color: blue;
-		left: 200px;
-        top: 200px;
-        visibility: initial;
+
 	}
 
 	75% {
 		color: green;
-		left: 0px;
-        top: 200px;
-        visibility: initial;
+
 	}
 
 	100% {
-        visibility: hidden;
-        display: none;
-        opacity: 0;
-        visibility: initial;
+        color: orange;
 	}
 }
 
