@@ -73,7 +73,6 @@
         }
 
         function createTable(ChatData) {
-            document.cookie = "length=" + ChatData.length;
             var tbl = document.getElementById('chat');
             tbdy.remove();
             tbdy = document.createElement('tbody');
@@ -93,6 +92,7 @@
                 if (ChatData.length - 1 == i && ChatData.length > getCookie("length")) {
                     tr.setAttribute("class", "fade");
                 }
+                document.cookie = "length=" + ChatData.length;
                 tbl.appendChild(tbdy);
             }
         }
