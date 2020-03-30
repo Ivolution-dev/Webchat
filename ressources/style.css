@@ -174,7 +174,7 @@ input:focus {
 #lgbtn {
 	margin-right: 0%;
 	width: 80px;
-	float: left;
+	clear: both;
 }
 #logobtn{
 	background: url(logout.png);
