@@ -22,7 +22,7 @@ h1 {
 h1.background{
 	background-color: red;
 	background-size: 40px 100%;
-	opacity: 0.75;
+	opacity: 75%;
 }
 
 form {
