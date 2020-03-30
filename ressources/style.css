@@ -66,9 +66,9 @@ form {
 	}
 
 	100% {
-        top: 10px;
-        opacity: 0;
         visibility: hidden;
+        opacity: 0;
+        top: 10px;
 	}
 }
 
