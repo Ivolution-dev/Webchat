@@ -59,7 +59,6 @@ form {
 	0% {
         visibility: initial;
         opacity: 1;
-        animation-duration: 4s;
 	}
 
 	25% {
