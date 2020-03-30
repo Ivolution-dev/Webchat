@@ -73,6 +73,9 @@
         }
 
         function createTable(ChatData) {
+            if (getCookie("length") == "") {
+                document.cookie = "length=" + ChatData.length;
+            }
             var tbl = document.getElementById('chat');
             tbdy.remove();
             tbdy = document.createElement('tbody');
@@ -95,9 +98,6 @@
                 }
                 tbl.appendChild(tbdy);
             }
-            //if (ChatData.length < parseInt(getCookie("length"))) {
-            //    document.cookie = "length=" + ChatData.length;
-            //}
         }
 
         function updater() {
