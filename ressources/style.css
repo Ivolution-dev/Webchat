@@ -176,7 +176,7 @@ input:focus {
 	width: 80px;
 }
 
-#logobtn {
+#logobtn, #mypbtn {
 	text-align: left;
 	background: url(logout.png);
 	background-size: 15px;

@@ -30,7 +30,7 @@
     <div class="logout">
         <form id="lgbtn" action="../components/logout.php" method="post">
             <input id="logobtn" type="submit" value="Logout" name="logout">
-            <input id="mypbtn" type="submit" value="Logout" name="profile">
+            <input id="mypbtn" type="submit" value="My Profile" name="profile">
         </form>
     </div><br>
     <table id="hd">
