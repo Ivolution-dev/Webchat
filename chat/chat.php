@@ -74,7 +74,7 @@
 
         function createTable(ChatData) {
             if (getCookie("length") == "") {
-                document.cookie = "length=" + ChatData.length;
+                document.cookie = "length=0";
             }
             var tbl = document.getElementById('chat');
             tbdy.remove();
