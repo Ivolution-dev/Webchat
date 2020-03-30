@@ -91,8 +91,8 @@
                 tbdy.appendChild(tr);
                 if (ChatData.length - 1 == i && ChatData.length > parseInt(getCookie("length"))) {
                     tr.setAttribute("class", "fade");
+                    document.cookie = "length=" + ChatData.length;
                 }
-                document.cookie = "length=" + ChatData.length;
                 tbl.appendChild(tbdy);
             }
         }
