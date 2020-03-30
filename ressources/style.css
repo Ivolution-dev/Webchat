@@ -52,7 +52,7 @@ form {
     -o-transition-property: visibility 2s;
     -ms-transition-property: visibility 2s;*/
 	animation-name: textanimation;
-	animation-duration: 4s;
+	animation-duration: 10s;
 }
 
 @keyframes textanimation {
@@ -65,7 +65,7 @@ form {
 	25% {
         position: relative;
         color: yellow;
-        top: 200px;
+        top: 20px;
 	}
 
 	50% {
