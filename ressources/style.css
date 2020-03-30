@@ -175,6 +175,7 @@ input:focus {
 	margin-right: 0%;
 	width: 80px;
 	clear: both;
+	text-align: center;
 }
 #logobtn{
 	background: url(logout.png);
