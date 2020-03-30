@@ -180,8 +180,6 @@ input:focus {
 	background-size: 15px;
 	background-position: right;
 	background-repeat: no-repeat;
-	margin-left: auto;
-	margin-right: auto;
 }
 #mypbtn{
 	background: url(user.png);
@@ -192,8 +190,6 @@ input:focus {
 #logobtn, #mypbtn {
 	text-align: left;
 	background-color: #ed3330;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 #scroll {
