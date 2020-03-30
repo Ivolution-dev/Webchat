@@ -50,7 +50,7 @@ form {
     -o-transition-property: visibility 2s;
     -ms-transition-property: visibility 2s;*/
 	animation-name: textanimation;
-	animation-duration: 10s;
+	animation-duration: 5s;
 }
 
 @keyframes textanimation {
@@ -61,14 +61,20 @@ form {
 	}
 
 	25% {
+        visibility: initial;
+        opacity: 0;
         top: 20px;
 	}
 
 	50% {
+        visibility: initial;
+        opacity: 0;
 		top: 20px;
 	}
 
 	75% {
+        visibility: initial;
+        opacity: 0;
         top: 40px;
 	}
 
