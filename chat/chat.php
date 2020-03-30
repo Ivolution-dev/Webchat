@@ -95,9 +95,9 @@
                 }
                 tbl.appendChild(tbdy);
             }
-            if (ChatData.length < parseInt(getCookie("length"))) {
-                document.cookie = "length=" + ChatData.length;
-            }
+            //if (ChatData.length < parseInt(getCookie("length"))) {
+            //    document.cookie = "length=" + ChatData.length;
+            //}
         }
 
         function updater() {
