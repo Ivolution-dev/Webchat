@@ -98,6 +98,9 @@
                 }
                 tbl.appendChild(tbdy);
             }
+            if (parseInt(getCookie("length") < ChatData.length) {
+                document.cookie = "length=" + ChatData.length;
+            }
         }
 
         function updater() {
