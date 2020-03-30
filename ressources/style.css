@@ -162,7 +162,7 @@ input:focus {
 }
 
 .btn {
-	margin-right: 0%;
+	
 	text-align: center;
 }
 
@@ -179,12 +179,14 @@ input:focus {
 	background-size: 15px;
 	background-position: right;
 	background-repeat: no-repeat;
+	margin-right: 0%;
 }
 #mypbtn{
 	background: url(user.png);
 	background-size: 15px;
 	background-position: right;
 	background-repeat: no-repeat;
+	margin-right: 1%;
 }
 #logobtn, #mypbtn {
 	text-align: left;
