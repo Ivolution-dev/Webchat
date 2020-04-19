@@ -95,8 +95,8 @@
                 var pic = document.createElement("img");
                 pic.setAttribute("id", "ChatPicture");
                 pic.src = "../profilepictures/12.png";
-                td1.appendChild(te1);
                 td1.appendChild(pic);
+                td1.appendChild(te1);
                 td2.appendChild(te2);
                 tr.appendChild(td1);
                 tr.appendChild(td2);
