@@ -36,7 +36,9 @@
             echo ("<p class=unp>" . $_SESSION['email'] . "</p>");
             ?>
             Profilbild:
+            <div id="dpb">
             <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>" id="pbpic"></img>
+            </div>
         </form>  
     
     <form action="../components/upload.php" method="post" enctype="multipart/form-data">
