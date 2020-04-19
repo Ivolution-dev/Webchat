@@ -169,10 +169,12 @@ input:focus {
 	text-align: center;
 }
 
-.btn input, input[type=file] {
+.btn input {
 	width: 100%;
 }
-
+input[type=file]{
+	width:90%;
+}
 #lgbtn {
 	width: 80px;
 	float: right;
