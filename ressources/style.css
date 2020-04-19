@@ -304,9 +304,4 @@ input[type=file]{
 	width: 60px;
 	align-items: center;
 }
-label{
-	float: left;
-}
-.eins{
-	float:left;
-}
+
