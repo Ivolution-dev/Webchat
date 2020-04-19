@@ -33,10 +33,11 @@
             <form action="../components/upload.php" method="post" enctype="multipart/form-data">
         <input type="file" name="datei"><br>
         <input type="submit" value="Hochladen">
-    </form><br>
+        <br>
             E-Mail :
             <?php echo ("<p class=unp>" . $_SESSION['email'] . "</p>"); ?>         
-        </form>  
+        </form>
+    </form>  
     
     <form action="../components/passch.php" method="post">
         Altes Passwort : <input type="password" name="oldpw" autocomplete="off"><br>
