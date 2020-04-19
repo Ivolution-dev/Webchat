@@ -37,7 +37,7 @@
 
         E-Mail :
         <?php echo ("<p class=unp>" . $_SESSION['email'] . "</p>"); ?>
-
+        </form>
         <form action="../components/passch.php" method="post">
             <h3>Passwort ändern?</h3>
             Altes Passwort : <input type="password" name="oldpw" autocomplete="off"><br>
@@ -46,7 +46,7 @@
             <input type="submit" value="Passwort ändern!" name="change">
             <a class="link" href="../index.php">Zurück zum Chat!</a>
         </form>
-        </form>
+        
     </div>
     <?php
     if (isset($_SESSION['codeChangePassword']) && $_SESSION['codeChangePassword'] != "") {
