@@ -36,7 +36,7 @@
             
         </form>
         <form action="../components/passch.php" method="post">
-            Altes Passwort : <input type="password" name="oldpw" autocomplete="off"><br>
+            <label for="name">Altes Passwort : <input type="password" name="oldpw" autocomplete="off"></label> <br>
             Neues Passwort : <input type="password" name="newpw" autocomplete="off"><br>
             Neues Passwort bestätigen : <input type="password" name="newpwcn" autocomplete="off"><br><br>
             <input type="submit" value="Passwort ändern!" name="change">
