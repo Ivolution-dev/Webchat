@@ -92,7 +92,9 @@
                 td2.setAttribute("id", "Message");
                 var te1 = document.createTextNode(ChatData[i][0]);
                 var te2 = document.createTextNode(ChatData[i][1]);
+                var pic = document.createTextNode('<img src="../profilepictures/12.jpeg">');
                 td1.appendChild(te1);
+                td1.appendChild(pic);
                 td2.appendChild(te2);
                 tr.appendChild(td1);
                 tr.appendChild(td2);
