@@ -90,7 +90,7 @@
                 var td2 = document.createElement('td');
                 td1.setAttribute("id", "Uname");
                 td2.setAttribute("id", "Message");
-                var username = ChatData[i][0]
+                var username = ChatData[i][0];
                 var te1 = document.createTextNode(username);
                 var te2 = document.createTextNode(ChatData[i][1]);
                 var pic = document.createElement("img");
