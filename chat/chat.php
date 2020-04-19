@@ -58,7 +58,7 @@
     {
         $allowed_extensions = array('png', 'jpg', 'jpeg', 'gif');
         $upload_folder = '../profilepictures/';
-        $filename = "Ivo";
+        $filename = $_COOKIE['u_n'];
         foreach ($allowed_extensions as &$al_extension) {
             $file = $upload_folder . $filename . "." . $al_extension;
             if (file_exists($file)) {
@@ -107,20 +107,12 @@
                 td1.setAttribute("id", "Uname");
                 td2.setAttribute("id", "Message");
                 var username = ChatData[i][0];
-                document.cookie = "u_n=" + username;
                 var te1 = document.createTextNode(username);
                 var te2 = document.createTextNode(ChatData[i][1]);
                 var pic = document.createElement("img");
                 pic.setAttribute("id", "ChatPicture");
-                //var extensions = ['png', 'jpg', 'jpeg', 'gif'];
-                //var upload_folder = '../profilepictures/'; 
-                //for (var extension of extensions) {
-                //    var file = upload_folder + username + "." + extension;
-
-                //}
-                //pic. = '../ressources/logo.png';
-                var img = "<?php echo img(); ?>";
-                pic.src = img;
+                document.cookie = "u_n=" + username;
+                pic.src = "<?php echo img(); ?>";
                 td1.appendChild(pic);
                 td1.appendChild(te1);
                 td2.appendChild(te2);
