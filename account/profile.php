@@ -16,12 +16,7 @@
         exit();
     }
     ?>
-    <div id="dpb">
-    <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>" id="pbpic"></img></div>
-    <form action="../components/upload.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="datei"><br>
-        <input type="submit" value="Hochladen">
-    </form>
+
     <?php
     if (isset($_SESSION['codeUpload']) && $_SESSION['codeUpload'] != "") {
         echo ($_SESSION['codeUpload']);
@@ -41,16 +36,18 @@
             echo ("<p class=unp>" . $_SESSION['email'] . "</p>");
             ?>
             <a class="link" href="../index.php">Zurück zum Chat!</a>
-        </form>
-    </div>
-
-    <div class="feld">
-        <form action="../components/passch.php" method="post">
-            Altes Passwort : <input type="password" name="oldpw" autocomplete="off"><br><br>
-            Neues Passwort : <input type="password" name="newpw" autocomplete="off"><br><br>
-            Neues Passwort bestätigen : <input type="password" name="newpwcn" autocomplete="off"><br><br>
-            <input type="submit" value="Passwort ändern!" name="change">
-        </form>
+        </form>  
+    <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>" id="pbpic"></img>
+    <form action="../components/upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="datei"><br>
+        <input type="submit" value="Hochladen">
+    </form>
+    <form action="../components/passch.php" method="post">
+        Altes Passwort : <input type="password" name="oldpw" autocomplete="off"><br><br>
+        Neues Passwort : <input type="password" name="newpw" autocomplete="off"><br><br>
+        Neues Passwort bestätigen : <input type="password" name="newpwcn" autocomplete="off"><br><br>
+        <input type="submit" value="Passwort ändern!" name="change">
+    </form>
     </div>
     <?php
     if (isset($_SESSION['codeChangePassword']) && $_SESSION['codeChangePassword'] != "") {
