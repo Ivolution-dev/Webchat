@@ -52,6 +52,12 @@
             <input type="submit" value="Passwort ändern!" name="change">
         </form>
     </div>
+    <?php
+    if (isset($_SESSION['codeChangePassword']) && $_SESSION['codeChangePassword'] != "") {
+        echo ($_SESSION['codeChangePassword']);
+        $_SESSION['codeChangePassword'] = "";
+    }
+    ?>
 </body>
 
 </html>
