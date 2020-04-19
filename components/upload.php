@@ -19,7 +19,7 @@
         }
 
         foreach ($allowed_extensions as &$al_extensions) {
-            $file = $upload_folder.$filename.$al_extension;
+            $file = $upload_folder.$filename.".".$al_extension;
             echo $file;
             if (file_exists($file)) {
                 echo "yes";
