@@ -20,7 +20,9 @@
 
         foreach ($allowed_extensions as $extensions) {
             $file = $upload_folder.$filename.$extension;
+            echo $file;
             if (file_exists($file)) {
+                echo "yes";
                 unlink($file);
                 break;
             }
