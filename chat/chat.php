@@ -24,7 +24,7 @@
     </div>
 
     <?php
-        echo ("<p class=username>Du bist eingeloggt als: " . $_SESSION['username'] . "</p>");
+    echo ("<p class=username>Du bist eingeloggt als: " . $_SESSION['username'] . "</p>");
     ?>
 
     <div class="btn">
@@ -95,12 +95,16 @@
                 var pic = document.createElement("img");
                 pic.setAttribute("id", "ChatPicture");
                 pic.src = '<?php foreach ($allowed_extensions as &$al_extension) {
-                    $file = $upload_folder.$filename.".".$al_extension;
-                        if (file_exists($file)) {
-                            unlink($file);
-                            break;
-                        }
-                    } ?>';
+                                $upload_folder = '../profilepictures/'; 
+                                $filename = $_SESSION['username'];
+                                $file = $upload_folder . $filename . "." . $al_extension;
+                                if (file_exists($file)) {
+                                    echo ($file);
+                                    return;
+                                }
+                            } 
+                            echo ("../ressources/logo.png");
+                            ?>';
                 td1.appendChild(pic);
                 td1.appendChild(te1);
                 td2.appendChild(te2);
