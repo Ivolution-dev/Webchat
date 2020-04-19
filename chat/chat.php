@@ -53,6 +53,23 @@
         </form>
     </div>
 
+    <?php
+    function img()
+    {
+        $allowed_extensions = array('png', 'jpg', 'jpeg', 'gif');
+        $upload_folder = '../profilepictures/';
+        $filename = $_COOKIE['u_n'];
+        foreach ($allowed_extensions as &$al_extension) {
+            $file = $upload_folder . $filename . "." . $al_extension;
+            if (file_exists($file)) {
+                return $file;
+                break;
+            }
+        }
+        return "../ressources/logo.png";
+    }
+    ?>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script>
         var length = 0;
@@ -91,7 +108,7 @@
                 td1.setAttribute("id", "Uname");
                 td2.setAttribute("id", "Message");
                 var username = ChatData[i][0];
-                document.cookie="u_n=" + username;
+                document.cookie = "u_n=" + username;
                 var te1 = document.createTextNode(username);
                 var te2 = document.createTextNode(ChatData[i][1]);
                 var pic = document.createElement("img");
@@ -100,25 +117,11 @@
                 //var upload_folder = '../profilepictures/'; 
                 //for (var extension of extensions) {
                 //    var file = upload_folder + username + "." + extension;
-                    
+
                 //}
                 //pic. = '../ressources/logo.png';
-                </script>
-                <?php 
-                $allowed_extensions = array('png', 'jpg', 'jpeg', 'gif');
-                $upload_folder = '../profilepictures/'; 
-                $filename = $_COOKIE['u_n'];
-                foreach ($allowed_extensions as &$al_extension) {
-                    $file = $upload_folder.$filename.".".$al_extension;
-                    if (file_exists($file)) {
-                        echo '<script>
-                        pic.src = $file;
-                        </script>';
-                        break;
-                    }
-                }
-                ?>
-                <script>
+                var img = <?php img(); ?>;
+                pic.src = img;
                 td1.appendChild(pic);
                 td1.appendChild(te1);
                 td2.appendChild(te2);
