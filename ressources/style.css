@@ -169,7 +169,7 @@ input:focus {
 	text-align: center;
 }
 
-.btn input {
+.btn input, input[type=file] {
 	width: 100%;
 }
 
