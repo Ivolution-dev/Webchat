@@ -6,6 +6,7 @@
         header('location: ../index.php');
         exit();
     } else {
+        die();
         $upload_folder = '../profilepictures/'; 
         $filename = $_SESSION['username'];
         $extension = strtolower(pathinfo($_FILES['datei']['name'], PATHINFO_EXTENSION));
