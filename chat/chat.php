@@ -99,15 +99,7 @@
                 var upload_folder = '../profilepictures/'; 
                 for (var extension in extensions) {
                     var file = upload_folder + username + "." + extension;
-                    jQuery.ajax({
-                        url:file,
-                        type:'HEAD',
-                        success: function()
-                        {
-                            pic.src = file;
-                            break;
-                        }
-                    });
+                    document.write(extension);
                 }
                 pic.alt = "../ressources/logo.png";
                 td1.appendChild(pic);
