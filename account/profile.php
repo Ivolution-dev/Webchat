@@ -35,15 +35,9 @@
             <label for="name"> E-Mail : <?php echo  $_SESSION['email'] ?></label>
         </form>
         <form action="../components/passch.php" method="post">
-<<<<<<< HEAD
             <label for="oldpw">Altes Passwort : <input type="password" name="oldpw" autocomplete="off"></label><br>
             Neues Passwort : <input type="password" name="newpw" autocomplete="off"><br>
             Neues Passwort bestätigen : <input type="password" name="newpwcn" autocomplete="off"><br><br>
-=======
-            <label for="name">Altes Passwort : <input type="password" name="oldpw" autocomplete="off"></label>
-            Neues Passwort : <input type="password" name="newpw" autocomplete="off">
-            Neues Passwort bestätigen : <input type="password" name="newpwcn" autocomplete="off">
->>>>>>> a5b6c6db94b791a063ae15da84dcc72d1920e1b0
             <input type="submit" value="Passwort ändern!" name="change">
             <a class="link" href="../index.php">Zurück zum Chat!</a>
         </form>
