@@ -100,10 +100,15 @@
                 var fso = new ActiveXObject("Scripting.FileSystemObject");
                 for (var extension in extensions) {
                     var file = upload_folder + username + "." + extension;
-                    if (fso.FileExists(file)) {
-                        pic.src = file;
-                        break;
-                    }
+                    jQuery.ajax({
+                        url:file,
+                        type:'HEAD',
+                        success: function()
+                        {
+                            pic.src = file;
+                            break;
+                        }
+                    });
                 }
                 pic.alt = "../ressources/logo.png";
                 td1.appendChild(pic);
