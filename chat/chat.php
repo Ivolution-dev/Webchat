@@ -95,7 +95,7 @@
                 var te2 = document.createTextNode(ChatData[i][1]);
                 var pic = document.createElement("img");
                 pic.setAttribute("id", "ChatPicture");
-                pic.src = "../components/getprofilepicture.php?" + username;
+                pic.src = "../components/getprofilepicture.php?profile=" + username;
                 td1.appendChild(pic);
                 td1.appendChild(te1);
                 td2.appendChild(te2);
