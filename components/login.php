@@ -27,6 +27,21 @@
                 $_SESSION['username'] = $row[1];
                 $_SESSION['u_id'] = $row[0];
                 $_SESSION['email'] = $row[4];
+
+                $upload_folder = '../profilepictures/';
+                $filename = $_SESSION['u_id'];
+                $allowed_extensions = array('png', 'jpg', 'jpeg', 'gif');
+                foreach ($allowed_extensions as &$al_extension) {
+                    $file = $upload_folder.$filename.".".$al_extension;
+                    if (file_exists($file)) {
+                        $_SESSION['profile_picture'] = $file;
+                        break;
+                    }
+                }
+                if (!isset($_SESSION['profile_picture'])) {
+                    $_SESSION['profile_picture'] = "../ressources/logo.png";
+                }
+                
                 header('location: ../chat/chat.php');
                 exit();
             } else {
