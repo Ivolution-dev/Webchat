@@ -25,13 +25,14 @@
     ?>
 
     <h1 id="loghd"> Mein Profil </h1>
-    <div class="profile">
+    <div class="feld">
         <form action="components/login.php" method="post">
-            Nutzername :<?php echo ("<p class=unp>" . $_SESSION['username'] . "</p>");?> 
+            Nutzername :
+            <?php echo ("<p class=unp>" . $_SESSION['username'] . "</p>");?> 
             <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>" id="pbpic"></img>
-            E-Mail :<?php echo ("<p class=unp>" . $_SESSION['email'] . "</p>"); ?>         
+            E-Mail :
+            <?php echo ("<p class=unp>" . $_SESSION['email'] . "</p>"); ?>         
         </form>  
-    
     <form action="../components/upload.php" method="post" enctype="multipart/form-data">
         <input type="file" name="datei"><br>
         <input type="submit" value="Hochladen">
