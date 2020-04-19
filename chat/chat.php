@@ -58,7 +58,7 @@
     {
         $allowed_extensions = array('png', 'jpg', 'jpeg', 'gif');
         $upload_folder = '../profilepictures/';
-        $filename = $_COOKIE['u_n'];
+        $filename = "Ivo";
         foreach ($allowed_extensions as &$al_extension) {
             $file = $upload_folder . $filename . "." . $al_extension;
             if (file_exists($file)) {
