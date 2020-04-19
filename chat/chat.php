@@ -107,7 +107,7 @@
                                 }
                             } 
                             ?>";
-                pic.alt = "../ressources/logo.png";
+                //pic.alt = "../ressources/logo.png";
                 td1.appendChild(pic);
                 td1.appendChild(te1);
                 td2.appendChild(te2);
