@@ -9,7 +9,7 @@
 
 
         $upload_folder = '../profilepictures/'; //Das Upload-Verzeichnis
-        $filename = $_SESSION['u_id'];
+        $filename = $_SESSION['username'];
         $extension = strtolower(pathinfo($_FILES['datei']['name'], PATHINFO_EXTENSION));
 
         //Überprüfung der Dateiendung
