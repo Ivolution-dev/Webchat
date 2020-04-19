@@ -29,7 +29,7 @@
             Neues Passwort : <input type="password" name="newpw" autocomplete="off"><br><br>
             Neues Passwort bestätigen : <input type="password" name="newpwcn" autocomplete="off"><br><br>
             <input type="submit" value="Passwort ändern!" name="change">
-            <a class="link" href="../index.php">Zurück zum Chat!</a>
+            <a class="link" href="../account/profile.php">Zurück zum Profil!</a>
         </form>
     </div>
     <?php
