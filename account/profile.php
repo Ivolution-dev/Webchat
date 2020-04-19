@@ -16,7 +16,7 @@
         exit();
     }
     ?>
-    <div>
+    <div id="dpb">
     <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>" id="pbpic"></img></div>
     <form action="../components/upload.php" method="post" enctype="multipart/form-data">
         <input type="file" name="datei"><br>
