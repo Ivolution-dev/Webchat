@@ -6,10 +6,11 @@
         header('location: ../index.php');
         exit();
     } else {
+
+
         $upload_folder = '../profilepictures/'; //Das Upload-Verzeichnis
         $filename = $_SESSION['u_id'];
         $extension = strtolower(pathinfo($_FILES['datei']['name'], PATHINFO_EXTENSION));
-
 
         //Überprüfung der Dateiendung
         $allowed_extensions = array('png', 'jpg', 'jpeg', 'gif');
@@ -29,6 +30,14 @@
             $detected_type = exif_imagetype($_FILES['datei']['tmp_name']);
             if (!in_array($detected_type, $allowed_types)) {
                 die("Nur der Upload von Bilddateien ist gestattet");
+            }
+        }
+
+        foreach ($allowed_extensions as &$al_extension) {
+            $file = $upload_folder.$filename.".".$al_extension;
+            if (file_exists($file)) {
+                unlink($file);
+                break;
             }
         }
 

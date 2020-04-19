@@ -92,6 +92,10 @@
                 td2.setAttribute("id", "Message");
                 var te1 = document.createTextNode(ChatData[i][0]);
                 var te2 = document.createTextNode(ChatData[i][1]);
+                var pic = document.createElement("img");
+                pic.setAttribute("id", "ChatPicture");
+                pic.src = '<?php echo $_SESSION["profile_picture"];?>';
+                td1.appendChild(pic);
                 td1.appendChild(te1);
                 td2.appendChild(te2);
                 tr.appendChild(td1);
