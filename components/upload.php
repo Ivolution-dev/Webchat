@@ -36,9 +36,6 @@ if(file_exists($new_path)) { //Falls Datei existiert, hänge eine Zahl an den Da
  $id++;
  } while(file_exists($new_path));
 }
-else {
-    die("Fehler!");
-}
  
 //Alles okay, verschiebe Datei an neuen Pfad
 move_uploaded_file($_FILES['datei']['tmp_name'], $new_path);
