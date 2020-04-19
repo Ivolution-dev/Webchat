@@ -230,14 +230,6 @@ input:focus {
 	text-align: right;
 	margin-bottom: 0.2%;
 }
-
-
-.unchpw {
-	text-align: center;
-	margin-bottom: 0.3%;
-	font-weight: bold;
-}
-
 .header img {
 	height: 40px;
 	width: 40px;
@@ -301,4 +293,9 @@ input:focus {
 	width:60px;
 	align-items: center;
 
+}
+.profile{
+	text-align: center;
+	align-items: center;
+	font-weight: bold;
 }
