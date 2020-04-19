@@ -110,7 +110,7 @@
                             ?>";
                 pic.alt = "../ressources/logo.png";
                 td1.appendChild(pic);
-                unset(pic);
+                delete(pic);
                 td1.appendChild(te1);
                 td2.appendChild(te2);
                 tr.appendChild(td1);
