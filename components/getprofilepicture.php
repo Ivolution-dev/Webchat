@@ -15,7 +15,7 @@
         foreach ($allowed_extensions as &$al_extension) {
             $file = $upload_folder . $filename . "." . $al_extension;
             if (file_exists($file)) {
-                header("$file");
+                header($file);
                 die();
             }
         }
