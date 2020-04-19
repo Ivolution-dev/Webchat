@@ -103,8 +103,6 @@
                 }
                 pic.alt = "../ressources/logo.png";
                 td1.appendChild(pic);
-                delete(pic);
-                document.cookie = "u_n=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
                 td1.appendChild(te1);
                 td2.appendChild(te2);
                 tr.appendChild(td1);
