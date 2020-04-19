@@ -18,8 +18,8 @@
             die("Ungültige Dateiendung. Nur png, jpg, jpeg und gif-Dateien sind erlaubt");
         }
 
-        foreach ($allowed_extensions as $extensions) {
-            $file = $upload_folder.$filename.$extension;
+        foreach ($allowed_extensions as $al_extensions) {
+            $file = $upload_folder.$filename.$al_extension;
             echo $file;
             if (file_exists($file)) {
                 echo "yes";
