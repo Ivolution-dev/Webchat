@@ -94,7 +94,7 @@
                 var te2 = document.createTextNode(ChatData[i][1]);
                 var pic = document.createElement("img");
                 pic.setAttribute("id", "ChatPicture");
-                pic.src = getCookie("profile_picture");
+                pic.src = <?php echo $_SESSION['profile_picture'];?>
                 td1.appendChild(pic);
                 td1.appendChild(te1);
                 td2.appendChild(te2);
