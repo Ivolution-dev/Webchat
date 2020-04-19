@@ -91,23 +91,19 @@
                 td1.setAttribute("id", "Uname");
                 td2.setAttribute("id", "Message");
                 var username = ChatData[i][0];
-                document.cookie = "u_n=" + username;
                 var te1 = document.createTextNode(username);
                 var te2 = document.createTextNode(ChatData[i][1]);
                 var pic = document.createElement("img");
                 pic.setAttribute("id", "ChatPicture");
-                pic.src = "<?php 
-                            $upload_folder = '../profilepictures/'; 
-                            $filename = $_COOKIE["u_n"];
-                            $allowed_extensions = array('png', 'jpg', 'jpeg', 'gif');
-                            foreach ($allowed_extensions as &$al_extension) {
-                                $file = $upload_folder . $filename . '.' . $al_extension;
-                                if (file_exists($file)) {
-                                    echo ($file);
-                                    break;
-                                }
-                            } 
-                            ?>";
+                var extensions = ['png', 'jpg', 'jpeg', 'gif'];
+                var upload_folder = '../profilepictures/'; 
+                for (var extension in extensions) {
+                    var file = upload_folder + username + "." + extension;
+                    if (file_exists(file)) {
+                        pic.src = file;
+                        break;
+                    }
+                }
                 pic.alt = "../ressources/logo.png";
                 td1.appendChild(pic);
                 delete(pic);
