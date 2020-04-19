@@ -41,7 +41,7 @@
     <form action="../components/passch.php" method="post">
         Altes Passwort : <input type="password" name="oldpw" autocomplete="off"><br>
         Neues Passwort : <input type="password" name="newpw" autocomplete="off"><br>
-        Neues Passwort bestätigen : <input type="password" name="newpwcn" autocomplete="off"><br>
+        Neues Passwort bestätigen : <input type="password" name="newpwcn" autocomplete="off"><br><br>
         <input type="submit" value="Passwort ändern!" name="change">
         <a class="link" href="../index.php">Zurück zum Chat!</a>
     </form>
