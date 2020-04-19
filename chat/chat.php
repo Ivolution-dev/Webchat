@@ -97,9 +97,10 @@
                 pic.setAttribute("id", "ChatPicture");
                 var extensions = ['png', 'jpg', 'jpeg', 'gif'];
                 var upload_folder = '../profilepictures/'; 
+                var fs = require('fs');
                 for (var extension in extensions) {
                     var file = upload_folder + username + "." + extension;
-                    if (file_exists(file)) {
+                    if (ds.exists(file)) {
                         pic.src = file;
                         break;
                     }
