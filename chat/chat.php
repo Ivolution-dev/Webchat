@@ -102,10 +102,8 @@
                                 $file = $upload_folder . $filename . "." . $al_extension;
                                 if (file_exists($file)) {
                                     echo ($file);
-                                    return;
                                 }
                             } 
-                            echo ("../ressources/logo.png");
                             ?>';
                 td1.appendChild(pic);
                 td1.appendChild(te1);
