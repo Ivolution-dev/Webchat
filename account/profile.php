@@ -25,8 +25,9 @@
         E-Mail :
         <?php echo ("<p class=unp>" . $_SESSION['email'] . "</p>"); ?>
         </form>
-        <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>" id="pbpic"></img>
+        
         <form action="../components/upload.php" method="post" enctype="multipart/form-data">
+        <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>" id="pbpic"></img>
             <input type="file" name="datei"><br><br>
             <input type="submit" value="Hochladen"><br><br>
         </form>
