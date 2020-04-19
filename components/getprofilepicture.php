@@ -15,11 +15,11 @@
         foreach ($allowed_extensions as &$al_extension) {
             $file = $upload_folder . $filename . "." . $al_extension;
             if (file_exists($file)) {
-                header($file);
+                header('location: '.$file);
                 die();
             }
         }
-        header("../ressources/logo.png");
+        header("location: ../ressources/logo.png");
         die();
     }
 ?>
