@@ -24,7 +24,7 @@
             exit();
         }
 
-        if (function_exists('exif_imagetype')) { //Die exif_imagetype-Funktion erfordert die exif-Erweiterung auf dem Server
+        if (function_exists('exif_imagetype')) { 
             $allowed_types = array(IMAGETYPE_PNG, IMAGETYPE_JPEG, IMAGETYPE_GIF);
             $detected_type = exif_imagetype($_FILES['datei']['tmp_name']);
             if (!in_array($detected_type, $allowed_types)) {
