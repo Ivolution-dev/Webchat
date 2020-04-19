@@ -46,6 +46,7 @@
             <input type="submit" value="Passwort ändern!" name="change">
             <a class="link" href="../index.php">Zurück zum Chat!</a>
         </form>
+        </form>
     </div>
     <?php
     if (isset($_SESSION['codeChangePassword']) && $_SESSION['codeChangePassword'] != "") {
