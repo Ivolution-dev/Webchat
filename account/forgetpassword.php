@@ -17,6 +17,11 @@
     }
     ?>
 
+    <form action="../components/upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="datei"><br>
+        <input type="submit" value="Hochladen">
+    </form>
+
     <h1 id="reghd"> Passwort zurücksetzen </h1>
     <div class="feld">
         <form action="../components/passrs.php" method="post">
