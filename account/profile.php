@@ -19,12 +19,13 @@
 
     <h1 id="loghd"> Mein Profil </h1>
     <div class="feld">
+        <form action="">
         Nutzername :
         <?php echo ("<p class=unp>" . $_SESSION['username'] . "</p>"); ?>
-        <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>" id="pbpic"></img><br>
         E-Mail :
         <?php echo ("<p class=unp>" . $_SESSION['email'] . "</p>"); ?>
-        
+        </form>
+        <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>" id="pbpic"></img>
         <form action="../components/upload.php" method="post" enctype="multipart/form-data">
             <input type="file" name="datei"><br><br>
             <input type="submit" value="Hochladen"><br><br>
