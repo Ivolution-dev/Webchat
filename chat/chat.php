@@ -94,9 +94,11 @@
                 var te2 = document.createTextNode(ChatData[i][1]);
                 var pic = document.createElement("img");
                 pic.setAttribute("id", "ChatPicture");
-                pic.src = '<?php foreach ($allowed_extensions as &$al_extension) {
-                                $upload_folder = '../profilepictures/'; 
-                                $filename = $_SESSION['username'];
+                pic.src = '<?php 
+                            $upload_folder = '../profilepictures/'; 
+                            $filename = $_SESSION['username'];
+                            $allowed_extensions = array('png', 'jpg', 'jpeg', 'gif');
+                            foreach ($allowed_extensions as &$al_extension) {
                                 $file = $upload_folder . $filename . "." . $al_extension;
                                 if (file_exists($file)) {
                                     echo ($file);
