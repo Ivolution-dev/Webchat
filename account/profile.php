@@ -24,11 +24,10 @@
         <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>" id="pbpic"></img><br>
         E-Mail :
         <?php echo ("<p class=unp>" . $_SESSION['email'] . "</p>"); ?>
-        <form>
-            <form action="../components/upload.php" method="post" enctype="multipart/form-data">
-                <input type="file" name="datei"><br><br>
-                <input type="submit" value="Hochladen"><br><br>
-            </form>
+        
+        <form action="../components/upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="datei"><br><br>
+            <input type="submit" value="Hochladen"><br><br>
         </form>
 
         <?php
@@ -37,7 +36,7 @@
             $_SESSION['codeUpload'] = "";
         }
         ?>
-        
+
         <h3>Passwort ändern?</h3>
         <form action="../components/passch.php" method="post">
             Altes Passwort : <input type="password" name="oldpw" autocomplete="off"><br>
