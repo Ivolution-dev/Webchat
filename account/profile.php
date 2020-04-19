@@ -34,6 +34,7 @@
                 echo ("<p class=unp>". $_SESSION['email'] . "</p>");
             ?>
             <a class="link" href="../account/changepassword.php">Passwort ändern</a><br><br>
+            <a class="link" href="../index.php">Zurück zum Chat!</a>
 
         </form>
     </div>
