@@ -97,7 +97,7 @@
                 pic.setAttribute("id", "ChatPicture");
                 pic.src = '<?php 
                             $upload_folder = '../profilepictures/'; 
-                            echo $filename = "<script>document.write(username)</script>";
+                            echo $filename = '<script>document.write(username)</script>';
                             $allowed_extensions = array('png', 'jpg', 'jpeg', 'gif');
                             foreach ($allowed_extensions as &$al_extension) {
                                 $file = $upload_folder . $filename . "." . $al_extension;
