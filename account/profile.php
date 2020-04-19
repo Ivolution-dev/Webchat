@@ -46,9 +46,9 @@
         <input type="submit" value="Hochladen">
     </form><br>
     <form action="../components/passch.php" method="post">
-        Altes Passwort : <input type="password" name="oldpw" autocomplete="off">
-        Neues Passwort : <input type="password" name="newpw" autocomplete="off">
-        Neues Passwort bestätigen : <input type="password" name="newpwcn" autocomplete="off">
+        Altes Passwort : <input type="password" name="oldpw" autocomplete="off"><br>
+        Neues Passwort : <input type="password" name="newpw" autocomplete="off"><br>
+        Neues Passwort bestätigen : <input type="password" name="newpwcn" autocomplete="off"><br>
         <input type="submit" value="Passwort ändern!" name="change">
         <a class="link" href="../index.php">Zurück zum Chat!</a>
     </form>
