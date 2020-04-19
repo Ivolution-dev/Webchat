@@ -95,9 +95,9 @@
                 var te2 = document.createTextNode(ChatData[i][1]);
                 var pic = document.createElement("img");
                 pic.setAttribute("id", "ChatPicture");
-                /*pic.src = "<?php 
+                pic.src = "<?php 
                             $upload_folder = '../profilepictures/'; 
-                            echo $filename = '<script>document.write(username)</script>';
+                            $filename = '<script>document.write(username)</script>';
                             $allowed_extensions = array('png', 'jpg', 'jpeg', 'gif');
                             foreach ($allowed_extensions as &$al_extension) {
                                 $file = $upload_folder . $filename . '.' . $al_extension;
@@ -107,7 +107,7 @@
                                 }
                             } 
                             ?>";
-                //pic.alt = "../ressources/logo.png"; */
+                pic.alt = "../ressources/logo.png";
                 td1.appendChild(pic);
                 td1.appendChild(te1);
                 td2.appendChild(te2);
