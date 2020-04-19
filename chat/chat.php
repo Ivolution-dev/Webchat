@@ -121,6 +121,7 @@
                 //}
                 //pic. = '../ressources/logo.png';
                 var img = <?php img(); ?>;
+                pic.src = img;
                 td1.appendChild(pic);
                 td1.appendChild(te1);
                 td2.appendChild(te2);
