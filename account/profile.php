@@ -28,7 +28,11 @@
             <?php
                 echo ("<p class=unp>". $_SESSION['email'] . "</p>");
             ?>
+<<<<<<< HEAD
+            <a class="link" href="account/forgetpassword.php">Passwort ändern</a><br><br>
+=======
             <a class="link" href="account/changepassword.php">Passwort ändern</a><br><br>
+>>>>>>> 82827d634cb591a611ca078d1078fb39e5a81971
 
         </form>
     </div>

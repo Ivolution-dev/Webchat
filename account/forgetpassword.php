@@ -27,7 +27,7 @@
         <form action="../components/passrs.php" method="post">
             Email : <input type="text" name="email" autocomplete="off"><br><br>
             <input type="submit" value="Passwort zurücksetzen!" name="newpwbtn">
-            <a class="link" href="../account/prfile.php">Zurück zum Profil!</a>
+            <a class="link" href="../account/profile.php">Zurück zum Profil!</a>
         </form>
     </div>
     <?php
