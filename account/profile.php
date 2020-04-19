@@ -34,7 +34,7 @@
             <input type="submit" value="Hochladen">
             <label for="name"> E-Mail : <?php echo  $_SESSION['email'] ?></label>
         </form>
-        <form action="../components/passch.php" method="post">
+        <form action="../components/passch.php" method="post" style="float:left">
             <label for="name">Altes Passwort : <input type="password" name="oldpw" autocomplete="off"></label>
             Neues Passwort : <input type="password" name="newpw" autocomplete="off" />
             Neues Passwort bestätigen : <input type="password" name="newpwcn" autocomplete="off" />
