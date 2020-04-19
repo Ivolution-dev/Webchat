@@ -29,7 +29,7 @@
         <form action="components/login.php" method="post">
             Nutzername :
             <?php echo ("<p class=unp>" . $_SESSION['username'] . "</p>");?> 
-            <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>" id="pbpic"></img>
+            <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>" id="pbpic"></img><br>
             E-Mail :
             <?php echo ("<p class=unp>" . $_SESSION['email'] . "</p>"); ?>         
         </form>  
