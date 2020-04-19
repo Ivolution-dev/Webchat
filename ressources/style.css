@@ -134,7 +134,7 @@ td {
 	border-collapse: collapse;
 }
 
-input[type=submit] {
+input[type=submit],.btna {
 	color: white;
 	text-transform: uppercase;
 	text-decoration: none;
