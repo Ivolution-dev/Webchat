@@ -35,7 +35,7 @@
                 <input type="submit" value="Hochladen"><br><br>
                 E-Mail :
                 <?php echo ("<p class=unp>" . $_SESSION['email'] . "</p>"); ?>
-            </form><br><br>
+            </form><br>
         </form>
 
         <form action="../components/passch.php" method="post">
