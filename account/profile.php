@@ -36,8 +36,6 @@
                 <input type="file" name="datei"><br><br>
                 <input type="submit" value="Hochladen"><br><br>
             </form>
-
-
         </form>
         <form action="../components/passch.php" method="post">
             <h3>Passwort ändern?</h3>
