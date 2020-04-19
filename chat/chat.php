@@ -103,7 +103,7 @@
                     
                 //}
                 //pic. = '../ressources/logo.png';
-                
+                </script>
                 <?php 
                 $allowed_extensions = array('png', 'jpg', 'jpeg', 'gif');
                 $upload_folder = '../profilepictures/'; 
@@ -117,9 +117,8 @@
                         break;
                     }
                 }
-
                 ?>
-
+                <script>
                 td1.appendChild(pic);
                 td1.appendChild(te1);
                 td2.appendChild(te2);
