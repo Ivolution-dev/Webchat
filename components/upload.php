@@ -17,7 +17,7 @@
             exit();
         }
 
-        $max_size = 1000 * 1024; //1000 KB
+        $max_size = 5000 * 1024; //5000 KB
         if ($_FILES['datei']['size'] > $max_size) {
             $_SESSION['codeUpload'] = "<div id='error'>Bitte keine Dateien größer 1mb hochladen</div>";
             header('location: ../account/profile.php');
