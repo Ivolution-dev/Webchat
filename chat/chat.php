@@ -93,6 +93,7 @@
                 var te1 = document.createTextNode(ChatData[i][0]);
                 var te2 = document.createTextNode(ChatData[i][1]);
                 var pic = document.createElement("img");
+                pic.setAttribute("id", "ChatPicture");
                 pic.src = "../profilepictures/12.png";
                 td1.appendChild(te1);
                 td1.appendChild(pic);

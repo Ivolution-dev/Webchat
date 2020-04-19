@@ -101,6 +101,11 @@ table {
 
 }
 
+#ChatPicture {
+	height: 10px;
+	width: 10px;
+}
+
 td {
 	margin-left: auto;
 	padding: 8px;
