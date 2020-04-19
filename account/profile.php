@@ -32,8 +32,8 @@
         <form action="../components/upload.php" method="post" enctype="multipart/form-data">
             <input type="file" name="datei"><br><br>
             <input type="submit" value="Hochladen"><br><br>
-            E-Mail :
-            <?php echo ("<p class=unp>" . $_SESSION['email'] . "</p>"); ?>
+            <label for="name"> E-Mail : <?php echo  $_SESSION['email'] ?></label>
+            
         </form>
         <form action="../components/passch.php" method="post">
             Altes Passwort : <input type="password" name="oldpw" autocomplete="off"><br>
