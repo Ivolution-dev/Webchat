@@ -17,35 +17,34 @@
     }
     ?>
 
-    <?php
-    if (isset($_SESSION['codeUpload']) && $_SESSION['codeUpload'] != "") {
-        echo ($_SESSION['codeUpload']);
-        $_SESSION['codeUpload'] = "";
-    }
-    ?>
-
     <h1 id="loghd"> Mein Profil </h1>
     <div class="feld">
-        <form>
-            Nutzername :
-            <?php echo ("<p class=unp>" . $_SESSION['username'] . "</p>"); ?>
-            <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>" id="pbpic"></img><br>
-            E-Mail :
-            <?php echo ("<p class=unp>" . $_SESSION['email'] . "</p>"); ?>
-            <form action="../components/upload.php" method="post" enctype="multipart/form-data">
-                <input type="file" name="datei"><br><br>
-                <input type="submit" value="Hochladen"><br><br>
-            </form>
+        Nutzername :
+        <?php echo ("<p class=unp>" . $_SESSION['username'] . "</p>"); ?>
+        <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>" id="pbpic"></img><br>
+        E-Mail :
+        <?php echo ("<p class=unp>" . $_SESSION['email'] . "</p>"); ?>
+        
+        <form action="../components/upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="datei"><br><br>
+            <input type="submit" value="Hochladen"><br><br>
         </form>
+
+        <?php
+        if (isset($_SESSION['codeUpload']) && $_SESSION['codeUpload'] != "") {
+            echo ($_SESSION['codeUpload']);
+            $_SESSION['codeUpload'] = "";
+        }
+        ?>
+
+        <h3>Passwort ändern?</h3>
         <form action="../components/passch.php" method="post">
-            <h3>Passwort ändern?</h3>
             Altes Passwort : <input type="password" name="oldpw" autocomplete="off"><br>
             Neues Passwort : <input type="password" name="newpw" autocomplete="off"><br>
             Neues Passwort bestätigen : <input type="password" name="newpwcn" autocomplete="off"><br><br>
             <input type="submit" value="Passwort ändern!" name="change">
-            <a class="link" href="../index.php">Zurück zum Chat!</a>
         </form>
-
+        <a class="link" href="../index.php">Zurück zum Chat!</a>
     </div>
     <?php
     if (isset($_SESSION['codeChangePassword']) && $_SESSION['codeChangePassword'] != "") {
