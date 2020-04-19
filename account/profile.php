@@ -34,8 +34,16 @@
             <?php
                 echo ("<p class=unp>". $_SESSION['email'] . "</p>");
             ?>
-            <a class="link" href="../account/changepassword.php">Passwort ändern</a><br><br>
             <a class="link" href="../index.php">Zurück zum Chat!</a>
+        </form>
+    </div>
+
+    <div class="feld">
+        <form action="../components/passch.php" method="post">
+            Altes Passwort : <input type="password" name="oldpw" autocomplete="off"><br><br>
+            Neues Passwort : <input type="password" name="newpw" autocomplete="off"><br><br>
+            Neues Passwort bestätigen : <input type="password" name="newpwcn" autocomplete="off"><br><br>
+            <input type="submit" value="Passwort ändern!" name="change">
         </form>
     </div>
 
