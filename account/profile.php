@@ -25,7 +25,7 @@
     ?>
 
     <h1 id="loghd"> Mein Profil </h1>
-    <div class="feld">
+    <div class="l">
         <form action="components/login.php" method="post">
             Nutzername :
             <?php
