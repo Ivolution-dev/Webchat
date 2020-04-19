@@ -298,4 +298,5 @@ input:focus {
 	text-align: center;
 	align-items: center;
 	font-weight: bold;
+	float: left;
 }
