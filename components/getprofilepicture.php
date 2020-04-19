@@ -15,9 +15,9 @@
         foreach ($allowed_extensions as &$al_extension) {
             $file = $upload_folder . $filename . "." . $al_extension;
             if (file_exists($file)) {
-                die($file);
+                echo "<img src = $file </img>";
             }
         }
-        die("../ressources/logo.png");
+        echo "<img src = ../ressources/logo.png </img>";
     }
 ?>
