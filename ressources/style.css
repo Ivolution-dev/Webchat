@@ -114,6 +114,7 @@ td {
 	width: 250px;
 	clear: both;
 	font-weight: bold;
+	align-items: center;
 }
 
 .feld input {
