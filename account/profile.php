@@ -48,16 +48,9 @@
     </div>
 
     <?php
-    if (isset($_SESSION['codeAnmelden']) && $_SESSION['codeAnmelden'] != "") {
-        echo ($_SESSION['codeAnmelden']);
-        $_SESSION['codeAnmelden'] = "";
-    }
-    ?>
-
-    <?php
-    if (isset($_SESSION['codeAbmelden']) && $_SESSION['codeAbmelden'] != "") {
-        echo ($_SESSION['codeAbmelden']);
-        $_SESSION['codeAbmelden'] = "";
+    if (isset($_SESSION['codeProfile']) && $_SESSION['codeProfile'] != "") {
+        echo ($_SESSION['codeProfile']);
+        $_SESSION['codeProfile'] = "";
     }
     ?>
 </body>
