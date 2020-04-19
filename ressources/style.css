@@ -303,4 +303,5 @@ input:focus {
 }
 label{
 	float: left;
+	white-space: pre-wrap;
 }
