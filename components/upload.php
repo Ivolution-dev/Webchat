@@ -6,15 +6,24 @@
         header('location: ../index.php');
         exit();
     } else {
+
+
         $upload_folder = '../profilepictures/'; //Das Upload-Verzeichnis
         $filename = $_SESSION['u_id'];
         $extension = strtolower(pathinfo($_FILES['datei']['name'], PATHINFO_EXTENSION));
-
 
         //Überprüfung der Dateiendung
         $allowed_extensions = array('png', 'jpg', 'jpeg', 'gif');
         if (!in_array($extension, $allowed_extensions)) {
             die("Ungültige Dateiendung. Nur png, jpg, jpeg und gif-Dateien sind erlaubt");
+        }
+
+        foreach ($allowed_extensions as $extensions) {
+            $file = $upload_folder.$filename.$extension;
+            if (file_exists($file)) {
+                unlink($file);
+                break;
+            }
         }
 
         //Überprüfung der Dateigröße
