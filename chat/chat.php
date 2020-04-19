@@ -63,7 +63,6 @@
             $file = $upload_folder . $filename . "." . $al_extension;
             if (file_exists($file)) {
                 return $file;
-                break;
             }
         }
         return "../ressources/logo.png";
