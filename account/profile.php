@@ -19,7 +19,6 @@
 
     <h1 id="loghd"> Mein Profil </h1>
     <div class="feld">
-
         Nutzername :
         <?php echo ("<p class=unp>" . $_SESSION['username'] . "</p>"); ?>
         <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>" id="pbpic"></img><br>
@@ -38,6 +37,7 @@
             $_SESSION['codeUpload'] = "";
         }
         ?>
+        
         <h3>Passwort ändern?</h3>
         <form action="../components/passch.php" method="post">
             Altes Passwort : <input type="password" name="oldpw" autocomplete="off"><br>
