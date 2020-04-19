@@ -33,10 +33,9 @@
             <input type="file" name="datei"><br><br>
             <input type="submit" value="Hochladen"><br><br>
             <label for="name"> E-Mail : <?php echo  $_SESSION['email'] ?></label>
-            
         </form>
         <form action="../components/passch.php" method="post">
-            <label for="name">Altes Passwort : <input type="password" name="oldpw" autocomplete="off"></label><br>
+            <label for="oldpw">Altes Passwort : <input type="password" name="oldpw" autocomplete="off"></label><br>
             Neues Passwort : <input type="password" name="newpw" autocomplete="off"><br>
             Neues Passwort bestätigen : <input type="password" name="newpwcn" autocomplete="off"><br><br>
             <input type="submit" value="Passwort ändern!" name="change">
