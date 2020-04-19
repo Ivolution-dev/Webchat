@@ -11,9 +11,9 @@ if(!in_array($extension, $allowed_extensions)) {
 }
  
 //Überprüfung der Dateigröße
-$max_size = 500*1024; //500 KB
+$max_size = 1000*1024; //1000 KB
 if($_FILES['datei']['size'] > $max_size) {
- die("Bitte keine Dateien größer 500kb hochladen");
+ die("Bitte keine Dateien größer 1mb hochladen");
 }
  
 //Überprüfung dass das Bild keine Fehler enthält
