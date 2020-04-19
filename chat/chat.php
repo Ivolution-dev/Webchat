@@ -119,7 +119,7 @@
 
                 //}
                 //pic. = '../ressources/logo.png';
-                var img = <?php echo img(); ?>
+                var img = "<?php echo img(); ?>";
                 pic.src = img;
                 td1.appendChild(pic);
                 td1.appendChild(te1);
