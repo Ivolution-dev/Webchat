@@ -97,10 +97,10 @@
                 pic.setAttribute("id", "ChatPicture");
                 var extensions = ['png', 'jpg', 'jpeg', 'gif'];
                 var upload_folder = '../profilepictures/'; 
-                var fs = require('fs');
+                var fso = new ActiveXObject("Scripting.FileSystemObject");
                 for (var extension in extensions) {
                     var file = upload_folder + username + "." + extension;
-                    if (ds.exists(file)) {
+                    if (fso.FileExists(file)) {
                         pic.src = file;
                         break;
                     }
