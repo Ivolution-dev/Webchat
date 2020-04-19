@@ -294,5 +294,5 @@ input:focus {
 	float:left;
 	width: 20px;
 	height:20px;
-	position:relative;
+	position:fixed;
 }
