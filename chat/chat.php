@@ -99,7 +99,7 @@
                 var upload_folder = '../profilepictures/'; 
                 for (var extension in extensions) {
                     var file = upload_folder + username + "." + extension;
-                    document.write(extension);
+                    //document.write(extension);
                 }
                 pic.alt = "../ressources/logo.png";
                 td1.appendChild(pic);
