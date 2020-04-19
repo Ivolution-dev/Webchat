@@ -26,6 +26,7 @@
 
     <h1 id="loghd"> Mein Profil </h1>
     <div class="feld">
+        <form>
         Nutzername :
         <?php echo ("<p class=unp>" . $_SESSION['username'] . "</p>"); ?>
         <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>" id="pbpic"></img><br>
