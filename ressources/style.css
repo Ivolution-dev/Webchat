@@ -292,7 +292,7 @@ input:focus {
 }
 #ChatPicture{
 	float:left;
-	width: 20px;
-	height:20px;
-	position:fixed;
+	width: 28px;
+	height:28px;
+	position:relative;
 }
