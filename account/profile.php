@@ -27,18 +27,9 @@
     <h1 id="loghd"> Mein Profil </h1>
     <div class="profile">
         <form action="components/login.php" method="post">
-            Nutzername :
-            <?php
-            echo ("<p class=unp>" . $_SESSION['username'] . "</p>");
-            ?>            
+            Nutzername :<?php echo ("<p class=unp>" . $_SESSION['username'] . "</p>");?> 
             <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>" id="pbpic"></img>
-            E-Mail :
-            <?php
-            echo ("<p class=unp>" . $_SESSION['email'] . "</p>");
-            ?>
-            Profilbild:
-            
-            
+            E-Mail :<?php echo ("<p class=unp>" . $_SESSION['email'] . "</p>"); ?>         
         </form>  
     
     <form action="../components/upload.php" method="post" enctype="multipart/form-data">
