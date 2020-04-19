@@ -17,6 +17,11 @@
     }
     ?>
 
+    <form action="../components/upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="datei"><br>
+        <input type="submit" value="Hochladen">
+    </form>
+
     <h1 id="loghd"> Mein Profil </h1>
     <div class="feld">
         <form action="components/login.php" method="post">
@@ -28,11 +33,7 @@
             <?php
                 echo ("<p class=unp>". $_SESSION['email'] . "</p>");
             ?>
-<<<<<<< HEAD
-            <a class="link" href="account/forgetpassword.php">Passwort ändern</a><br><br>
-=======
             <a class="link" href="account/changepassword.php">Passwort ändern</a><br><br>
->>>>>>> 82827d634cb591a611ca078d1078fb39e5a81971
 
         </form>
     </div>
