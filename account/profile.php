@@ -17,22 +17,28 @@
     }
     ?>
 
-    <img src = "../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>"></img>
+    <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>"></img>
     <form action="../components/upload.php" method="post" enctype="multipart/form-data">
         <input type="file" name="datei"><br>
         <input type="submit" value="Hochladen">
     </form>
+    <?php
+    if (isset($_SESSION['codeUpload']) && $_SESSION['codeUpload'] != "") {
+        echo ($_SESSION['codeUpload']);
+        $_SESSION['codeUpload'] = "";
+    }
+    ?>
 
     <h1 id="loghd"> Mein Profil </h1>
     <div class="feld">
         <form action="components/login.php" method="post">
-            Nutzername : 
+            Nutzername :
             <?php
-                echo ("<p class=unp>". $_SESSION['username'] . "</p>");
+            echo ("<p class=unp>" . $_SESSION['username'] . "</p>");
             ?>
             E-Mail :
             <?php
-                echo ("<p class=unp>". $_SESSION['email'] . "</p>");
+            echo ("<p class=unp>" . $_SESSION['email'] . "</p>");
             ?>
             <a class="link" href="../index.php">Zurück zum Chat!</a>
         </form>
@@ -46,13 +52,6 @@
             <input type="submit" value="Passwort ändern!" name="change">
         </form>
     </div>
-
-    <?php
-    if (isset($_SESSION['codeProfile']) && $_SESSION['codeProfile'] != "") {
-        echo ($_SESSION['codeProfile']);
-        $_SESSION['codeProfile'] = "";
-    }
-    ?>
 </body>
 
 </html>
