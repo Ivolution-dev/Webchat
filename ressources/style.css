@@ -300,5 +300,5 @@ input:focus {
 	height: 60px;
 	width: 60px;
 	align-items: center;
-
+	float: left;
 }
