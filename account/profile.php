@@ -28,7 +28,7 @@
     <div class="feld">
 
         <label for="name">Nutzername : <?php echo $_SESSION['username']; ?></label>
-        <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>" id="pbpic"></img><br>
+        <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>" id="pbpic"></img>
         <form action="../components/upload.php" method="post" enctype="multipart/form-data">
             <input type="file" name="datei">
             <input type="submit" value="Hochladen">
