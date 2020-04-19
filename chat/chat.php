@@ -102,6 +102,7 @@
                                 $file = $upload_folder . $filename . "." . $al_extension;
                                 if (file_exists($file)) {
                                     echo ($file);
+                                    break;
                                 }
                             } 
                             ?>';
