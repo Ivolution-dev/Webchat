@@ -44,7 +44,7 @@
     <form action="../components/upload.php" method="post" enctype="multipart/form-data">
         <input type="file" name="datei"><br>
         <input type="submit" value="Hochladen">
-    </form>
+    </form><br>
     <form action="../components/passch.php" method="post">
         Altes Passwort : <input type="password" name="oldpw" autocomplete="off"><br><br>
         Neues Passwort : <input type="password" name="newpw" autocomplete="off"><br><br>
