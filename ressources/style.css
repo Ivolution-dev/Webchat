@@ -230,9 +230,7 @@ input:focus {
 	text-align: right;
 	margin-bottom: 0.2%;
 }
-.unp{
-	text-align: center;
-}
+
 
 .unchpw {
 	text-align: center;
@@ -302,5 +300,5 @@ input:focus {
 	height:60px;
 	width:60px;
 	align-items: center;
-	
+
 }
