@@ -30,15 +30,15 @@
         <label for="name">Nutzername : <?php echo $_SESSION['username']; ?></label>
         <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>" id="pbpic"></img><br>
         <form action="../components/upload.php" method="post" enctype="multipart/form-data">
-            <input type="file" name="datei"><br><br>
-            <input type="submit" value="Hochladen"><br><br>
+            <input type="file" name="datei">
+            <input type="submit" value="Hochladen">
             <label for="name"> E-Mail : <?php echo  $_SESSION['email'] ?></label>
             
         </form>
         <form action="../components/passch.php" method="post">
-            <label for="name">Altes Passwort : <input type="password" name="oldpw" autocomplete="off"></label> <br>
-            Neues Passwort : <input type="password" name="newpw" autocomplete="off"><br>
-            Neues Passwort bestätigen : <input type="password" name="newpwcn" autocomplete="off"><br><br>
+            <label for="name">Altes Passwort : <input type="password" name="oldpw" autocomplete="off"></label>
+            Neues Passwort : <input type="password" name="newpw" autocomplete="off">
+            Neues Passwort bestätigen : <input type="password" name="newpwcn" autocomplete="off">
             <input type="submit" value="Passwort ändern!" name="change">
             <a class="link" href="../index.php">Zurück zum Chat!</a>
         </form>
