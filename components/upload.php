@@ -46,7 +46,7 @@
 
         move_uploaded_file($_FILES['datei']['tmp_name'], $new_path);
         $_SESSION['codeUpload'] = "<div id='success'>Dein Profilbild wurde aktualisiert!</div>";
-        header('location: ../account/profile.php');
-        exit();
+        //header('location: ../account/profile.php');
+        die();
     }
 ?>
