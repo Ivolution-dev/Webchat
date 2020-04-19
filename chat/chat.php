@@ -90,13 +90,14 @@
                 var td2 = document.createElement('td');
                 td1.setAttribute("id", "Uname");
                 td2.setAttribute("id", "Message");
-                var te1 = document.createTextNode(ChatData[i][0]);
+                var username = ChatData[i][0]
+                var te1 = document.createTextNode(username);
                 var te2 = document.createTextNode(ChatData[i][1]);
                 var pic = document.createElement("img");
                 pic.setAttribute("id", "ChatPicture");
                 pic.src = '<?php 
                             $upload_folder = '../profilepictures/'; 
-                            $filename = $_SESSION['username'];
+                            echo $filename = "<script>document.write(username)</script>";
                             $allowed_extensions = array('png', 'jpg', 'jpeg', 'gif');
                             foreach ($allowed_extensions as &$al_extension) {
                                 $file = $upload_folder . $filename . "." . $al_extension;
@@ -106,6 +107,7 @@
                                 }
                             } 
                             ?>';
+                pic.alt = "../ressources/logo.png";
                 td1.appendChild(pic);
                 td1.appendChild(te1);
                 td2.appendChild(te2);
