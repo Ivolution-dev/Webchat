@@ -26,8 +26,8 @@
 
     <h1 id="loghd"> Mein Profil </h1>
     <div class="feld">
-    <label for="name">Nutzername :</label>
-            <?php echo ("<p class=unp>" . $_SESSION['username'] . "</p>"); ?>
+    <label for="name">Nutzername : <?php echo ("<p class=unp>" . $_SESSION['username'] . "</p>"); ?></label>
+            
             <img src="../components/getprofilepicture.php?profile=<?php echo $_SESSION['username']; ?>" id="pbpic"></img><br>
             <form action="../components/upload.php" method="post" enctype="multipart/form-data">
                 <input type="file" name="datei"><br><br>
