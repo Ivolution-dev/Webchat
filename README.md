@@ -3,6 +3,6 @@ Schulprojekt 2020
 
 Made by Ivo Tofall and Collin Schulz
 
-http://gamer-server.eu/Webchat
+http://ivoltion.dev/Webchat
 
-https://github.com/Ivolution-debug/Webchat
+https://github.com/Ivolution-dev/Webchat
